@@ -1,0 +1,28 @@
+.Forum {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: auto;
+}
+
+.ForumCentar {
+  display: flex;
+}
+
+.Background {
+  background-color: #fafafa;
+}
+
+.Button {
+  height: 4rem;
+  width: 4rem;
+  background-color: #18bc9c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 85%;
+  left: 92%;
+  box-shadow: 0 4px 8px #ccc;
+  border: none;
+}

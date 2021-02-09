@@ -1,0 +1,32 @@
+.Sticky {
+  left: 90%;
+  top: 90%;
+  position: fixed;
+  transform: translateZ(0);
+  height: 4rem;
+  font-size: 1.1rem;
+  width: 4rem;
+  background-color: #18bc9c;
+  border-radius: 50%;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 85%;
+  left: 92%;
+  box-shadow: 0 4px 8px #ccc;
+  border: none;
+  transition: all 0.5s;
+  transform-origin: left;
+}
+
+.Sticky:active {
+  border: none;
+}
+
+.Sticky:focus {
+  outline: none;
+}
+
+.Sticky:hover {
+}
