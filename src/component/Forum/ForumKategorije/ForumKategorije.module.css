@@ -12,6 +12,7 @@
   width: 80%;
   box-shadow: 0 4px 8px #ccc;
   transition: all 0.5s;
+  border-left: 5px solid green;
 }
 
 .Kartica:hover {
