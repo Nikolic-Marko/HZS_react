@@ -1,0 +1,128 @@
+.Modal {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  z-index: 500;
+  background-color: white;
+  width: 50%;
+  height: 50%;
+  box-shadow: 0 4px 8px #ccc;
+  padding: 16px;
+  left: 25%;
+  top: 20%;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+  border-top: 10px solid #18bc9c;
+  border-radius: 4px;
+}
+
+.Content {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Icon {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+}
+
+.Inputi {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.7%;
+  margin-top: 2.5%;
+}
+
+.Input1 {
+  width: 67.5%;
+
+  height: 2.5rem;
+  border: 1px solid black;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+}
+
+.Input1:focus {
+  outline: none;
+  border: 1px solid #18bc9c;
+}
+
+.Input2 {
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  width: 30%;
+  height: 2.5rem;
+  border: 1px solid black;
+}
+.Input2:focus {
+  outline: none;
+  border: 1px solid #18bc9c;
+}
+
+.Tekst {
+  margin: 0 1rem;
+  height: 100%;
+  margin: 0;
+}
+
+.TekstArea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  height: 100%;
+}
+
+.TekstArea:focus {
+  outline: none;
+  border: 1px solid #18bc9c;
+}
+
+.Submit {
+  margin-top: 1rem;
+}
+
+.btnSubmit {
+  border: none;
+  outline: none;
+  background-color: #18bc9c;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s;
+}
+.btnSubmit i {
+  margin-right: 0.5rem;
+}
+
+.btnSubmit:hover {
+  background-color: #128d75;
+}
+
+.btnCancel {
+  margin-left: 1rem;
+  border: none;
+  cursor: pointer;
+  color: #75758a;
+  outline: none;
+  background-color: white;
+}
+
+.btnCancel:hover {
+  color: #ea4c3c;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .Modal {
+    height: 60%;
+  }
+}

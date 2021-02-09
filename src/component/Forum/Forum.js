@@ -1,13 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../Header'
 import ForumNavigacija from './ForumNavigacija/ForumNavigacija'
 import classes from './Forum.module.css'
 import ForumKategorije from './ForumKategorije/ForumKategorije'
 import ForumLatest from './ForumLatest/ForumLatest'
-import { StickyContainer, Sticky } from 'react-sticky'
-import SticklyCircle from './StickyCircle/SticklyCircle'
+import Modal from './Modal/Modal'
 
 const Forum = () => {
+  const [showModal, setShowModal] = useState(false)
+
+  const showNewTopic = () => {
+    setShowModal(true)
+  }
+
+  const closeModal = () => {
+    setShowModal(false)
+  }
+
   const styleTopic = {
     height: '4rem',
     width: '4rem',
@@ -26,26 +35,20 @@ const Forum = () => {
   }
   return (
     <React.Fragment>
-      <StickyContainer>
-        <Header />
-        <div className={classes.Background}>
-          <div className={classes.Forum}>
-            <ForumNavigacija />
-            <div className={classes.ForumCentar}>
-              <ForumKategorije />
-              <ForumLatest />
-            </div>
+      <Header />
+      <div className={classes.Background}>
+        <div className={classes.Forum}>
+          <ForumNavigacija />
+          <div className={classes.ForumCentar}>
+            <ForumKategorije />
+            <ForumLatest />
           </div>
         </div>
-        <SticklyCircle />
-        {/* <Sticky>
-          {({ style }) => (
-            <button style={{ ...style, ...styleTopic }}>
-              <i className="fas fa-plus"></i>
-            </button>
-          )}
-        </Sticky> */}
-      </StickyContainer>
+      </div>
+      <button className={classes.Sticky} onClick={showNewTopic}>
+        <i className="fas fa-plus" style={{ color: 'white' }}></i>
+      </button>
+      <Modal show={showModal} modalClosed={closeModal} />
     </React.Fragment>
   )
 }
