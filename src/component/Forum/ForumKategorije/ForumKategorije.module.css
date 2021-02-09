@@ -3,22 +3,6 @@
   padding: 1rem 0 0 0;
 }
 
-.Kartica {
-  height: 9rem;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.1rem 1rem;
-  margin: 1rem;
-  width: 80%;
-  box-shadow: 0 4px 8px #ccc;
-  transition: all 0.5s;
-  border-left: 5px solid green;
-}
-
-.Kartica:hover {
-  box-shadow: 0 8px 16px #ccc;
-}
-
 .Content {
   width: 75%;
 }
@@ -31,10 +15,4 @@
 .Content p {
   margin: 0;
   padding: 0;
-}
-
-.Topics {
-  padding: 1rem 0.2rem;
-  color: #929292;
-  font-size: 1.1rem;
 }
