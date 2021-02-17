@@ -30,7 +30,7 @@ const Forum = () => {
           </div>
         </div>
       </div>
-      <Dugme click={showNewTopic} />
+      <Dugme click={showNewTopic} ikonica="fas fa-plus" />
       <Modal show={showModal} modalClosed={closeModal} />
     </React.Fragment>
   )
