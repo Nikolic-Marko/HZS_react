@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom'
 import Homepage from './component/Homepage'
 import Forum from './component/Forum/Forum'
 import ForumPitanja from './component/Forum/ForumPitanja/ForumPitanja'
+import PitanjaStranica from './component/Forum/PitanjaContainer/PitnjaStranica/PitanjaStranica'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/forum/pitanja" exact component={ForumPitanja} />
       <Route path="/forum/takmicenja" exact component={ForumPitanja} />
       <Route path="/forum/ostalo" exact component={ForumPitanja} />
+      <Route path="/forum/ostalo/:id" component={PitanjaStranica} />
     </Switch>
   )
 }
