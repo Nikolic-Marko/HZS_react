@@ -254,6 +254,179 @@ body {
   width: 100%;
 }
 
+/*******partneri*************/
+.partners {
+  width: 100%;
+  background-color: #161616;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: -1;
+}
+
+.glavni-partneri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  height: auto;
+  margin: 25px;
+}
+
+.glavni-partneri img {
+  display: flex;
+  width: 20%;
+  height: 100%;
+}
+
+.linija-partneri {
+  background-color: #00ffa3;
+  width: 150px;
+  border: 1px solid #00ffa3;
+}
+
+.naslov-partneri {
+  color: #00ffa3;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.zlatni-partner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zlatni-partner img {
+  height: auto;
+  width: 50%;
+}
+
+.nat .for-slick-slider .items img {
+  width: 70%;
+}
+
+.nat .for-slick-slider .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*****slider***********/
+.naturalni-partneri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+.for-slick-slider {
+  display: flex;
+  width: 70%;
+}
+
+.for-slick-slider .items {
+  width: 100%;
+  height: auto;
+  margin: 30px;
+}
+
+.for-slick-slider .items img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+  color: #00ffa3;
+  opacity: 1;
+  font-size: 16px;
+}
+
+.slick-dots li.slick-active button {
+  height: 4px;
+  width: 30px;
+  margin: 0;
+  padding: 0;
+  background-color: #00ffa3;
+}
+
+.slick-dots li.slick-active button:before {
+  color: transparent;
+}
+
+/********************************/
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+@-webkit-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+@-moz-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+@-ms-keyframes move-clouds-back {
+  from {
+    background-position: 0;
+  }
+
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80vh;
+  display: block;
+}
+
+.clouds {
+  background: transparent url(img/clouds5.png) repeat top center;
+  /* background: transparent url(img/oblaciljubicasta.png) repeat top center; */
+  z-index: 100;
+
+  -moz-animation: move-clouds-back 200s linear infinite;
+  -ms-animation: move-clouds-back 200s linear infinite;
+  -o-animation: move-clouds-back 200s linear infinite;
+  -webkit-animation: move-clouds-back 200s linear infinite;
+  animation: move-clouds-back 200s linear infinite;
+}
+
+/*****************************************************/
+
 /****************************mediaquery***********************************/
 
 @media (max-width: 992px) {
@@ -356,57 +529,4 @@ body {
     margin-top: 10px;
     font-size: 16px;
   }
-}
-
-/********************************/
-
-@keyframes move-clouds-back {
-  from {
-    background-position: 0 0;
-  }
-
-  to {
-    background-position: 10000px 0;
-  }
-}
-
-@-webkit-keyframes move-clouds-back {
-  from {
-    background-position: 0 0;
-  }
-
-  to {
-    background-position: 10000px 0;
-  }
-}
-
-@-moz-keyframes move-clouds-back {
-  from {
-    background-position: 0 0;
-  }
-
-  to {
-    background-position: 10000px 0;
-  }
-}
-
-@-ms-keyframes move-clouds-back {
-  from {
-    background-position: 0;
-  }
-
-  to {
-    background-position: 10000px 0;
-  }
-}
-
-.clouds {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 80vh;
-  display: block;
 }
