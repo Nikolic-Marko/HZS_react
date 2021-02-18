@@ -1,0 +1,412 @@
+html,
+body {
+  cursor: url(img/cursor.png), auto !important;
+  margin: 0 auto 0 auto;
+  background-color: #bebaba;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #161616;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: #161616;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00ffa3;
+}
+
+.homepage {
+  background-color: #161616;
+  z-index: 1s;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-obavestenje {
+  z-index: 101;
+  margin: 0 0 70px 100px;
+  color: white;
+  font-size: 20px;
+  height: auto;
+  width: auto;
+}
+
+.dugme-ucestvuj {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 14px;
+  width: 100px;
+  height: 30px;
+  background-color: #00ffa3;
+}
+
+.dugme-ucestvuj:hover {
+  background-color: #7952d8;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.tajmer {
+  height: 30px;
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+}
+
+#timer {
+  font-size: 20px;
+  color: #00ffa3;
+}
+
+.dugmici-mreze {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.dugmici-mreze img {
+  margin-right: 20px;
+  height: 25px;
+  width: 25px;
+}
+
+.sporedni-logo {
+  display: flex;
+  height: 100vh;
+  margin-right: 110px;
+  z-index: 1;
+}
+
+.sporedni-logo img {
+  height: auto;
+  width: 110%;
+  -webkit-animation: sporedni-logo 0.9s both;
+  animation: sporedni-logo 0.9s both;
+}
+
+.slogan {
+  align-self: flex-end;
+  margin-bottom: 31.8vh;
+}
+
+@-webkit-keyframes sporedni-logo {
+  0% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  38% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+
+  55% {
+    -webkit-transform: translateY(-65px);
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  72% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  81% {
+    -webkit-transform: translateY(-28px);
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  90% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  95% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes sporedni-logo {
+  0% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  38% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+
+  55% {
+    -webkit-transform: translateY(-65px);
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  72% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  81% {
+    -webkit-transform: translateY(-28px);
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  90% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  95% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+.slogan p {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 6px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #00ffa3, #fff, #00ffa3);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 4s linear;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+}
+
+.mountain {
+  z-index: 20;
+  align-self: flex-end;
+  position: absolute;
+  width: 100%;
+  height: 40vh;
+}
+
+.mountain img {
+  height: 100%;
+  width: 100%;
+}
+
+/****************************mediaquery***********************************/
+
+@media (max-width: 992px) {
+  .for-slick-slider .items {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+
+  .slick-dots li.slick-active button {
+    width: 20px;
+  }
+
+  .for-slick-slider {
+    display: flex;
+    width: 90%;
+  }
+
+  .zlatni-partner img {
+    height: auto;
+    width: 70%;
+  }
+
+  .homepage {
+    background-color: #161616;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .text-obavestenje {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 0 0;
+    font-size: 16px;
+  }
+
+  .dugme-ucestvuj {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    float: none;
+    z-index: 99;
+  }
+
+  .tajmer {
+    padding-left: 0;
+  }
+
+  .dugmici-mreze img {
+    margin-left: 20px;
+    height: 30px;
+    width: 30px;
+    z-index: 99;
+  }
+
+  .mountain {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .mountain img {
+    height: auto;
+  }
+
+  .sporedni-logo {
+    height: auto;
+
+    margin: 0;
+    z-index: 1;
+  }
+
+  .slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    align-self: unset;
+  }
+
+  .slogan p {
+    background-size: 100%;
+  }
+
+  .sporedni-logo img {
+    height: auto;
+    width: 85%;
+  }
+
+  .naslov-partneri {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+}
+
+/********************************/
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+@-webkit-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+@-moz-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+@-ms-keyframes move-clouds-back {
+  from {
+    background-position: 0;
+  }
+
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80vh;
+  display: block;
+}

@@ -5,7 +5,6 @@ import Homepage from './component/Homepage'
 import Forum from './component/Forum/Forum'
 import ForumPitanja from './component/Forum/ForumPitanja/ForumPitanja'
 import PitanjaStranica from './component/Forum/PitanjaContainer/PitnjaStranica/PitanjaStranica'
-
 function App() {
   return (
     <Switch>

@@ -1,0 +1,105 @@
+/*******partneri*************/
+.partners {
+  width: 100%;
+  background-color: #161616;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: -1;
+}
+
+.glavni-partneri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  height: auto;
+  margin: 25px;
+}
+
+.glavni-partneri img {
+  display: flex;
+  width: 20%;
+  height: 100%;
+}
+
+.linija-partneri {
+  background-color: #00ffa3;
+  width: 150px;
+  border: 1px solid #00ffa3;
+}
+
+.naslov-partneri {
+  color: #00ffa3;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.zlatni-partner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zlatni-partner img {
+  height: auto;
+  width: 50%;
+}
+
+.nat .for-slick-slider .items img {
+  width: 70%;
+}
+
+.nat .for-slick-slider .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*****slider***********/
+.naturalni-partneri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+.for-slick-slider {
+  display: flex;
+  width: 70%;
+}
+
+.for-slick-slider .items {
+  width: 100%;
+  height: auto;
+  margin: 30px;
+}
+
+.for-slick-slider .items img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+  color: #00ffa3;
+  opacity: 1;
+  font-size: 16px;
+}
+
+.slick-dots li.slick-active button {
+  height: 4px;
+  width: 30px;
+  margin: 0;
+  padding: 0;
+  background-color: #00ffa3;
+}
+
+.slick-dots li.slick-active button:before {
+  color: transparent;
+}
