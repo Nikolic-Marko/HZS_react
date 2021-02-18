@@ -1,0 +1,80 @@
+#nas-tim {
+  background-color: #161616; /**/
+}
+
+.nas-tim-naslov {
+  text-align: center;
+  font-family: Gilroy-ExtraBold, sans-serif;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.nas-tim-span {
+  color: #00ffa3;
+}
+
+.row {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: center;
+}
+
+.kartica {
+  width: 280px;
+  height: 100px;
+  margin: 20px 10px 10px 10px;
+  background-color: white;
+  margin-bottom: 200px;
+  background-color: #161616;
+}
+
+.kartica-sadrzaj {
+  padding: 15px;
+}
+
+.kartica-image {
+  text-align: center;
+}
+
+.ime {
+  text-align: center;
+  margin-top: -110px;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-family: 'Gilroy-Light', sans-serif;
+}
+
+.linkedin-img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-left: 70px;
+}
+
+.email-img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-left: 152px;
+}
+
+@media (max-width: 768px) {
+  .row {
+    width: 100%;
+  }
+}
+
+@media (max-width: 468px) {
+  .kartica {
+    width: 290px;
+    height: 250px;
+  }
+}
