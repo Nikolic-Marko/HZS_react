@@ -1,0 +1,132 @@
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #161616;
+}
+
+.logoSection{
+    width: 33%;
+}
+
+.logoSection img{
+    display: block;
+    margin-left: 10%;
+    margin-top: 4%;
+    width: 33%;
+}
+
+.locationSection{
+    width: 25%;
+    text-align: justify;
+}
+
+.locationSection h1{
+    color: #00ffa3;
+    font-size: 20px;
+}
+.locationSection p{
+    color: white;
+    line-height: 7px;
+}
+
+.contactSection{
+    width: 42%;
+    text-align: justify;
+}
+.contactSection h1{
+    color: #00ffa3;
+    font-size: 20px;
+}
+.contactSection p{
+    color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .locationSection{
+        width: 30%;
+    }
+    .contactSection{
+        width: 37%;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .locationSection{
+        width: 30%;
+    }
+    .contactSection{
+        width: 37%;
+    }
+    .locationSection h1{
+        font-size: 17px;
+    }
+    .contactSection h1{
+        font-size: 17px;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .locationSection{
+        width: 32%;
+    }
+    .contactSection{
+        width: 35%;
+    }
+    .locationSection h1{
+        font-size: 15px;
+    }
+    .contactSection h1{
+        font-size: 15px;
+    }
+    .locationSection p{
+        font-size: 12px;
+    }
+    .contactSection p{
+        font-size: 12px;
+    }
+    .logoSection img{
+        width: 43%;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .footer{
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    .logoSection{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .locationSection{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .logoSection img{
+        display: flex;
+        margin: 0;
+    }
+    .contactSection{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .locationSection h1{
+        font-size: 15px;
+    }
+    .contactSection h1{
+        font-size: 15px;
+    }
+    .locationSection p{
+        font-size: 12px;
+    }
+    .contactSection p{
+        font-size: 12px;
+    }
+    .logoSection img{
+        width: 100%;
+    }
+  }

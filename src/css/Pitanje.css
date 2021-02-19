@@ -1,0 +1,103 @@
+.Pitanje{
+    position: relative;
+    margin-bottom: 40px;
+    
+}
+
+.Pitanje input{
+    width: 100%;
+    height: 3rem;
+    background-color: black;
+    outline: none;
+    border: none;
+    color:white;
+    padding-left: 10px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.83); 
+box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.83);
+}
+
+.fake-placeholder{
+    color:var(--zelena-boja);
+    font-size: 1.1rem;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform .3s;
+    height: 3rem;
+    text-shadow: 6px 4px 3px rgb(0, 0, 0);
+}
+
+.placeholderUp{
+    transform: translateY(0);
+}
+
+.required{
+    position: absolute;
+    right: 10px;
+    top:3.8rem;
+    opacity: 0.5;
+}
+
+.fake-underline{
+    background-color: var(--zelena-boja);
+    width: 0;
+    height: 3px;
+    position: absolute;
+    transition: width 0.3s;
+}
+
+.ovoPoljeJeObavezno{
+    width: 100%;
+    color: white;
+    padding-left: 10px;
+    font-size: 0.8rem;
+    background-color: rgb(219, 49, 49);
+}
+
+.Pitanje textarea{
+    width: 100%;
+    background-color: black;
+    outline: none;
+    border: none;
+    color:white;
+    padding: 10px;
+    resize: none;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.83); 
+box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.83);
+}
+
+.posaljiBtn{
+    width: 100%;
+    background-color:var(--zelena-boja);
+    padding:20px;
+    outline:none;
+    border:none;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.posaljiBtn h2{
+    font-size: 1.3rem;
+    
+}
+
+.posaljiBtn:hover{
+    cursor: pointer;
+    color:var(--zelena-boja);
+    background-color: black;
+    transform: scale(1.05);
+}
+
+.posaljiBtn:hover path{
+    fill:var(--zelena-boja)
+}
+
+.posaljiBtn svg{
+    position: absolute;
+    right: 40px;
+    top:50%;
+    transform: translateY(-50%);
+}

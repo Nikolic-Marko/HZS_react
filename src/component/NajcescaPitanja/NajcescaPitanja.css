@@ -1,9 +1,9 @@
-#najcesca-pitanja::before,
-#najcesca-pitanja::after {
+.najcesca-pitanja::before,
+.najcesca-pitanja::after {
   box-sizing: inherit;
 }
 
-#najcesca-pitanja {
+.najcesca-pitanja {
   box-sizing: border-box;
   width: 100%;
   height: 100vh;
@@ -46,6 +46,8 @@
   position: relative;
   width: 45%;
   margin: 10px 20px;
+  height: 100px;
+  transition: height 750ms;
 }
 
 .krug-zatvoreno-pitanje {
@@ -91,10 +93,10 @@
 .odgovor {
   margin-top: 5px;
   background-color: whitesmoke;
-  max-height: 0;
+  height: 0px;
   overflow: hidden;
   position: relative;
-  transition: max-height 750ms;
+  transition: height 750ms;
 }
 
 .odgovor::before {
@@ -107,15 +109,18 @@
   background-color: whitesmoke;
 }
 
-.najcesce-pitanje:target .odgovor {
-  max-height: 200px;
+.najcesce-pitanje:hover {
+  height: 200px;
+}
+.najcesce-pitanje:hover .odgovor {
+  height: 100px;
 }
 
-.najcesce-pitanje:target .pitanje-link .krug-zatvoreno-pitanje {
+.najcesce-pitanje:hover .pitanje-link .krug-zatvoreno-pitanje {
   display: none;
 }
 
-.najcesce-pitanje:target .pitanje-link .krug-otvoreno-pitanje {
+.najcesce-pitanje:hover  .pitanje-link .krug-otvoreno-pitanje {
   display: block;
 }
 

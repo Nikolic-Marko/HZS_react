@@ -1,0 +1,44 @@
+body{
+  background: #161616;
+}
+h4 {
+    padding-top: 0.25em;
+    color: #00ffa3;
+  }
+  .vertical-timeline-element-content {
+    box-shadow: none!important;
+    padding: 2em 3em !important;
+  }
+  .date {
+    color: rgb(201, 251, 255);
+  }
+  
+  #description {
+    margin: 1.5em 0 2em 0;
+  }
+  
+  .workButton {
+    background-color: #00ffa3;
+  }
+  
+  .workButton:hover {
+    background-color: #00ffa3;
+  }
+  
+  .schoolButton {
+    background-color: #00ffa3;
+  }
+  
+  .schoolButton:hover {
+    background-color: #00ffa3;
+  }
+  
+  @media only screen and (max-width: 1700px) {
+    .vertical-timeline-element-date {
+      display: block ;
+      float: none ;
+      color: rgb(44, 44, 44);
+      margin-top: 1.5em;
+    }
+  }
+  

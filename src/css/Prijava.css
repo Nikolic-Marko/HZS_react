@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+@font-face{
+    font-family: digital;
+    src:url('digital.ttf');
+}
+
+:root{
+    --zelena-boja:rgb(0, 255, 163);
+}
+
+main{
+    background-color: rgb(22,22,22);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    min-height: 100vh;
+}
+
+.naslov-prijave{
+    color:white;
+    padding: 10px 0px;
+    border-bottom: 1.5px solid var(--zelena-boja);
+}
+
+.naslov-prijave > h1{
+    font-size: 1.2rem;
+    text-align:center;
+    padding: 5px 10px;
+}
+
+.brojac-container > h1{
+    font-size: 1.2rem;
+    text-align:center;
+    padding: 20px;
+}
+
+.brojac-container .brojac{
+    color:var(--zelena-boja);
+    font-family: digital;
+    font-weight: 100;
+    font-size: 6rem;
+    letter-spacing: 0.4rem;
+    background-color: rgba(0, 0, 0);
+    border-radius: 30px;
+    margin-top: 50px;
+
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.83); 
+box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.83);
+}
+
+.normalFont{
+    font-size: 4rem;
+    opacity: 0.3;
+    font-family: digital;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .brojac-container .brojac{
+        font-size: 5rem;
+    }
+
+    .normalFont{
+        font-size: 2.8rem;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .brojac-container .brojac{
+        font-size: 3rem;
+        letter-spacing: 0.2rem;
+        
+    }
+    .naslov-prijave > h1{
+        font-size: 1rem;
+    }
+
+    .normalFont{
+        font-size: 2rem;
+    }
+}
+
+
+.pitanja-container{
+    width:320px;
+    padding-top: 50px;
+    /* overflow: hidden; */
+
+}
+
+.stiklir{
+    width: 14vw;
+    height: 14vw;
+    min-width: 130px;
+    min-height: 130px;
+    margin:40px auto 20px auto;
+
+    background-size: contain;
+    background-image: url('./success.png');
+}

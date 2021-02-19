@@ -1,0 +1,21 @@
+.Pitanja {
+    height:5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1rem 1rem;
+    margin: 0.5rem 1rem;
+    width: 80%;
+    box-shadow: 0 4px 8px #ccc;
+    transition: all 0.5s;
+  }
+  
+  .Pitanja:hover {
+    box-shadow: 0 8px 16px #ccc;
+  }
+  
+  .Topics {
+    padding: 1rem 0.2rem;
+    color: #929292;
+    font-size: 1.1rem;
+  }
+  

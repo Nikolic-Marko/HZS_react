@@ -10,7 +10,7 @@ const ForumKategorije = () => {
         link="ohakatonu"
         paragraph="Sve sto vas zanima o hakatonu mozete naci ovde."
         heading="O hakatonu"
-        color="green"
+        color="#12A89D"
       />
 
       <Kartica
@@ -18,7 +18,7 @@ const ForumKategorije = () => {
         paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua."
         heading="Prijava za takmicenje"
-        color="red"
+        color="#F7941D"
       />
 
       <Kartica
@@ -26,7 +26,7 @@ const ForumKategorije = () => {
         paragraph="Sve što ne spada ni u jednu drugu kategoriju. Ako ne znate gde,
         postavite vašu temu ovde."
         heading="Ostalo"
-        color="yellow"
+        color="#FFFF00"
       />
     </div>
   )

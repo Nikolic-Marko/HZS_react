@@ -6,6 +6,8 @@ import NasTim from './NasTim/NasTim'
 import Landing from './Landing/Landing'
 import NajcescaPitanja from './NajcescaPitanja/NajcescaPitanja'
 import Partneri from './Partneri/Partneri'
+import AboutHakaton from './AboutHakaton/AboutHakaton'
+import TimeLine from './TimeLine/TimeLine'
 
 class Homepage extends React.Component {
   render() {
@@ -13,6 +15,8 @@ class Homepage extends React.Component {
       <div className="App">
         <Header />
         <Landing />
+        <AboutHakaton />
+        <TimeLine />
         <NasTim />
         <NajcescaPitanja />
         <Partneri />

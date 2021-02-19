@@ -5,7 +5,12 @@ const ForumNavigacija = () => {
   return (
     <div className={classes.ForumNavigacija}>
       {/* PRIVREMENO SU <BUTTON/> */}
-      <button>SVE KATEGORIJE</button>
+      <select className={classes.ListaKategorija}>
+      <option>O hakatonu</option>
+        <option>O hakatonu</option>
+        <option>Prijava za takmicenje</option>
+        <option>Ostalo</option>
+      </select>
       <button>KATEGORIJE</button>
       <button>NAJNOVIJE</button>
     </div>
