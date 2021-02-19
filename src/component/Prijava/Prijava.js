@@ -1,4 +1,4 @@
-import '../css/Prijava.css'
+import './Prijava.css'
 import Pitanje from './Pitanje.js'
 import CVButoon from './CVButton'
 import TextarePitanje from './TextareaPitanje.js'

@@ -1,4 +1,4 @@
-import '../css/CVButton.css'
+import './CVButton.css'
 import {useRef, useState} from 'react'
 
 const CVButton = ({error}) =>{
