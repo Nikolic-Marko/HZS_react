@@ -22,6 +22,13 @@ const ForumKategorije = () => {
       />
 
       <Kartica
+        link="Selekcija"
+        paragraph="Sve sto vas zanima o nacinu biranja timova za hakaton mozes pitati ovde."
+        heading="Selekcija"
+        color="#12A89D"
+      />
+
+      <Kartica
         link="ostalo"
         paragraph="Sve što ne spada ni u jednu drugu kategoriju. Ako ne znate gde,
         postavite vašu temu ovde."

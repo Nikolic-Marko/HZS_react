@@ -29,7 +29,7 @@ class AboutHakaton extends Component {
                     <div className="textSection">
                         <h1>O HAKATONU</h1>
                         <p>Hakaton za srednjoškolce je projekat koji se po
-                        drugi put održava na Fakultetu organizacionih
+                        treći put održava na Fakultetu organizacionih
                         nauka. Namenjen je učenicima srednjih škola sa
                         teritorije Srbije koji su spremni da primene postojeće
                         znanje u praksi i nauče nešto novo u oblasti

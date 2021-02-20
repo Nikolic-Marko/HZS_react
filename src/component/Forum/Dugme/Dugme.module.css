@@ -10,6 +10,7 @@
   left: 92%;
   box-shadow: 0 4px 8px #ccc;
   border: none;
+  box-shadow: none;
 }
 
 .Sticky {
@@ -17,9 +18,8 @@
   top: 90%;
   position: fixed;
   transform: translateZ(0);
-  height: 4rem;
+  padding: 20px;
   font-size: 1.1rem;
-  width: 4rem;
   background-color: #18bc9c;
   border-radius: 50%;
   float: right;
@@ -30,7 +30,7 @@
   left: 92%;
   box-shadow: 0 4px 8px #ccc;
   border: none;
-  transition: all 0.5s;
+  transition: 0s;
   transform-origin: left;
 }
 
@@ -43,4 +43,13 @@
 }
 
 .Sticky:hover {
+  border-radius:20% 20% 20% 20% / 50% 50% 50% 50% ;
+  color: white;
+  transform: translateX(-60%);
+  transition: 0ms;
+}
+
+.Sticky:hover::after {
+  content: "New Topic";
+  color: white;
 }

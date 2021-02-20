@@ -167,7 +167,7 @@ const Prijava = () => {
                     <CVButoon error={errors[10]} />
                     <div style={presekStyle}></div>
                     <Pitanje error={errors[4]} text="Naziv tima" required={true} />
-                    <TextarePitanje error={errors[5]} required={false} text="Ako si ranije učestvovao/la na takmičenju sličnog karaktera, molimo te da to iskustvo podeliš sa nama?" />
+                    <TextarePitanje error={errors[5]} required={false} text="Ako si ranije učestvovao/la na takmičenju sličnog karaktera, molimo te da to iskustvo podeliš sa nama" />
                     <TextarePitanje error={errors[6]} required={true} text="Na koji način će Hakaton za srednoškolce uticati na lični i profesionalni razvoj tebe i tvog tima?" />
                     <TextarePitanje error={errors[7]} required={true} text="Po čemu je tvoj tim jedinstven i zbog čega bi baš vi trebalo da budete deo ovogodišnjeg hakatona?" />
                     <TextarePitanje error={errors[8]} required={true} text="Koja osoba iz IT sveta te motiviše i zašto?" />

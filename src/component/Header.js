@@ -18,7 +18,7 @@ class Header extends Component {
               FORUM
             </NavLink>
 
-            <NavLink to="/error404" className={classes.Link}>
+            <NavLink to="/prijava" className={classes.Link}>
               PRIJAVI SE
             </NavLink>
           </div>

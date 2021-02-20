@@ -17,8 +17,7 @@ const Landing = () => {
           organizacionog tima{' '}
           <b>
             Hakaton za srednjoškolce
-            <br /> 2021
-          </b>
+            <br /> 2021 </b>
           biće održan u periodu od 2. do 3. aprila <br />
           2021. u potpunosti onlajn. Prezentacijama
           <br />
