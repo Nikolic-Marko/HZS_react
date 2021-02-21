@@ -128,4 +128,24 @@
   .najcesce-pitanje {
     width: 100%;
   }
+  .najcesce-pitanje:hover {
+    height: 200px;
+  }
+  .najcesce-pitanje:hover .odgovor {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .najcesce-pitanje {
+    width: 100%;
+  }
+  .najcesce-pitanje:hover {
+    height: 300px;
+  }
+  .najcesce-pitanje:hover .odgovor {
+    height: 150px;
+  }
+  .pitanje-tekst {
+    height: 50px;
+  }
 }

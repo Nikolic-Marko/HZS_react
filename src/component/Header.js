@@ -15,11 +15,11 @@ class Header extends Component {
             <div className={classes.Text}>2-3 APRILA</div>
 
             <NavLink to="/forum" className={classes.Link}>
-              FORUM
+            <span>Forum</span>
             </NavLink>
 
             <NavLink to="/prijava" className={classes.Link}>
-              PRIJAVI SE
+              <span>Log In</span>
             </NavLink>
           </div>
         </div>

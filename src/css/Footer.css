@@ -17,7 +17,7 @@
 }
 
 .locationSection{
-    width: 25%;
+    width: 30%;
     text-align: justify;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .contactSection{
-    width: 42%;
+    width: 37%;
     text-align: justify;
 }
 .contactSection h1{
@@ -53,42 +53,20 @@
 
   @media only screen and (max-width: 1000px) {
     .locationSection{
-        width: 30%;
-    }
-    .contactSection{
-        width: 37%;
-    }
-    .locationSection h1{
-        font-size: 17px;
-    }
-    .contactSection h1{
-        font-size: 17px;
-    }
-  }
-  @media only screen and (max-width: 800px) {
-    .locationSection{
-        width: 32%;
-    }
-    .contactSection{
         width: 35%;
     }
+    .contactSection{
+        width: 32%;
+    }
     .locationSection h1{
-        font-size: 15px;
+        font-size: 17px;
     }
     .contactSection h1{
-        font-size: 15px;
-    }
-    .locationSection p{
-        font-size: 12px;
-    }
-    .contactSection p{
-        font-size: 12px;
-    }
-    .logoSection img{
-        width: 43%;
+        font-size: 17px;
     }
   }
-  @media only screen and (max-width: 500px) {
+ 
+  @media only screen and (max-width: 800px) {
     .footer{
         flex-direction: column;
         padding-top: 50px;

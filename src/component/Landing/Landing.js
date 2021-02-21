@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './Landing.css'
 import LinkedIn from './img/linkedin.png'
 import Facebook from './img/facebook.png'
@@ -26,8 +27,11 @@ const Landing = () => {
           putem linka u nedelju 03.04. u 19 časova.
         </p>
         <div className="dugme-ucestvuj">
-          <b>UČESTVUJ</b>
+          <NavLink to="/prijava">
+            <b>UČESTVUJ</b>
+          </NavLink>
         </div>
+
 
         {/* <!-- <div className="tajmer">
           <p id="timer"></p>

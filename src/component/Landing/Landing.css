@@ -39,6 +39,11 @@
   width: 100px;
   height: 30px;
   background-color: #00ffa3;
+  margin-top: 20px;
+}
+.dugme-ucestvuj a{
+  text-decoration: none;
+  color: black;
 }
 
 .dugme-ucestvuj:hover {
