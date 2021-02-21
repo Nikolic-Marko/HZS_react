@@ -8,7 +8,10 @@ const Prijava = () => {
 
     useEffect(() => {
         vratiInicijalnoOdbrojavanje();
-        odbrojavanje();
+        let interval = odbrojavanje();
+        return () => {
+            clearInterval(interval);
+        }
     });
 
     const formRef = useRef();
@@ -220,7 +223,7 @@ const vratiInicijalnoOdbrojavanje = () => {
     //     + minutes + "<span class='normalFont'>m </span>" + seconds + "<span class='normalFont'>s </span>";   
 }
 const odbrojavanje = () => {
-    var x = setInterval(function () {
+    let interval = setInterval(function () {
         var countDownDate = new Date("Feb 28, 2021 00:00:00").getTime();
 
         var now = new Date().getTime();
@@ -240,6 +243,7 @@ const odbrojavanje = () => {
             document.querySelector('.brojac').innerHTML = 'Vreme za prijave je isteklo :('
         }
     }, 1000);
+    return interval;
 }
 
 window.smoothScroll = function (target) {
