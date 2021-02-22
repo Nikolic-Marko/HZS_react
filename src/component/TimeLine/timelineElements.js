@@ -17,6 +17,22 @@ let timelineElements = [
   },
   {
     id: 3,
+    startDate: "14.3.2021",
+    title: "Moodle test",
+    description:
+      "lorem ipsum",
+    icon: "work",
+  },
+  {
+    id: 4,
+    startDate: "18.3.2021 - 21.3.2021",
+    title: "Radionice",
+    description:
+      "lorem ",
+    icon: "work",
+  },
+  {
+    id: 5,
     startDate: "2.4.2021",
     title: "Otvaranje hakatona",
     description:
@@ -24,7 +40,7 @@ let timelineElements = [
     icon: "work",
   },
   {
-    id: 4,
+    id: 6,
     startDate: "3.4.2021",
     title: "Zatvaranje hakatona",
     description:

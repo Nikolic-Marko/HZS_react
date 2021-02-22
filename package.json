@@ -1,7 +1,7 @@
 {
   "name": "hzs",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "https://hzstim.fonis.rs/hello/",
   "private": true,
   "dependencies": {
     "@emotion/css": "^11.1.3",
