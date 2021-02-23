@@ -1,36 +1,37 @@
-.aboutHakaton{
+.aboutHakaton {
     width: 100%;
     margin: 50px 0;
     display: flex;
     background-color: #161616;
+
 }
 
-.leftSide{
+.leftSide {
     width: 50%;
 }
 
-.leftSide img{
+.leftSide img {
     width: 33%;
     line-height: 0;
 }
 
-.rightSide{
+.rightSide {
     width: 50%;
     display: flex;
     align-items: center;
 }
 
-.textSection{
+.textSection {
     width: 72%;
-    text-align: justify;
-    margin-top: 10%;
+    text-align: justifcy;
+    margin-top: 0;
     padding-left: 10%;
     font-size: 18px;
     border-left: #00ffa3 solid 3px;
     color: white;
 }
 
-.textSection h1{
+.textSection h1 {
     color: #00ffa3;
 }
 
@@ -38,60 +39,69 @@
     width: 74%;
     height: 3px;
     margin-left: 20%;
-    background-color:#00ffa3;
+    background-color: #00ffa3;
     box-shadow: none;
-    border:none;
- }
+    border: none;
+}
 
- @media only screen and (max-width: 1200px) {
-    .textSection{
+@media only screen and (max-width: 1200px) {
+    .textSection {
         font-size: 16px;
     }
-  }
-  @media only screen and (max-width: 1000px) {
-    .textSection{
+}
+
+@media only screen and (max-width: 1000px) {
+    .textSection {
         font-size: 14px;
     }
-  }
-  @media only screen and (max-width: 800px) {
-    .textSection{
+}
+
+@media only screen and (max-width: 800px) {
+    .textSection {
         font-size: 12px;
     }
-  }
-  @media only screen and (max-width: 700px) {
-    .textSection{
+}
+
+@media only screen and (max-width: 700px) {
+    .textSection {
         font-size: 10px;
         border-left: #00ffa3 solid 1px;
     }
-    .textSection h1{
+
+    .textSection h1 {
         font-size: 20px;
     }
+
     .textSection hr {
         height: 1px;
-     }
-  }
-  @media only screen and (max-width: 600px) {
-    .textSection{
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .textSection {
         font-size: 8px;
     }
-  }
-  @media only screen and (max-width: 700px) {
-    .aboutHakaton{
+}
+
+@media only screen and (max-width: 700px) {
+    .aboutHakaton {
         flex-direction: column;
     }
-    .leftSide{
+
+    .leftSide {
         width: 100%;
     }
-    
-    .leftSide img{
+
+    .leftSide img {
         width: 33%;
     }
-    
-    .rightSide{
+
+    .rightSide {
         width: 95%;
         margin-left: 5%;
     }
-    .textSection{
+
+    .textSection {
         width: 80%;
         text-align: justify;
         margin-top: 10%;
@@ -100,16 +110,16 @@
         border-left: #00ffa3 solid 3px;
         color: white;
     }
-    
-    .textSection h1{
+
+    .textSection h1 {
         color: #00ffa3;
     }
-    
+
     .textSection hr {
         width: 74%;
         height: 1px;
         margin-left: 20%;
-        background-color:#00ffa3;
-     }
-    
-  }
+        background-color: #00ffa3;
+    }
+
+}
