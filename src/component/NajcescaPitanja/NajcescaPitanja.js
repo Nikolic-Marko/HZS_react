@@ -16,10 +16,9 @@ const NajcescaPitanja = () => {
             </a>
             <div className="odgovor">
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dolorum dicta accusamus consequuntur itaque. Facilis quos nulla,
-                aut vitae dolore ad, atque fugit blanditiis rem libero labore
-                rerum, architecto consectetur quidem?
+              Pravo na učešće imaju isključivo učenici srednjih škola iz Republike Srbije. Prijavljivanje 
+              nije individualno, već se zainteresovani prijavljuju kao tim od troje ili četvoro. Sama 
+              prijava i učešće su besplatni, a forma za prijavu se može naći na sajtu pod nazivom ,,Prijava’’.
               </p>
             </div>
           </div>
@@ -34,10 +33,9 @@ const NajcescaPitanja = () => {
             </a>
             <div className="odgovor">
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dolorum dicta accusamus consequuntur itaque. Facilis quos nulla,
-                aut vitae dolore ad, atque fugit blanditiis rem libero labore
-                rerum, architecto consectetur quidem?
+              Da, svaki od timova dobija po jednog mentora, koji će u toku trajanja
+              hakatona sve vreme biti uz njih i usmeravati ih, davati im korisne 
+              komentare i sugestije kako bi tim što bolje odgovorio na zadatak.
               </p>
             </div>
           </div>
@@ -52,10 +50,10 @@ const NajcescaPitanja = () => {
             </a>
             <div className="odgovor">
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dolorum dicta accusamus consequuntur itaque. Facilis quos nulla,
-                aut vitae dolore ad, atque fugit blanditiis rem libero labore
-                rerum, architecto consectetur quidem?
+              Najpre se radi online test, od kojih samo najboljih 16 timova ostvaruju 
+              pravo da pristustvuju radionicama. Na kraju radionicama se takmičarima 
+              zadaje projektni zadatak. Prvih 8 timova sa najbolje urađenim zadatkom se 
+              plasira na hakaton. Takođe se uzima u obzir anganžman tima i svakog člana ponaosob.
               </p>
             </div>
           </div>
@@ -70,10 +68,9 @@ const NajcescaPitanja = () => {
             </a>
             <div className="odgovor">
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dolorum dicta accusamus consequuntur itaque. Facilis quos nulla,
-                aut vitae dolore ad, atque fugit blanditiis rem libero labore
-                rerum, architecto consectetur quidem?
+              Takmičari će imati priliku da koriste tehnologije po svom izboru.
+              Dozvoljeno je korišćenje interneta u svrhu učenja i traženja informacija
+              koje su relevantne za takmičenje.
               </p>
             </div>
           </div>
@@ -88,10 +85,7 @@ const NajcescaPitanja = () => {
             </a>
             <div className="odgovor">
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dolorum dicta accusamus consequuntur itaque. Facilis quos nulla,
-                aut vitae dolore ad, atque fugit blanditiis rem libero labore
-                rerum, architecto consectetur quidem?
+              Ne, u finale se može plasirati samo jedan tim iz određene srednje škole.
               </p>
             </div>
           </div>
@@ -106,10 +100,10 @@ const NajcescaPitanja = () => {
             </a>
             <div className="odgovor">
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dolorum dicta accusamus consequuntur itaque. Facilis quos nulla,
-                aut vitae dolore ad, atque fugit blanditiis rem libero labore
-                rerum, architecto consectetur quidem?
+              Nije neophodno da takmičari nose svoju opremu. Moguće je raditi na 
+              računarima obezbeđenim od strane organizatora, ali nije dozvoljena 
+              instalacija dodatnog softvera. Organizator je takođe u mogućnosti da
+              obezbedi dodatne miševe, tastature i sl.
               </p>
             </div>
           </div>
@@ -122,10 +116,9 @@ const NajcescaPitanja = () => {
             </a>
             <div className="odgovor">
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dolorum dicta accusamus consequuntur itaque. Facilis quos nulla,
-                aut vitae dolore ad, atque fugit blanditiis rem libero labore
-                rerum, architecto consectetur quidem?
+              Prilikom prezentovanja finalnih rešenja, takmičari imaju 10 minuta
+               za prezentovanje svog rešenja stručnom žiriju, nakon čega žiri ima
+              5 minuta za dodatna pitanja koja postavlja timu
               </p>
             </div>
           </div>
@@ -140,10 +133,7 @@ const NajcescaPitanja = () => {
             </a>
             <div className="odgovor">
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dolorum dicta accusamus consequuntur itaque. Facilis quos nulla,
-                aut vitae dolore ad, atque fugit blanditiis rem libero labore
-                rerum, architecto consectetur quidem?
+              Nije neophodno. Hrana i piće su obezbeđeni od strane organizatora.
               </p>
             </div>
           </div>

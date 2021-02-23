@@ -18,9 +18,9 @@ let timelineElements = [
   {
     id: 3,
     startDate: "14.3.2021",
-    title: "Moodle test",
+    title: "Online test",
     description:
-      "lorem ipsum",
+      "U pitanju je onlajn test, čija je svrha procena informatičkog znanja prijavljenih takmičara. Prvih 16 timova sa najboljim rezultatima na testu ostvaruju pravo da pohađaju radionice",
     icon: "work",
   },
   {
@@ -28,7 +28,7 @@ let timelineElements = [
     startDate: "18.3.2021 - 21.3.2021",
     title: "Radionice",
     description:
-      "lorem ",
+      "Radionice predstavljaju IT obuke na Fakultetu organizacionih nauka, na kojima će se učesnici upoznati sa tehnologijama koje će im biti potrebne i steći znanja koja će primeniti na samom hakatonu",
     icon: "work",
   },
   {
