@@ -1,7 +1,9 @@
 .footer{
     width: 100%;
+    padding: 20px;
     display: flex;
-    flex-direction: row;
+    
+    border-top: 1px solid #00ffa3;
     background-color: #161616;
 }
 
@@ -23,6 +25,7 @@
 
 .locationSection h1{
     color: #00ffa3;
+    margin-bottom: 8px;
     font-size: 20px;
 }
 .locationSection p{
@@ -36,6 +39,7 @@
 }
 .contactSection h1{
     color: #00ffa3;
+    margin-bottom: 8px;
     font-size: 20px;
 }
 .contactSection p{
@@ -69,7 +73,7 @@
   @media only screen and (max-width: 800px) {
     .footer{
         flex-direction: column;
-        padding-top: 50px;
+        padding-top: 40px;
     }
     .logoSection{
         width: 50%;
@@ -77,6 +81,7 @@
         margin-right: auto;
     }
     .locationSection{
+        margin-top: 20px;
         width: 50%;
         margin-left: auto;
         margin-right: auto;
@@ -87,6 +92,7 @@
         margin: 0;
     }
     .contactSection{
+        margin-top: 20px;
         width: 50%;
         margin-left: auto;
         margin-right: auto;
