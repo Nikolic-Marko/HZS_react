@@ -10,17 +10,16 @@ import Prijava from './component/Prijava/Prijava'
 function App() {
 
   return (
-    <BrowserRouter>
       <Switch>
-        <Route path="/" exact component={Homepage} />
+        <Route path="/" component={Homepage} />
         <Route path="/forum" exact component={Forum} />
         <Route path="/forum/pitanja" exact component={ForumPitanja} />
         <Route path="/forum/takmicenja" exact component={ForumPitanja} />
-        <Route path="/forum/ostalo" exact component={ForumPitanja} />
-        <Route path="/forum/ostalo/:id" component={PitanjaStranica} />
+        <Route path="/forum/ostalo" exact  component={ForumPitanja} />
+        <Route path="/forum/ostalo/:id" exact component={PitanjaStranica} />
         <Route path="/prijava" exact component={Prijava} />
       </Switch>
-    </BrowserRouter>
+
   )
 }
 
