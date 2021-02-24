@@ -1,5 +1,6 @@
-body{
+.timeLineWrap{
   background: #161616;
+  margin-top: 5%;
 }
 h4 {
     padding-top: 0.25em;
@@ -39,6 +40,13 @@ h4 {
       float: none ;
       color: rgb(44, 44, 44);
       margin-top: 1.5em;
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    .timeLineWrap{
+      background: #161616;
+      margin-top: 130px;
     }
   }
   

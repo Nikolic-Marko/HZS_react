@@ -33,7 +33,7 @@ let timelineElements = [
   },
   {
     id: 5,
-    startDate: "2.4. i 3.4.",
+    startDate: "2.4.-3.4.",
     title: " Hakaton",
     description:
       "Timovima se predstavlja tema hakatona, nakon čega imaju na raspolaganju 24 sata da osmisle što bolje i kreativnije rešenje, i na taj način osvoje prvo mesto!",

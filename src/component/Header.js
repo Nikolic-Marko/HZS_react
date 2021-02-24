@@ -8,7 +8,7 @@ class Header extends Component {
     return (
       <div className={classes.Header}>
         <div className={classes.HeaderWidth}>
-          <NavLink to="/">
+          <NavLink to="/2020">
             <img src={Logo} alt="logo" />
           </NavLink>
           <div className={classes.Links}>

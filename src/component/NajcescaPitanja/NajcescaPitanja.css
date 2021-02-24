@@ -1,3 +1,7 @@
+body{
+  background-color: #161616;
+}
+
 .najcesca-pitanja::before,
 .najcesca-pitanja::after {
   box-sizing: inherit;
