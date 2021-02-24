@@ -14,24 +14,23 @@ const Landing = () => {
 
       <div className="text-obavestenje">
         <p>
-          Zbog bezbednosti i zdravlja takmičara i <br />
-          organizacionog tima{' '}
-          <b>
-            Hakaton za srednjoškolce
-            <br /> 2021 </b>
-          biće održan u periodu od 2. do 3. aprila <br />
-          2021. u potpunosti onlajn. Prezentacijama
+          I ove godine, po treći put zaredom, <br />
+          Udruženje studenata informatike FONIS {' '}
+          <br />organizuje <b>
+            Hakaton za srednjoškolce!
+            <br /></b>
+            Ovaj put družimo se u online formatu, <br />
+            u periodu od 2. do 3. aprila 2021.
           <br />
-          rešenja i svečanom zatvaranju možete pristupiti
+          Prijave za takmičenje su otvorene <br /> do 11. marta u 23:59,
           <br />
-          putem linka u nedelju 03.04. u 19 časova.
+          a mi vas s nestrpljenjem očekujemo!
         </p>
         <div className="dugme-ucestvuj">
           <NavLink to="/prijava">
             <b>UČESTVUJ</b>
           </NavLink>
         </div>
-
 
         {/* <!-- <div className="tajmer">
           <p id="timer"></p>
