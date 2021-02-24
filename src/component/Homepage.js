@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './../App.css'
 import Header from './Header'
 import Footer from './Footer'
@@ -8,21 +8,31 @@ import NajcescaPitanja from './NajcescaPitanja/NajcescaPitanja'
 import Partneri from './Partneri/Partneri'
 import AboutHakaton from './AboutHakaton/AboutHakaton'
 import TimeLine from './TimeLine/TimeLine'
+import LoginModal from './Forum/LoginModal/LoginModal'
 
-class Homepage extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <Header />
-        <Landing />
-        <AboutHakaton />
-        <TimeLine />
-        <NasTim />
-        <NajcescaPitanja />
-        <Partneri />
-        <Footer />
-      </div>
-    )
+const Homepage = () => {
+  const [showModal, setShowModal] = useState(false)
+
+  const closeModal = () => {
+    setShowModal(false)
   }
+
+  const modalShow = () => {
+    setShowModal(true)
+  }
+
+  return (
+    <div className="App">
+      <Header modalShow={modalShow} />
+      <Landing />
+      <AboutHakaton />
+      <TimeLine />
+      <NasTim />
+      <NajcescaPitanja />
+      <Partneri />
+      <Footer />
+      <LoginModal show={showModal} modalClosed={closeModal} />
+    </div>
+  )
 }
 export default Homepage

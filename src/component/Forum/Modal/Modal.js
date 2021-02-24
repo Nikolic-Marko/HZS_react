@@ -1,7 +1,41 @@
-import React from 'react'
-
+import React, { useState } from 'react'
 import classes from './Modal.module.css'
-const modal = (props) => {
+
+const Modal = (props) => {
+  const [title, setTitle] = useState('')
+  const [text, setText] = useState('')
+  const [category, setCategory] = useState('')
+
+  const insertPost = async (naslov, text, autor, kategorija) => {
+    const form = new FormData()
+    form.append('naslov', naslov)
+    form.append('text', text)
+    form.append('autor', autor)
+    form.append('kategorija', kategorija)
+
+    const url = 'http://localhost/hzsapi/api/insert_post.php'
+    const request = new Request(url, {
+      method: 'POST',
+      body: form,
+    })
+
+    const response = await fetch(request)
+    const json_data = await response.json()
+
+    return json_data
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    insertPost(title, text, 'marko', category)
+      .then((data) => {
+        console.log(data)
+      })
+      .catch((err) => {
+        console.log('Greska: ' + err)
+      })
+  }
+
   return (
     <React.Fragment>
       <div
@@ -12,7 +46,12 @@ const modal = (props) => {
         }}
       >
         <div className={classes.Content}>
-          <form action="/submit" method="get" style={{ height: '60%' }}>
+          <form
+            action="/submit"
+            method="get"
+            style={{ height: '60%' }}
+            onSubmit={handleSubmit}
+          >
             <span className={classes.Icon} onClick={props.modalClosed}>
               <i class="fas fa-times"></i>
             </span>
@@ -20,12 +59,24 @@ const modal = (props) => {
               <input
                 type="text"
                 placeholder="Add Title"
+                required
                 className={classes.Input1}
+                value={title}
+                onChange={(e) => setTitle(e.target.value)}
               ></input>
-              <input type="text" className={classes.Input2}></input>
+              <input
+                type="text"
+                required
+                className={classes.Input2}
+                value={category}
+                onChange={(e) => setCategory(e.target.value)}
+              ></input>
             </div>
             <div className={classes.Tekst}>
               <textarea
+                value={text}
+                required
+                onChange={(e) => setText(e.target.value)}
                 placeholder="Ovde upisite vase pitanje"
                 className={classes.TekstArea}
                 style={{
@@ -51,4 +102,4 @@ const modal = (props) => {
   )
 }
 
-export default React.memo(modal)
+export default React.memo(Modal)

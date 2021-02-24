@@ -10,6 +10,7 @@ import HzsSporedni from '../Landing/img/hzs-sporedni-mali-removebg-preview.png'
 import Chipsway from '../Landing/img/chipswaylogo.png'
 import ZabacLogo from '../Landing/img/zabaclogo.png'
 import BaniniLogo from '../Landing/img/baninilogo.png'
+
 const Partneri = () => {
   return (
     <React.Fragment>

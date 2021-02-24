@@ -1,0 +1,127 @@
+.Modal {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  z-index: 500;
+  background-color: white;
+  width: 30%;
+
+  box-shadow: 0 4px 8px #ccc;
+  padding: 16px;
+  left: 35%;
+  top: 25%;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+  border-top: 10px solid #18bc9c;
+  border-radius: 4px;
+}
+
+.Content {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Icon {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+}
+
+.Inputi {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5%;
+  margin-top: 2.5%;
+}
+
+.Input1 {
+  width: 80%;
+  padding: 0 0.5rem;
+  height: 2.5rem;
+  border: 1px solid black;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+}
+
+.Input1:focus {
+  outline: none;
+  border: 1px solid #18bc9c;
+}
+
+.Input2 {
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+
+  box-sizing: border-box;
+  width: 80%;
+  height: 2.5rem;
+  border: 1px solid black;
+  margin: 1rem 0;
+}
+.Input2:focus {
+  outline: none;
+  border: 1px solid #18bc9c;
+}
+
+.Submit {
+  margin-top: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.SubmitButtons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnFinish {
+  border: none;
+  outline: none;
+  background-color: #18bc9c;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s;
+}
+.btnFinish i {
+  margin-right: 0.5rem;
+}
+
+.btnFinish:hover {
+  background-color: #128d75;
+}
+
+.btnDynamic {
+  border: none;
+  outline: none;
+  background-color: #18bc9c;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s;
+}
+
+.btnDynamic:hover {
+  background-color: #128d75;
+}
+
+.btnDynamic i {
+  margin-right: 0.5rem;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .Modal {
+    height: 37%;
+  }
+}

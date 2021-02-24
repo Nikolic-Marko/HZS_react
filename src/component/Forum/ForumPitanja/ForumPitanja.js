@@ -11,6 +11,7 @@ const ForumPitanja = () => {
       <div className={classes.ForumPitanja}>
         <ForumNavigacija />
         <PitanjaContainer />
+        
       </div>
     </React.Fragment>
   )
