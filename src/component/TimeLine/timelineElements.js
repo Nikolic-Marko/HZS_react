@@ -4,7 +4,7 @@ let timelineElements = [
     startDate: "25.1.2021",
     title: "Otvaranje prijava",
     description:
-      "Iskoristite ovu priliku i prijavite se na vreme! Potrebno je samo da okupite tim i da popunite formu koja se nalazi na našem sajtu. ",
+      "Okupite tim, sastavite prijavu i popunite formu na sajtu!",
     icon: "work",
   },
   {
@@ -12,15 +12,15 @@ let timelineElements = [
     startDate: "11.3.2021",
     title: "Zatvaranje prijava",
     description:
-      "Nakon zatvaranja prijava, sve dalje informacije biće poslate prijavljenim kandidatima. Proveravajte svoje  mejlove! ",
-    icon: "school",
+      "Nakon zatvaranja prijava, prijavljeni timovi će biti kontaktirani i biće im dostavljene sve neophodne informacije vezane za dalji tok takmičenja.",
+    icon: "work",
   },
   {
     id: 3,
     startDate: "14.3.2021",
     title: "Online test",
     description:
-      "U pitanju je onlajn test, čija je svrha procena informatičkog znanja prijavljenih takmičara. Prvih 16 timova sa najboljim rezultatima na testu ostvaruju pravo da pohađaju radionice",
+      "Svaki tim radi test, nakon čega se u najkraćem mogućem roku dostavljaju rezultati testa kao i informacija o prolasku u naredni krug selekcije.",
     icon: "work",
   },
   {
@@ -28,25 +28,17 @@ let timelineElements = [
     startDate: "18.3.2021 - 21.3.2021",
     title: "Radionice",
     description:
-      "Radionice predstavljaju IT obuke na Fakultetu organizacionih nauka, na kojima će se učesnici upoznati sa tehnologijama koje će im biti potrebne i steći znanja koja će primeniti na samom hakatonu",
+      "Podrazumevaju upoznavanje potencijalnih učesnika sa tehnologijama koje će im biti od pomoći na samom hakatonu. Nakon odslušanih radionica, timovima se zadaje projektni zadatak koji je neophodno da odrade i predaju na vreme, i koji ujedno predstavlja drugi krug selekcije.",
     icon: "work",
   },
   {
     id: 5,
-    startDate: "2.4.2021",
-    title: "Otvaranje hakatona",
+    startDate: "2.4. i 3.4.",
+    title: " Hakaton",
     description:
-      "Tokom 48h, timovi pokušavaju da realizuju najbolje softversko rešenje zadatog problema i bore se za titulu pobednika sedmog po redu Hakatona! ",
+      "Timovima se predstavlja tema hakatona, nakon čega imaju na raspolaganju 24 sata da osmisle što bolje i kreativnije rešenje, i na taj način osvoje prvo mesto!",
     icon: "work",
   },
-  {
-    id: 6,
-    startDate: "3.4.2021",
-    title: "Zatvaranje hakatona",
-    description:
-      "Timovi izlažu svoja softverska rešenja stručnom žiriju. Nakon proglašenja pobednika, sledi dodela nagrada i koktel veče! ",
-    icon: "school",
-  }
 ];
 
 export default timelineElements;

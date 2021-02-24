@@ -3,136 +3,177 @@ import './NasTim.css'
 import Email from '../../assets/email.png'
 import LinkedIn from '../../assets/linkedin.png'
 import LinkedInWhite from '../../assets/linkedinwhite.png'
+import 'react-multi-carousel/lib/styles.css';
+import Carousel from 'react-multi-carousel';
+import { NavLink } from 'react-router-dom'
+// import Marija from './img/'
+// import Milica from './img/'
+// import Jana from './img/'
+// import Tijana from './img/'
+// import Nastasja from './img/'
+// import Sasa from './img/'
+// import Kosta from './img/'
+// import Marko from './img/'
 
 const NasTim = () => {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4
+    },
+    desktop: {
+      breakpoint: { max: 1024, min: 800 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 800, min: 700 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 700, min: 0 },
+      items: 2
+    }
+  };
+
   return (
     <React.Fragment>
-      <section id="nas-tim">
+      <div className="nas-team">
         <h1 className="nas-tim-naslov">
           UPOZNAJTE
           <br />
           <span className="nas-tim-span">NAŠ TIM</span>
         </h1>
+        <div className="sliderTeam">
 
-        <div className="tim-container">
-          <div className="row">
-            <div className="kartica">
-              <div className="kartica-sadrzaj">
-                <div className="kartica-image">
-                  <img
-                    src="https://cdn.fastly.picmonkey.com/contentful/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=800&q=70"
-                    width="280px"
-                    height="250px"
-                    alt=""
-                  />
+          <Carousel responsive={responsive} autoPlay={true} autoPlaySpeed={1500} infinite={true} showDots={false} arrows={false}
+            itemClass="carousel-item-padding-20-px">
+            <div className="cardTeam"><img src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png" alt="" className="slika-osobe" />
+              <div className="sadrzaj">
+                <div className="imePrezime">
+                  <h2>Marija Radovanović</h2>
+                  <h3>Koordinator projekta</h3>
                 </div>
-                <div className="ime">
-                  <h2>Ime prezime</h2>
-                  <br />
-                  <h2>Tim</h2>
+                <div className="dugmiciMreze">
+                  <NavLink to="https://www.linkedin.com/in/mradovanovic">
+                    <img src={LinkedIn} alt="" className="linkedin-image" />
+                  </NavLink>
+                  <NavLink to="marija.radovanovic@fonis.rs">
+                    <img src={Email} alt="" className="email-image" />
+                  </NavLink>
                 </div>
-                <img src={LinkedIn} alt="" className="linkedin-img" />
-                <img src={Email} alt="" className="email-img" />
               </div>
             </div>
-            <div className="kartica">
-              <div className="kartica-sadrzaj">
-                <div className="kartica-image">
-                  <img
-                    src="https://cdn.fastly.picmonkey.com/contentful/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=800&q=70"
-                    width="280px"
-                    height="250px"
-                    alt=""
-                  />
+            <div className="cardTeam"><img src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png" alt="" />
+              <div className="sadrzaj">
+                <div className="imePrezime">
+                  <h2>Milica Bačić</h2>
+                  <h3>Koordinator PR tima</h3>
                 </div>
-                <div className="ime">
-                  <h2>Ime prezime</h2>
-                  <br />
-                  <h2>Tim</h2>
+                <div className="dugmiciMreze">
+                  <NavLink to="https://www.linkedin.com/mwlite/in/milica-bacic-1264a71a3">
+                    <img src={LinkedIn} alt="" className="linkedin-image" />
+                  </NavLink>
+                  <NavLink to="milica.bacic@fonis.rs">
+                    <img src={Email} alt="" className="email-image" />
+                  </NavLink>
                 </div>
-                <img src={LinkedIn} alt="" className="linkedin-img" />
-                <img src={Email} alt="" className="email-img" />
-              </div>
-            </div>
-            <div className="kartica">
-              <div className="kartica-sadrzaj">
-                <div className="kartica-image">
-                  <img
-                    src="https://cdn.fastly.picmonkey.com/contentful/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=800&q=70"
-                    width="280px"
-                    height="250px"
-                    alt=""
-                  />
+              </div></div>
+            <div className="cardTeam"><img src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png" alt="" />
+              <div className="sadrzaj">
+                <div className="imePrezime">
+                  <h2>Jana Veličković</h2>
+                  <h3>Koordinator Dizajn tima</h3>
                 </div>
-                <div className="ime">
-                  <h2>Ime prezime</h2>
-                  <br />
-                  <h2>Tim</h2>
+                <div className="dugmiciMreze">
+                  <NavLink to="https://www.linkedin.com">
+                    <img src={LinkedIn} alt="" className="linkedin-image" />
+                  </NavLink>
+                  <NavLink to="jana.velickovic@fonis.rs">
+                    <img src={Email} alt="" className="email-image" />
+                  </NavLink>
                 </div>
-                <img src={LinkedIn} alt="" className="linkedin-img" />
-                <img src={Email} alt="" className="email-img" />
-              </div>
-            </div>
-            <div className="kartica">
-              <div className="kartica-sadrzaj">
-                <div className="kartica-image">
-                  <img
-                    src="https://cdn.fastly.picmonkey.com/contentful/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=800&q=70"
-                    width="280px"
-                    height="250px"
-                    alt=""
-                  />
+              </div></div>
+              <div className="cardTeam"><img src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png" alt="" />
+              <div className="sadrzaj">
+                <div className="imePrezime">
+                  <h2>Tijana Čizmić</h2>
+                  <h3>Koordinator HR tima</h3>
                 </div>
-                <div className="ime">
-                  <h2>Ime prezime</h2>
-                  <br />
-                  <h2>Tim</h2>
+                <div className="dugmiciMreze">
+                  <NavLink to="https://www.linkedin.com">
+                    <img src={LinkedIn} alt="" className="linkedin-image" />
+                  </NavLink>
+                  <NavLink to="tijana.cizmic@fonis.rs">
+                    <img src={Email} alt="" className="email-image" />
+                  </NavLink>
                 </div>
-                <img src={LinkedIn} alt="" className="linkedin-img" />
-                <img src={Email} alt="" className="email-img" />
-              </div>
-            </div>
-            <div className="kartica">
-              <div className="kartica-sadrzaj">
-                <div className="kartica-image">
-                  <img
-                    src="https://cdn.fastly.picmonkey.com/contentful/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=800&q=70"
-                    width="280px"
-                    height="250px"
-                    alt=""
-                  />
+              </div></div>
+            <div className="cardTeam"><img src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png" alt="" />
+              <div className="sadrzaj">
+                <div className="imePrezime">
+                  <h2>Nastasja Baković</h2>
+                  <h3>Koordinator AR tima</h3>
                 </div>
-                <div className="ime">
-                  <h2>Ime prezime</h2>
-                  <br />
-                  <h2>Tim</h2>
+                <div className="dugmiciMreze">
+                  <NavLink to="https://www.linkedin.com/in/nastasja-bakovic">
+                    <img src={LinkedIn} alt="" className="linkedin-image" />
+                  </NavLink>
+                  <NavLink to="nastasja.bakovic@fonis.rs">
+                    <img src={Email} alt="" className="email-image" />
+                  </NavLink>
                 </div>
-                <img src={LinkedIn} alt="" className="linkedin-img" />
-                <img src={Email} alt="" className="email-img" />
-              </div>
-            </div>
-            <div className="kartica">
-              <div className="kartica-sadrzaj">
-                <div className="kartica-image">
-                  <img
-                    src="https://cdn.fastly.picmonkey.com/contentful/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=800&q=70"
-                    width="280px"
-                    height="250px"
-                    alt=""
-                  />
+              </div></div>
+            <div className="cardTeam"><img src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png" alt="" />
+              <div className="sadrzaj">
+                <div className="imePrezime">
+                  <h2>Saša Jevremović</h2>
+                  <h3>Koordinator CR tima</h3>
                 </div>
-                <div className="ime">
-                  <h2>Ime prezime</h2>
-                  <br />
-                  <h2>Tim</h2>
+                <div className="dugmiciMreze">
+                  <NavLink to="https://www.linkedin.com/in/sa%C5%A1a-jevremovi%C4%87-5b927715b/">
+                    <img src={LinkedIn} alt="" className="linkedin-image" />
+                  </NavLink>
+                  <NavLink to="sasa.jevremovic@fonis.rs">
+                    <img src={Email} alt="" className="email-image" />
+                  </NavLink>
                 </div>
-                <img src={LinkedIn} alt="" className="linkedin-img" />
-                <img src={Email} alt="" className="email-img" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+              </div></div>
+            <div className="cardTeam"><img src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png" alt="" />
+              <div className="sadrzaj">
+                <div className="imePrezime">
+                  <h2>Kosta Aćimović</h2>
+                  <h3>Koordinator Logistike</h3>
+                </div>
+                <div className="dugmiciMreze">
+                  <NavLink to="https://www.linkedin.com/in/kosta-aćimović-5277b3207">
+                    <img src={LinkedIn} alt="" className="linkedin-image" />
+                  </NavLink>
+                  <NavLink to="kosta.acimovic@fonis.rs">
+                    <img src={Email} alt="" className="email-image" />
+                  </NavLink>
+                </div>
+              </div></div>
+              <div className="cardTeam"><img src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png" alt="" />
+              <div className="sadrzaj">
+                <div className="imePrezime">
+                  <h2>Marko Nikolić</h2>
+                  <h3>Koordinator IT tima</h3>
+                </div>
+                <div className="dugmiciMreze">
+                  <NavLink to="https://www.linkedin.com/in/marko-nikolic-8a1209177/">
+                    <img src={LinkedIn} alt="" className="linkedin-image" />
+                  </NavLink>
+                  <NavLink to="marko.nikolic@fonis.rs">
+                    <img src={Email} alt="" className="email-image" />
+                  </NavLink>
+                </div>
+              </div></div>
+          </Carousel>;
+
+      </div>
+
+      </div>
     </React.Fragment>
   )
 }

@@ -7,31 +7,35 @@ const ForumKategorije = () => {
   return (
     <div className={classes.ForumKategorije}>
       <Kartica
-        link="ohakatonu"
-        paragraph="Sve sto vas zanima o hakatonu mozete naci ovde."
-        heading="O hakatonu"
+        link="Radionice"
+        paragraph="Želiš da unaprediš svoje IT znanje i time omogućiš sebi bolji plasman na hakatonu? Za tebe smo spremili radionice koje će ti u tome pomoći! Sve što te zanima o radionicama nas možeš ovde pitati."
+        heading="Radionice"
         color="#12A89D"
       />
 
       <Kartica
-        link="prijava"
-        paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        heading="Prijava za takmicenje"
+        link="Domaći zadatak"
+        paragraph="Svoje znanje sa radionica primenićeš na realnom primeru, ali ćeš i pokazati zašto baš tvoj tim zaslužuje da uđe u najuži krug i time bude korak bliže pobedi. Dileme u vezi sa domaćim zadacima ćemo rešiti u ovoj sekciji."
+        heading="Domaći zadatak"
         color="#F7941D"
       />
 
       <Kartica
-        link="Selekcija"
-        paragraph="Sve sto vas zanima o nacinu biranja timova za hakaton mozes pitati ovde."
-        heading="Selekcija"
+        link="Prezentovanje rešenja"
+        paragraph="Odeljak Prezentovanje rešenja predstavlja kutak u kome možete prodiskutovati o svemu što vas interesuje, a vezano je za vaš nastup pred žirijem. Rešenja ne smete otkrivati unapred, ali stojimo vam na raspolaganju za sve tehničke nedoumice koje imate."
+        heading="Prezentovanje rešenja  "
         color="#12A89D"
       />
 
       <Kartica
-        link="ostalo"
-        paragraph="Sve što ne spada ni u jednu drugu kategoriju. Ako ne znate gde,
-        postavite vašu temu ovde."
+        link="Pravila"
+        paragraph="Nisi siguran kako funkcioniše projekat? Imaš nedoumice u vezi sa pravilima? Ovo je pravo mesto da postaviš svoje pitanje, a mi ćemo se potruditi da ti razjasnimo sve što te buni u najkraćem roku!"
+        heading="Pravila"
+        color="#FFFF00"
+      />
+       <Kartica
+        link="Ostalo"
+        paragraph="Imaš još neku nedoumicu koja se tiče HZS-a koju bi želeo da rastumačiš? Mi smo tu da ti damo odgovor!"
         heading="Ostalo"
         color="#FFFF00"
       />

@@ -15,11 +15,10 @@
 
 .najcesca-pitanja-naslov {
   text-align: center;
-  font-family: Gilroy-ExtraBold, sans-serif;
   color: #00ffa3;
   font-size: 50px;
   margin-bottom: 50px;
-  padding-top: 125px;
+  padding-top: 100px;
 }
 
 .najcesca-pitanja-container {
@@ -110,10 +109,10 @@
 }
 
 .najcesce-pitanje:hover {
-  height: 200px;
+  height: 230px;
 }
 .najcesce-pitanje:hover .odgovor {
-  height: 100px;
+  height: 140px;
 }
 
 .najcesce-pitanje:hover .pitanje-link .krug-zatvoreno-pitanje {
@@ -140,10 +139,10 @@
     width: 100%;
   }
   .najcesce-pitanje:hover {
-    height: 300px;
+    height: 350px;
   }
   .najcesce-pitanje:hover .odgovor {
-    height: 150px;
+    height: 200px;
   }
   .pitanje-tekst {
     height: 50px;
