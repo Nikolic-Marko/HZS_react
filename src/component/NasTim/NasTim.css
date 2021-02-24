@@ -121,3 +121,12 @@
   }
 }
 
+@media (max-width: 700px) {
+  .sliderTeam{
+    width: 100%;
+  }
+  .cardTeam{
+    width: 95%;
+    margin-left: 10px;
+  }
+}
