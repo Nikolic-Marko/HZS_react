@@ -89,7 +89,7 @@ const Prijava = () => {
             window.alert('Morate popuniti sva polja koja su obavezna!');
             return;
         } else {
-            let url = 'https://hzstim.fonis.rs/hello/obradaPrijave.php';
+            let url = 'https://hzs.fonis.rs/2020/obradaPrijave.php';
             // let url = 'http://localhost/hzsPrijaveServer/index.php';
             const request = new Request(url, {
                 method: 'POST',
