@@ -113,3 +113,117 @@ box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.83);
     background-size: contain;
     background-image: url('./success.png');
 }
+
+.clanBroj{
+    color:var(--zelena-boja);
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.sledecaStranaBtn{
+    width: 80%;
+    background-color: var(--zelena-boja);
+    text-align: center;
+    padding: 10px;
+    margin:50px auto;
+    font-size: 1.2rem;
+    clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0 100%, 0 0);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sledecaStranaBtn:hover{
+    background-color: black;
+}
+
+.prethodna{
+    clip-path: polygon(10% 0%, 100% 0, 100% 100%, 10% 100%, 0 50%);
+}
+
+.saznali-container{
+    width: 100%;
+    margin:50px 0;
+    margin-top:90px;
+    padding: 20px 10px 0 10px;
+    color:var(--zelena-boja);
+    background-color: black;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.83); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.83);
+    position: relative;
+    font-size: 1.1rem;
+}
+
+select{
+    border: none;
+    outline:none;
+    width: 100%;
+    color: var(--zelena-boja);
+    background-color: black;
+
+    font-size: 1.1rem;
+    margin-top:20px;
+    border-top: 1.2px solid var(--zelena-boja);
+}
+
+.saznali-container div.required{
+    top:5px;
+    right: 5px;
+}
+
+.pravilnik-container{
+    background-color: black;
+    color:var(--zelena-boja);
+    padding: 10px;
+    display: flex;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.83); 
+box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.83);
+    margin:50px 0;
+    position: relative;
+}
+.pravilnik-container input{
+    margin:5px;
+}
+
+.pravilnik-container div.required{
+    top:5px;
+    right: 5px;
+}
+
+.pravilnik-container a{
+    font-size: 1.2em;
+    font-weight: bold;
+    
+}
+
+#ucitavanjeDiv{
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#rotirajuciKruzic{
+    background-image: url(loader.png);
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    animation: rotiranje 1.5s infinite ease-in-out;
+
+}
+
+
+@keyframes rotiranje{
+    
+      to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+}
+
