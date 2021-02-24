@@ -6,19 +6,19 @@ function NavigationDots(props) {
     return (
         <ul className="NavigationDots">
             <li>
-                <Dot scrollAddress="home" tooltipText="Home" />
+                <Dot scrollAddress="home" tooltipText="Početna" />
             </li>
             <li>
                 <Dot scrollAddress="about" tooltipText="O nama" />
             </li>
             <li>
-                <Dot scrollAddress="timeline" tooltipText="Timeline" />
+                <Dot scrollAddress="timeline" tooltipText="Vremenska linija" />
             </li>
             <li>
                 <Dot scrollAddress="team" tooltipText="Naš tim" />
             </li>
             <li>
-                <Dot scrollAddress="najcesca-pitanja" tooltipText="FAQ" />
+                <Dot scrollAddress="najcesca-pitanja" tooltipText="Najčešća pitanja" />
             </li>
             <li>
                 <Dot scrollAddress="partners" tooltipText="Partneri" />

@@ -11,7 +11,7 @@ function App() {
     return (
         <BrowserRouter basename="/">
             <Switch>
-                <Route path="/2020" exact component={Homepage} />
+                <Route path="/2021" exact component={Homepage} />
                 <Route path="/forum" exact component={Forum} />
                 <Route path="/forum/pitanja" exact component={ForumPitanja} />
                 <Route path="/forum/takmicenja" exact component={ForumPitanja} />

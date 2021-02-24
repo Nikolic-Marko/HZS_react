@@ -91,6 +91,7 @@ body{
 .pitanje-tekst {
   background-color: whitesmoke;
   margin-right: 20px;
+  width: 90%;
 }
 
 .odgovor {
@@ -143,12 +144,12 @@ body{
     width: 100%;
   }
   .najcesce-pitanje:hover {
-    height: 350px;
+    height: 440px;
   }
   .najcesce-pitanje:hover .odgovor {
-    height: 200px;
+    height: 290px;
   }
   .pitanje-tekst {
-    height: 50px;
+    height: 55px;
   }
 }

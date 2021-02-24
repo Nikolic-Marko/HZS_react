@@ -16,7 +16,7 @@ const NajcescaPitanja = () => {
             </a>
             <div className="odgovor">
               <p>
-                Takmičenje je namenjeno učenicima srednjih škola iz Republike Srbije. Na takmičenju učestvuju timovi od tri ili četiri člana, sastavljeni isključivo od učenika srednjih škola. Učešće je besplatno i možete se prijaviti preko forme koja se može pronaći na sajtu pod nazivom „Prijava".
+                Takmičenje je namenjeno učenicima srednjih škola iz Republike Srbije. Na takmičenju učestvuju timovi od tri ili četiri člana, sastavljeni isključivo od učenika srednjih škola. Učešće je besplatno i možete se prijaviti preko forme koja se može pronaći na sajtu pod nazivom „Prijava”.
               </p>
             </div>
           </div>
@@ -119,7 +119,7 @@ const NajcescaPitanja = () => {
             </a>
             <div className="odgovor">
               <p>
-                Svi zvanični delovi projekta se u online formatu. Svi timovi dobiće blagovremeno obavešteni o način za pristup platformi na kojoj će se projekat održati. Za detaljnije objašnjen način održavanja takmičarskog dela projekta posetite deo sajta „Pravilnik".
+              Svi delovi projekta su u online formatu. Timovi će biti blagovremeno obavešteni o načinu za pristup platformi na kojoj će se projekat održati. Za detaljnije informacije o načinu održavanja projekta posetite deo sajta “Pravilnik”.
               </p>
             </div>
           </div>

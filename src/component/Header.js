@@ -12,15 +12,15 @@ class Header extends Component {
                         <img src={Logo} alt="logo" />
                     </NavLink>
                     <div className={classes.Links}>
-                        <div className={classes.Text}>2-3 APRILA</div>
-
+                        <div className={classes.Text}>2-3. APRILA</div>
+{/* 
                         <NavLink to="/forum" className={classes.Link}>
                             <span>Forum</span>
                         </NavLink>
 
                         <NavLink to="/2020" className={classes.Link}>
                             <span>Log In</span>
-                        </NavLink>
+                        </NavLink> */}
                     </div>
                 </div>
             </div>

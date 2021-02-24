@@ -1,12 +1,15 @@
 import React from 'react';
 import '../css/Footer.css';
 import logoFonis from '../assets/FONISlogo.png'
+import { NavLink } from "react-router-dom"
 
 function Footer() {
   return (
-    <div className="footer"> 
+    <div className="footer">
       <div className="logoSection">
-        <img src={logoFonis} alt="Logo Fonis"/>
+        <NavLink to="https://fonis.rs/">
+          <img src={logoFonis} alt="Logo Fonis" />
+        </NavLink>
       </div>
       <div className="locationSection">
         <h1>GDE SE NALAZIMO ?</h1>
@@ -16,7 +19,9 @@ function Footer() {
       </div>
       <div className="contactSection">
         <h1>KONTAKTIRAJTE NAS</h1>
-        <p>office@fonis.rs</p>
+        <a href="mailto: office@fonis.rs">
+          <p>office@fonis.rs</p>
+        </a>
       </div>
     </div>
   );

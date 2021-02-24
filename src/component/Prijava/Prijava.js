@@ -89,7 +89,7 @@ const Prijava = () => {
             window.alert('Morate popuniti sva polja koja su obavezna!');
             return;
         } else {
-            let url = 'https://hzs.fonis.rs/2020/obradaPrijave.php';
+            let url = 'https://hzs.fonis.rs/2021/obradaPrijave.php';
             // let url = 'http://localhost/hzsPrijaveServer/index.php';
             const request = new Request(url, {
                 method: 'POST',
@@ -133,7 +133,7 @@ const Prijava = () => {
             <header className='naslov-prijave'>
                 <h1>Dobrodošli na stranicu za prijavu</h1>
                 <h1>Molimo vas da popunite polja ispod kako biste se prijavili za hakaton</h1>
-                <h1 style={{ fontSize: "0.9rem" }}>Polja oznacena uzvicnikom (!) su obavezna</h1>
+                <h1 style={{ fontSize: "0.9rem" }}>Polja označena uzvičnikom (!) su obavezna</h1>
                 <h1 style={{ fontSize: "0.9rem" }}><b>Napomena:</b>prijava se <b>OBAVEZNO</b> popunjava timski!</h1>
             </header>
             <div className="brojac-container">
@@ -171,13 +171,13 @@ const Prijava = () => {
                             </select>
                         </div>
                         <TextarePitanje required={false} text="Da li ste nekada učestvovali na sličnim takmičenjima? Ukoliko jeste opišite vaša iskustva." />
-                        <TextarePitanje required={true} text="Šta vas motiviše da se prijavite na ovogodišnji HZS? Opišite svoju motivaciju i očekivanja" />
+                        <TextarePitanje required={true} text="Šta vas motiviše da se prijavite na ovogodišnji HZS? [od 70 do 150 reči]" />
+                        <TextarePitanje required={true} text="Koja su vaša očekivanja od takmičenja? [od 40 do 80 reči]" />
                         <TextarePitanje required={true} text="Šta bi za vaš tim predstavaljao najveći izazov tokom takmičenja?" />
-                        <TextarePitanje required={true} text="Zašto baš vaš tim treba da odaberemo?" />
                         <div className="pravilnik-container">
                             <div><input type="checkbox" ref={pravilnikRef} /></div>
                             <div>
-                                Saglasni smo da smo pročitali i da smo upoznati sa <a target="_blank" href="https://hzstim.fonis.rs/hello/pravilnik.pdf">pravilnikom</a> takmičenja
+                                Saglasni smo da smo pročitali i da smo upoznati sa <a target="_blank" href="https://hzs.fonis.rs/2021/HZS.pdf">pravilnikom</a> takmičenja
                             </div>
                             <div className="required"><svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="9.3" stroke="#18EEA1" strokeWidth="1.4" /><path fill="#18EEA1" d="M9 14h2v2H9z" /><path stroke="#18EEA1" d="M9.5 3v10M10.5 3v10" /></svg></div>
                         </div>
@@ -222,7 +222,7 @@ const Prijava = () => {
                     </div>
 
                     <div style={{ fontSize: "0.8rem", textAlign: "center" }}>*Ukoliko imaš dodatnih pitanja u vezi sa prijavom pošalji nam mejl na</div>
-                    <div style={{ fontSize: "1rem", marginBottom: "20px", textAlign: "center" }}><b>fonis@fonis.rs</b></div>
+                    <div style={{ fontSize: "1rem", marginBottom: "20px", textAlign: "center" }}><b><a href="mailto: office@fonis.rs" style={{textDecoration : "none"}} >office@fonis.rs</a></b></div>
 
                 </div>
                 :

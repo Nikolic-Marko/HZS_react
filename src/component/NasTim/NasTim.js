@@ -5,7 +5,7 @@ import LinkedIn from "../../assets/linkedin.png";
 import LinkedInWhite from "../../assets/linkedinwhite.png";
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Marija from './img/MarijaCrno.png'
 import Milica from './img/MilicaCrno.png'
 import Jana from './img/JanaCrno.png'
@@ -66,20 +66,20 @@ const NasTim = () => {
                                     <h3>Koordinator projekta</h3>
                                 </div>
                                 <div className="dugmiciMreze">
-                                    <NavLink to="https://www.linkedin.com/in/mradovanovic">
+                                    <a href="https://www.linkedin.com/in/mradovanovic">
                                         <img
                                             src={LinkedIn}
                                             alt=""
                                             className="linkedin-image"
                                         />
-                                    </NavLink>
-                                    <NavLink to="marija.radovanovic@fonis.rs">
+                                    </a>
+                                    <a href="mailto: marija.radovanovic@fonis.rs">
                                         <img
                                             src={Email}
                                             alt=""
                                             className="email-image"
                                         />
-                                    </NavLink>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -94,20 +94,20 @@ const NasTim = () => {
                                     <h3>Koordinator PR tima</h3>
                                 </div>
                                 <div className="dugmiciMreze">
-                                    <NavLink to="https://www.linkedin.com/mwlite/in/milica-bacic-1264a71a3">
+                                    <a href="https://www.linkedin.com/mwlite/in/milica-bacic-1264a71a3">
                                         <img
                                             src={LinkedIn}
                                             alt=""
                                             className="linkedin-image"
                                         />
-                                    </NavLink>
-                                    <NavLink to="milica.bacic@fonis.rs">
+                                    </a>
+                                    <a href="mailto: milica.bacic@fonis.rs">
                                         <img
                                             src={Email}
                                             alt=""
                                             className="email-image"
                                         />
-                                    </NavLink>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -122,20 +122,20 @@ const NasTim = () => {
                                     <h3>Koordinator Dizajn tima</h3>
                                 </div>
                                 <div className="dugmiciMreze">
-                                    <NavLink to="https://www.linkedin.com">
+                                    <a href="https://www.linkedin.com">
                                         <img
                                             src={LinkedIn}
                                             alt=""
                                             className="linkedin-image"
                                         />
-                                    </NavLink>
-                                    <NavLink to="jana.velickovic@fonis.rs">
+                                    </a>
+                                    <a href="mailto: jana.velickovic@fonis.rs">
                                         <img
                                             src={Email}
                                             alt=""
                                             className="email-image"
                                         />
-                                    </NavLink>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -150,20 +150,20 @@ const NasTim = () => {
                                     <h3>Koordinator HR tima</h3>
                                 </div>
                                 <div className="dugmiciMreze">
-                                    <NavLink to="https://www.linkedin.com">
+                                    <a href="https://www.linkedin.com/in/jana-veli%C4%8Dkovi%C4%87-954675207/">
                                         <img
                                             src={LinkedIn}
                                             alt=""
                                             className="linkedin-image"
                                         />
-                                    </NavLink>
-                                    <NavLink to="tijana.cizmic@fonis.rs">
+                                    </a>
+                                    <a href="mailto: tijana.cizmic@fonis.rs">
                                         <img
                                             src={Email}
                                             alt=""
                                             className="email-image"
                                         />
-                                    </NavLink>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -178,20 +178,20 @@ const NasTim = () => {
                                     <h3>Koordinator AR tima</h3>
                                 </div>
                                 <div className="dugmiciMreze">
-                                    <NavLink to="https://www.linkedin.com/in/nastasja-bakovic">
+                                    <a href="https://www.linkedin.com/in/nastasja-bakovic">
                                         <img
                                             src={LinkedIn}
                                             alt=""
                                             className="linkedin-image"
                                         />
-                                    </NavLink>
-                                    <NavLink to="nastasja.bakovic@fonis.rs">
+                                    </a>
+                                    <a href="mailto: nastasja.bakovic@fonis.rs">
                                         <img
                                             src={Email}
                                             alt=""
                                             className="email-image"
                                         />
-                                    </NavLink>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -206,20 +206,20 @@ const NasTim = () => {
                                     <h3>Koordinator CR tima</h3>
                                 </div>
                                 <div className="dugmiciMreze">
-                                    <NavLink to="https://www.linkedin.com/in/sa%C5%A1a-jevremovi%C4%87-5b927715b/">
+                                    <a href="https://www.linkedin.com/in/sa%C5%A1a-jevremovi%C4%87-5b927715b/">
                                         <img
                                             src={LinkedIn}
                                             alt=""
                                             className="linkedin-image"
                                         />
-                                    </NavLink>
-                                    <NavLink to="sasa.jevremovic@fonis.rs">
+                                    </a>
+                                    <a href="mailto: sasa.jevremovic@fonis.rs">
                                         <img
                                             src={Email}
                                             alt=""
                                             className="email-image"
                                         />
-                                    </NavLink>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -231,23 +231,23 @@ const NasTim = () => {
                             <div className="sadrzaj">
                                 <div className="imePrezime">
                                     <h2>Kosta Aćimović</h2>
-                                    <h3>Koordinator Logistike</h3>
+                                    <h3>Koordinator logistike</h3>
                                 </div>
                                 <div className="dugmiciMreze">
-                                    <NavLink to="https://www.linkedin.com/in/kosta-aćimović-5277b3207">
+                                    <a href="https://www.linkedin.com/in/kosta-aćimović-5277b3207">
                                         <img
                                             src={LinkedIn}
                                             alt=""
                                             className="linkedin-image"
                                         />
-                                    </NavLink>
-                                    <NavLink to="kosta.acimovic@fonis.rs">
+                                    </a>
+                                    <a href="mailto:kosta.acimovic@fonis.rs">
                                         <img
                                             src={Email}
                                             alt=""
                                             className="email-image"
                                         />
-                                    </NavLink>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -262,20 +262,20 @@ const NasTim = () => {
                                     <h3>Koordinator IT tima</h3>
                                 </div>
                                 <div className="dugmiciMreze">
-                                    <NavLink to="https://www.linkedin.com/in/marko-nikolic-8a1209177/">
+                                    <a href="https://www.linkedin.com/in/marko-nikolic-8a1209177/">
                                         <img
                                             src={LinkedIn}
                                             alt=""
                                             className="linkedin-image"
                                         />
-                                    </NavLink>
-                                    <NavLink to="marko.nikolic@fonis.rs">
+                                    </a>
+                                    <a href="mailto: marko.nikolic@fonis.rs">
                                         <img
                                             src={Email}
                                             alt=""
                                             className="email-image"
                                         />
-                                    </NavLink>
+                                    </a>
                                 </div>
                             </div>
                         </div>

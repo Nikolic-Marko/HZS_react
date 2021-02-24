@@ -2,7 +2,7 @@ import React from "react";
 import "./PartneriTemp.css";
 import Guarana from "../Landing/img/GuaranaLogo.png";
 import FonLogo from "../Landing/img/fonlogoceo.jpg";
-import ComeTrade from "../Landing/img/ComTrade-logo.jpg";
+import ComeTrade from "../Landing/img/ComTrade-logo.png";
 
 const PartneriTemp = () => {
     return (
@@ -13,13 +13,13 @@ const PartneriTemp = () => {
                 </div>
                 <div className="slikeOmotac" id="slika2">
                     <div className="slikePartnera">
-                        <img src={ComeTrade} alt="" />
+                        <a href="https://www.comtrade.com/"><img src={ComeTrade} alt="ComTrade" /></a>
                     </div>
                     <div className="slikePartnera" id="slika1">
-                        <img src={Guarana} alt="" />
+                        <a href="https://guarana.rs/"><img src={Guarana} alt="" /></a>
                     </div>
                     <div className="slikePartnera">
-                        <img src={FonLogo} alt="" />
+                        <a href="http://www.fon.bg.ac.rs/"><img src={FonLogo} alt="" /></a>
                     </div>
                 </div>
             </div>
