@@ -1,0 +1,58 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.dot {
+    float: none;
+    height: 15px;
+    width: 15px;
+    transition: background-color 0.5s ease;
+    background-color: gray;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 100;
+    right: 15px;
+}
+
+.dot:hover {
+    background-color: #00ffa3;
+}
+
+.NavigationDots {
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 45%;
+    z-index: 500;
+    list-style-type: none;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+.tooltip .tooltiptext {
+    font-size: 12px;
+    height: 25px;
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+
+    position: absolute;
+    top: -5px;
+    right: 105%;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
