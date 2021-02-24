@@ -3,136 +3,114 @@ import './NasTim.css'
 import Email from '../../assets/email.png'
 import LinkedIn from '../../assets/linkedin.png'
 import LinkedInWhite from '../../assets/linkedinwhite.png'
+import 'react-multi-carousel/lib/styles.css';
+import Carousel from 'react-multi-carousel';
 
 const NasTim = () => {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 700 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 700, min: 0 },
+      items: 2
+    }
+  };
+
   return (
     <React.Fragment>
-      <section id="nas-tim">
-        <h1 className="nas-tim-naslov">
+   <div className="nas-team">
+   <h1 className="nas-tim-naslov">
           UPOZNAJTE
           <br />
           <span className="nas-tim-span">NAŠ TIM</span>
         </h1>
-
-        <div className="tim-container">
-          <div className="row">
-            <div className="kartica">
-              <div className="kartica-sadrzaj">
-                <div className="kartica-image">
-                  <img
-                    src="https://cdn.fastly.picmonkey.com/contentful/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=800&q=70"
-                    width="280px"
-                    height="250px"
-                    alt=""
-                  />
-                </div>
-                <div className="ime">
-                  <h2>Ime prezime</h2>
-                  <br />
-                  <h2>Tim</h2>
-                </div>
-                <img src={LinkedIn} alt="" className="linkedin-img" />
-                <img src={Email} alt="" className="email-img" />
-              </div>
-            </div>
-            <div className="kartica">
-              <div className="kartica-sadrzaj">
-                <div className="kartica-image">
-                  <img
-                    src="https://cdn.fastly.picmonkey.com/contentful/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=800&q=70"
-                    width="280px"
-                    height="250px"
-                    alt=""
-                  />
-                </div>
-                <div className="ime">
-                  <h2>Ime prezime</h2>
-                  <br />
-                  <h2>Tim</h2>
-                </div>
-                <img src={LinkedIn} alt="" className="linkedin-img" />
-                <img src={Email} alt="" className="email-img" />
-              </div>
-            </div>
-            <div className="kartica">
-              <div className="kartica-sadrzaj">
-                <div className="kartica-image">
-                  <img
-                    src="https://cdn.fastly.picmonkey.com/contentful/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=800&q=70"
-                    width="280px"
-                    height="250px"
-                    alt=""
-                  />
-                </div>
-                <div className="ime">
-                  <h2>Ime prezime</h2>
-                  <br />
-                  <h2>Tim</h2>
-                </div>
-                <img src={LinkedIn} alt="" className="linkedin-img" />
-                <img src={Email} alt="" className="email-img" />
-              </div>
-            </div>
-            <div className="kartica">
-              <div className="kartica-sadrzaj">
-                <div className="kartica-image">
-                  <img
-                    src="https://cdn.fastly.picmonkey.com/contentful/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=800&q=70"
-                    width="280px"
-                    height="250px"
-                    alt=""
-                  />
-                </div>
-                <div className="ime">
-                  <h2>Ime prezime</h2>
-                  <br />
-                  <h2>Tim</h2>
-                </div>
-                <img src={LinkedIn} alt="" className="linkedin-img" />
-                <img src={Email} alt="" className="email-img" />
-              </div>
-            </div>
-            <div className="kartica">
-              <div className="kartica-sadrzaj">
-                <div className="kartica-image">
-                  <img
-                    src="https://cdn.fastly.picmonkey.com/contentful/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=800&q=70"
-                    width="280px"
-                    height="250px"
-                    alt=""
-                  />
-                </div>
-                <div className="ime">
-                  <h2>Ime prezime</h2>
-                  <br />
-                  <h2>Tim</h2>
-                </div>
-                <img src={LinkedIn} alt="" className="linkedin-img" />
-                <img src={Email} alt="" className="email-img" />
-              </div>
-            </div>
-            <div className="kartica">
-              <div className="kartica-sadrzaj">
-                <div className="kartica-image">
-                  <img
-                    src="https://cdn.fastly.picmonkey.com/contentful/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=800&q=70"
-                    width="280px"
-                    height="250px"
-                    alt=""
-                  />
-                </div>
-                <div className="ime">
-                  <h2>Ime prezime</h2>
-                  <br />
-                  <h2>Tim</h2>
-                </div>
-                <img src={LinkedIn} alt="" className="linkedin-img" />
-                <img src={Email} alt="" className="email-img" />
-              </div>
-            </div>
+   <div className="sliderTeam">
+    
+   <Carousel responsive={responsive} autoPlay={true} autoPlaySpeed={1500} infinite={true} showDots={false} arrows={false}
+   itemClass="carousel-item-padding-20-px">
+          <div className="cardTeam"><img src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png" alt="" className="slika-osobe" />
+          <div className="sadrzaj">
+          <div className="imePrezime">
+          <h2>Ime prezime</h2>
+          <h3>Tim</h3>
           </div>
-        </div>
-      </section>
+          <div className="dugmiciMreze">
+            <img src={LinkedIn} alt="" className="linkedin-image" />
+                <img src={Email} alt="" className="email-image" />
+            </div>
+                </div>
+                </div>
+          <div className="cardTeam"><img src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png" alt="" />
+          <div className="sadrzaj">
+          <div className="imePrezime">
+          <h2>Ime prezime</h2>
+          <h3>Tim</h3>
+          </div>
+          <div className="dugmiciMreze">
+            <img src={LinkedIn} alt="" className="linkedin-image" />
+                <img src={Email} alt="" className="email-image" />
+            </div>
+                </div></div>
+          <div className="cardTeam"><img src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png" alt="" />
+          <div className="sadrzaj">
+          <div className="imePrezime">
+          <h2>Ime prezime</h2>
+          <h3>Tim</h3>
+          </div>
+          <div className="dugmiciMreze">
+            <img src={LinkedIn} alt="" className="linkedin-image" />
+                <img src={Email} alt="" className="email-image" />
+            </div>
+                </div></div>
+          <div className="cardTeam"><img src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png" alt="" />
+          <div className="sadrzaj">
+          <div className="imePrezime">
+          <h2>Ime prezime</h2>
+          <h3>Tim</h3>
+          </div>
+          <div className="dugmiciMreze">
+            <img src={LinkedIn} alt="" className="linkedin-image" />
+                <img src={Email} alt="" className="email-image" />
+            </div>
+                </div></div>
+          <div className="cardTeam"><img src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png" alt="" />
+          <div className="sadrzaj">
+          <div className="imePrezime">
+          <h2>Ime prezime</h2>
+          <h3>Tim</h3>
+          </div>
+          <div className="dugmiciMreze">
+            <img src={LinkedIn} alt="" className="linkedin-image" />
+                <img src={Email} alt="" className="email-image" />
+            </div>
+                </div></div>
+          <div className="cardTeam"><img src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png" alt="" />
+          <div className="sadrzaj">
+          <div className="imePrezime">
+          <h2>Ime prezime</h2>
+          <h3>Tim</h3>
+          </div>
+          <div className="dugmiciMreze">
+            <img src={LinkedIn} alt="" className="linkedin-image" />
+                <img src={Email} alt="" className="email-image" />
+            </div>
+                </div></div>
+    </Carousel>;
+      
+      </div> 
+
+      </div>
     </React.Fragment>
   )
 }
