@@ -1,12 +1,12 @@
-import React from 'react'
-import './PartneriTemp.css'
-import Guarana from '../Landing/img/GuaranaLogo.png'
-import FonLogo from '../Landing/img/fonlogoceo.jpg'
+import React from "react";
+import "./PartneriTemp.css";
+import Guarana from "../Landing/img/GuaranaLogo.png";
+import FonLogo from "../Landing/img/fonlogoceo.jpg";
 
 const PartneriTemp = () => {
     return (
         <React.Fragment>
-            <div className="partners">
+            <div className="partners" id="partners">
                 <div className="generalniPartneriNaslov">
                     <h1>GENERALNI PARTNERI</h1>
                 </div>
@@ -20,7 +20,7 @@ const PartneriTemp = () => {
                 </div>
             </div>
         </React.Fragment>
-    )
-}
+    );
+};
 
-export default PartneriTemp
+export default PartneriTemp;
