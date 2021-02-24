@@ -18,7 +18,7 @@ class Header extends Component {
                             <span>Forum</span>
                         </NavLink>
 
-                        <NavLink to="/prijava" className={classes.Link}>
+                        <NavLink to="/2020" className={classes.Link}>
                             <span>Log In</span>
                         </NavLink>
                     </div>

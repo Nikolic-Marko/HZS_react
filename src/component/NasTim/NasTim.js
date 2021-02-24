@@ -6,14 +6,14 @@ import LinkedInWhite from "../../assets/linkedinwhite.png";
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
 import { NavLink } from "react-router-dom";
-// import Marija from './img/'
-// import Milica from './img/'
-// import Jana from './img/'
-// import Tijana from './img/'
-// import Nastasja from './img/'
-// import Sasa from './img/'
-// import Kosta from './img/'
-// import Marko from './img/'
+import Marija from './img/MarijaCrno.png'
+import Milica from './img/MilicaCrno.png'
+import Jana from './img/JanaCrno.png'
+import Tijana from './img/TijanaCrno.png'
+import Nastasja from './img/NastasjaCrno.png'
+import Sasa from './img/SasaCrno.png'
+import Kosta from './img/KostaCrno.png'
+import Marko from './img/MarkoCrno.png'
 
 const NasTim = () => {
     const responsive = {
@@ -56,7 +56,7 @@ const NasTim = () => {
                     >
                         <div className="cardTeam">
                             <img
-                                src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png"
+                                src={Marija}
                                 alt=""
                                 className="slika-osobe"
                             />
@@ -85,7 +85,7 @@ const NasTim = () => {
                         </div>
                         <div className="cardTeam">
                             <img
-                                src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png"
+                                src={Milica}
                                 alt=""
                             />
                             <div className="sadrzaj">
@@ -113,7 +113,7 @@ const NasTim = () => {
                         </div>
                         <div className="cardTeam">
                             <img
-                                src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png"
+                                src={Jana}
                                 alt=""
                             />
                             <div className="sadrzaj">
@@ -141,7 +141,7 @@ const NasTim = () => {
                         </div>
                         <div className="cardTeam">
                             <img
-                                src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png"
+                                src={Tijana}
                                 alt=""
                             />
                             <div className="sadrzaj">
@@ -169,7 +169,7 @@ const NasTim = () => {
                         </div>
                         <div className="cardTeam">
                             <img
-                                src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png"
+                                src={Nastasja}
                                 alt=""
                             />
                             <div className="sadrzaj">
@@ -197,7 +197,7 @@ const NasTim = () => {
                         </div>
                         <div className="cardTeam">
                             <img
-                                src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png"
+                                src={Sasa}
                                 alt=""
                             />
                             <div className="sadrzaj">
@@ -225,7 +225,7 @@ const NasTim = () => {
                         </div>
                         <div className="cardTeam">
                             <img
-                                src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png"
+                                src={Kosta}
                                 alt=""
                             />
                             <div className="sadrzaj">
@@ -253,7 +253,7 @@ const NasTim = () => {
                         </div>
                         <div className="cardTeam">
                             <img
-                                src="https://i.ibb.co/jyy7FZb/Slika-Osobe.png"
+                                src={Marko}
                                 alt=""
                             />
                             <div className="sadrzaj">

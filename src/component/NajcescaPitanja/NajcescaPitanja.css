@@ -107,16 +107,16 @@ body{
 }
 
 .odgovor p {
-  font-size: 16px;
+  font-size: 15px;
   padding: 5px;
   background-color: whitesmoke;
 }
 
 .najcesce-pitanje:hover {
-  height: 230px;
+  height: 240px;
 }
 .najcesce-pitanje:hover .odgovor {
-  height: 140px;
+  height: 150px;
 }
 
 .najcesce-pitanje:hover .pitanje-link .krug-zatvoreno-pitanje {
@@ -132,10 +132,10 @@ body{
     width: 100%;
   }
   .najcesce-pitanje:hover {
-    height: 200px;
+    height: 220px;
   }
   .najcesce-pitanje:hover .odgovor {
-    height: 100px;
+    height: 110px;
   }
 }
 @media screen and (max-width: 650px) {

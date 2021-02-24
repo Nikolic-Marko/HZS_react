@@ -11,13 +11,13 @@ function App() {
     return (
         <BrowserRouter basename="/">
             <Switch>
-                <Route path="/" component={Homepage} />
-                <Route path="/forum" component={Forum} />
-                <Route path="/forum/pitanja" component={ForumPitanja} />
-                <Route path="/forum/takmicenja" component={ForumPitanja} />
-                <Route path="/forum/ostalo" component={ForumPitanja} />
-                <Route path="/forum/ostalo/:id" component={PitanjaStranica} />
-                <Route path="/prijava" component={Prijava} />
+                <Route path="/2020" exact component={Homepage} />
+                <Route path="/forum" exact component={Forum} />
+                <Route path="/forum/pitanja" exact component={ForumPitanja} />
+                <Route path="/forum/takmicenja" exact component={ForumPitanja} />
+                <Route path="/forum/ostalo" exact component={ForumPitanja} />
+                <Route path="/forum/ostalo/:id" exact component={PitanjaStranica} />
+                <Route path="/prijava" exact component={Prijava} />
             </Switch>
         </BrowserRouter>
     );
