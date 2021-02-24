@@ -6,9 +6,11 @@ const ForumNavigacija = () => {
     <div className={classes.ForumNavigacija}>
       {/* PRIVREMENO SU <BUTTON/> */}
       <select className={classes.ListaKategorija}>
-      <option>O hakatonu</option>
-        <option>O hakatonu</option>
-        <option>Prijava za takmicenje</option>
+      <option>Radionice</option>
+        <option>Domaći zadatak</option>
+        <option>Prezentovanje rešenja</option>
+        <option>Pravila</option>
+        <option>Pravila</option>
         <option>Ostalo</option>
       </select>
       <button>KATEGORIJE</button>
