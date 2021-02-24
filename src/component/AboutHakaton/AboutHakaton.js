@@ -15,15 +15,15 @@ class AboutHakaton extends Component {
         return (
             <div className="aboutHakaton">
                 <div className="leftSide">
-                    <img src={slika1} alt="logo" />
-                    <img src={slika2} alt="logo" />
-                    <img src={slika3} alt="logo" />
-                    <img src={slika4} alt="logo" />
-                    <img src={slika5} alt="logo" />
-                    <img src={slika6} alt="logo" />
-                    <img src={slika7} alt="logo" />
-                    <img src={slika8} alt="logo" />
-                    <img src={slika9} alt="logo" />
+                    <img src={slika1} alt="slika sa takmicenja" />
+                    <img src={slika2} alt="slika sa takmicenja" />
+                    <img src={slika3} alt="slika sa takmicenja" />
+                    <img src={slika4} alt="slika sa takmicenja" />
+                    <img src={slika5} alt="slika sa takmicenja" />
+                    <img src={slika6} alt="slika sa takmicenja" />
+                    <img src={slika7} alt="slika sa takmicenja" />
+                    <img src={slika8} alt="slika sa takmicenja" />
+                    <img src={slika9} alt="slika sa takmicenja" />
                 </div>
                 <div className="rightSide">
                     <div className="textSection">

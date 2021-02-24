@@ -13,7 +13,7 @@ let timelineElements = [
     title: "Zatvaranje prijava",
     description:
       "Nakon zatvaranja prijava, sve dalje informacije biće poslate prijavljenim kandidatima. Proveravajte svoje  mejlove! ",
-    icon: "school",
+    icon: "work",
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ let timelineElements = [
     title: "Zatvaranje hakatona",
     description:
       "Timovi izlažu svoja softverska rešenja stručnom žiriju. Nakon proglašenja pobednika, sledi dodela nagrada i koktel veče! ",
-    icon: "school",
+    icon: "work",
   }
 ];
 

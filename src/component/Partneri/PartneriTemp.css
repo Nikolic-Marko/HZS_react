@@ -1,0 +1,54 @@
+.partners{
+    width: 100%;
+    height: 100vh;
+    font-family: Gilroy-ExtraBold, sans-serif;
+    margin-top: 10%;
+}
+
+.generalniPartneriNaslov{
+    color: #00ffa3;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slikeOmotac{
+    padding-top: 7%;
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+}
+
+.slikePartnera{
+    width: 25%;
+}
+
+#slika1{
+    margin-right: 10%;
+} 
+
+@media (max-width: 1300px) {
+    .partners{
+        margin-top: 5%;
+    }
+    .slikeOmotac{
+        width: max-content;
+        display: block;
+        margin-top: 0%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+    }
+    .slikePartnera{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .slikePartnera img{
+        width: 18rem;
+    }
+    #slika1{
+        margin-right: 0%;
+        margin-bottom: 10%;
+    } 
+  }
