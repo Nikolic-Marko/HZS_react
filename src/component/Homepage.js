@@ -8,6 +8,7 @@ import NajcescaPitanja from './NajcescaPitanja/NajcescaPitanja'
 import Partneri from './Partneri/Partneri'
 import AboutHakaton from './AboutHakaton/AboutHakaton'
 import TimeLine from './TimeLine/TimeLine'
+import PartneriTemp from './Partneri/PartneriTemp'
 
 class Homepage extends React.Component {
   render() {
@@ -19,7 +20,7 @@ class Homepage extends React.Component {
         <TimeLine />
         <NasTim />
         <NajcescaPitanja />
-        <Partneri />
+        <PartneriTemp />
         <Footer />
       </div>
     )
