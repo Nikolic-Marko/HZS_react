@@ -87,16 +87,16 @@
   display: block;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .sliderTeam{
     width: 90%;
   }
 
   .cardTeam{
-    width: 90%;
+    width: 85%;
     height: auto;
     background: red;
-    color: #161616;
+    color: white;
     font-size: 30px;
     margin-left: 15px;
     display: flex;
