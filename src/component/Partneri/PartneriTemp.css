@@ -1,0 +1,63 @@
+.partners{
+    width: 100%;
+    height: 110vh;
+    font-family: Gilroy-ExtraBold, sans-serif;
+    margin-top: 10rem;
+}
+
+.generalniPartneriNaslov{
+    color: #00ffa3;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slikeOmotac{
+    width: max-content;
+    display: block;
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+}
+
+.slikePartnera{
+    width: 25%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#slika1{
+    margin-right: 10%;
+} 
+#slika2{
+    margin-top:2rem;
+}
+.slikePartnera img{
+    width: 18rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1300px) {
+    .partners{
+        margin-top: 10rem;
+    }
+    .slikeOmotac{
+        width: max-content;
+        display: block;
+        margin-top: 0%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+    }
+    .slikePartnera{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .slikePartnera img{
+        width: 18rem;
+    }
+    #slika1{
+        margin-right: 0%;
+        margin-bottom: 10%;
+    } 
+  }

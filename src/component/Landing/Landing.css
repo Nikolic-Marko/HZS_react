@@ -14,7 +14,7 @@
 .homepage {
   background-color: #161616;
   z-index: 1s;
-  height: 100vh;
+  height: calc(100vh - 100px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,7 +22,7 @@
 
 .text-obavestenje {
   z-index: 101;
-  margin: 0 0 70px 100px;
+  margin: 0 0 125px 100px;
   color: white;
   font-size: 20px;
   height: auto;
@@ -36,12 +36,13 @@
   justify-content: center;
   color: black;
   font-size: 14px;
-  width: 100px;
-  height: 30px;
+  width: 150px;
+  height: 36px;
   background-color: #00ffa3;
   margin-top: 20px;
 }
-.dugme-ucestvuj a{
+
+.dugme-ucestvuj a {
   text-decoration: none;
   color: black;
 }
@@ -93,7 +94,7 @@
 
 .slogan {
   align-self: flex-end;
-  margin-bottom: 31.8vh;
+  margin-bottom: 38.6vh;
 }
 
 @-webkit-keyframes sporedni-logo {
@@ -222,6 +223,7 @@
   text-transform: uppercase;
   font-size: 2em;
   letter-spacing: 6px;
+  margin-bottom: 30px;
   overflow: hidden;
   background: linear-gradient(90deg, #00ffa3, #fff, #00ffa3);
   background-repeat: no-repeat;
@@ -448,7 +450,6 @@
 
   .homepage {
     background-color: #161616;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -461,8 +462,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 30px 0 0 0;
-    font-size: 16px;
+    margin: 30px 0 40px 0;
+    font-size: 14px;
+    padding: 0 10px 0 10px;
   }
 
   .dugme-ucestvuj {
@@ -496,8 +498,8 @@
   }
 
   .sporedni-logo {
+    top: 0;
     height: auto;
-
     margin: 0;
     z-index: 1;
   }
@@ -521,8 +523,24 @@
     width: 85%;
   }
 
+  .clouds {
+    height: 100vh;
+  }
+
   .naslov-partneri {
     margin-top: 10px;
     font-size: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .slogan{
+    margin-top: 1rem;
+  }
+  .text-obavestenje p{
+    font-size: 12px;
+  }
+  .dugmici-mreze{
+    margin-top: 0;
   }
 }

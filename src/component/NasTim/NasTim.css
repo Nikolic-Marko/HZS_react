@@ -13,68 +13,123 @@
 .nas-tim-span {
   color: #00ffa3;
 }
-
-.row {
-  width: 60%;
-  margin: auto;
+.sadrzaj{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 10px;
+  text-shadow: 8px 8px 8px #161616;
+}
+.imePrezime{
+  text-align: center;
+}
+.imePrezime h2{
+  font-size: 20px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.imePrezime h3{
+  font-size: 16px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.dugmiciMreze{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
 }
 
-.kartica {
-  width: 280px;
-  height: 100px;
-  margin: 20px 10px 10px 10px;
-  background-color: white;
-  margin-bottom: 200px;
+.dugmiciMreze img{
+  width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+
+/******************/
+/*******nas tim*************/
+.nas-team {
+  width: 100%;
   background-color: #161616;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: -1;
 }
 
-.kartica-sadrzaj {
-  padding: 15px;
+
+
+/*****slider***********/
+.sliderTeam{
+  width: 90%;
+ 
 }
 
-.kartica-image {
-  text-align: center;
-}
-
-.ime {
-  text-align: center;
-  margin-top: -110px;
-}
-
-h2 {
-  text-align: center;
+.cardTeam{
+  width: 90%;
+  height: auto;
+  background: red;
   color: white;
-  font-family: 'Gilroy-Light', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.linkedin-img {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  margin-left: 70px;
+.cardTeam img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.email-img {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  margin-left: 152px;
-}
+@media (max-width: 1024px) {
+  .sliderTeam{
+    width: 90%;
+  }
 
-@media (max-width: 768px) {
-  .row {
-    width: 100%;
+  .cardTeam{
+    width: 85%;
+    height: auto;
+    background: red;
+    color: white;
+    font-size: 30px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imePrezime h2{
+    font-size: 16px;
+    font-weight: bold ;
+  }
+  .imePrezime h3{
+    font-size: 14px;
+  }
+  .dugmiciMreze{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 30px;
+    height: 30px;
   }
 }
 
-@media (max-width: 468px) {
-  .kartica {
-    width: 290px;
-    height: 250px;
+@media (max-width: 700px) {
+  .sliderTeam{
+    width: 100%;
+  }
+  .cardTeam{
+    width: 95%;
+    margin-left: 10px;
   }
 }

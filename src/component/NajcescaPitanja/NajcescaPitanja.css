@@ -1,3 +1,7 @@
+body{
+  background-color: #161616;
+}
+
 .najcesca-pitanja::before,
 .najcesca-pitanja::after {
   box-sizing: inherit;
@@ -15,11 +19,10 @@
 
 .najcesca-pitanja-naslov {
   text-align: center;
-  font-family: Gilroy-ExtraBold, sans-serif;
   color: #00ffa3;
   font-size: 50px;
   margin-bottom: 50px;
-  padding-top: 125px;
+  padding-top: 100px;
 }
 
 .najcesca-pitanja-container {
@@ -88,6 +91,7 @@
 .pitanje-tekst {
   background-color: whitesmoke;
   margin-right: 20px;
+  width: 90%;
 }
 
 .odgovor {
@@ -104,16 +108,16 @@
 }
 
 .odgovor p {
-  font-size: 16px;
+  font-size: 15px;
   padding: 5px;
   background-color: whitesmoke;
 }
 
 .najcesce-pitanje:hover {
-  height: 200px;
+  height: 240px;
 }
 .najcesce-pitanje:hover .odgovor {
-  height: 100px;
+  height: 150px;
 }
 
 .najcesce-pitanje:hover .pitanje-link .krug-zatvoreno-pitanje {
@@ -129,10 +133,10 @@
     width: 100%;
   }
   .najcesce-pitanje:hover {
-    height: 200px;
+    height: 220px;
   }
   .najcesce-pitanje:hover .odgovor {
-    height: 100px;
+    height: 110px;
   }
 }
 @media screen and (max-width: 650px) {
@@ -140,12 +144,12 @@
     width: 100%;
   }
   .najcesce-pitanje:hover {
-    height: 300px;
+    height: 440px;
   }
   .najcesce-pitanje:hover .odgovor {
-    height: 150px;
+    height: 290px;
   }
   .pitanje-tekst {
-    height: 50px;
+    height: 55px;
   }
 }

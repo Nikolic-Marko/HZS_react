@@ -9,6 +9,10 @@
   transition: all 0.5s;
 }
 
+.Content p{
+  font-size: 10px;
+}
+
 .Kartica:hover {
   box-shadow: 0 8px 16px #ccc;
 }

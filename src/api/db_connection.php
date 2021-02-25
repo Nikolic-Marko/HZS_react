@@ -1,8 +1,8 @@
 <?php
 
-$servername = "localhost";
-$db_username = "root";
-$db_password = "";
+$servername = "fonisrs_hzs_2021";
+$db_username = "fonisrs_hzs";
+$db_password = "yRcI)04K]K^s";
 $db_name = "hzs2021_forum";
 
 header('Access-Control-Allow-Origin: *');
