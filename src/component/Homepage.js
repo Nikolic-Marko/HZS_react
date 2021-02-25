@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from 'react'
 import './../App.css'
 import Header from './Header'
@@ -9,6 +8,8 @@ import NajcescaPitanja from './NajcescaPitanja/NajcescaPitanja'
 import Partneri from './Partneri/Partneri'
 import AboutHakaton from './AboutHakaton/AboutHakaton'
 import TimeLine from './TimeLine/TimeLine'
+import PartneriTemp from './Partneri/PartneriTemp'
+import NavigationDots from './NavigationDots'
 import LoginModal from './Forum/LoginModal/LoginModal'
 
 const Homepage = () => {
@@ -24,48 +25,18 @@ const Homepage = () => {
 
   return (
     <div className="App">
+      <NavigationDots />
       <Header modalShow={modalShow} />
       <Landing />
       <AboutHakaton />
       <TimeLine />
       <NasTim />
       <NajcescaPitanja />
-      <Partneri />
+      <PartneriTemp />
       <Footer />
       <LoginModal show={showModal} modalClosed={closeModal} />
     </div>
   )
-=======
-import React from "react";
-import "./../App.css";
-import Header from "./Header";
-import Footer from "./Footer";
-import NasTim from "./NasTim/NasTim";
-import Landing from "./Landing/Landing";
-import NajcescaPitanja from "./NajcescaPitanja/NajcescaPitanja";
-import Partneri from "./Partneri/Partneri";
-import AboutHakaton from "./AboutHakaton/AboutHakaton";
-import TimeLine from "./TimeLine/TimeLine";
-import PartneriTemp from "./Partneri/PartneriTemp";
-import NavigationDots from "./NavigationDots";
-
-class Homepage extends React.Component {
-    render() {
-        return (
-            <div className="App">
-                <NavigationDots />
-                <Header />
-                <Landing />
-                <AboutHakaton />
-                <TimeLine />
-                <NasTim />
-                <NajcescaPitanja />
-                <PartneriTemp />
-                <Footer />
-            </div>
-        );
-    }
->>>>>>> faa9ec72afe5ea6ae067339ce66b750fcbbc8625
 }
 
-export default Homepage;
+export default Homepage
