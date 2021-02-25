@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import classes from './Kartica.module.css'
 const Kartica = (props) => {
-  const link = '/forum/' + props.link
+  const link = '/2021/forum/' + props.link
   return (
     <div
       className={classes.Kartica}

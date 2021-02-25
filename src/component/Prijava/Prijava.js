@@ -177,7 +177,7 @@ const Prijava = () => {
                         <div className="pravilnik-container">
                             <div><input type="checkbox" ref={pravilnikRef} /></div>
                             <div>
-                                Saglasni smo da smo pročitali i da smo upoznati sa <a target="_blank" href="https://hzs.fonis.rs/2021/HZS.pdf">pravilnikom</a> takmičenja
+                                Saglasni smo da smo pročitali i da smo upoznati sa <a target="_blank" href="https://hzs.fonis.rs/2021/HZS.pdf" id ="pravilnikA">pravilnikom</a> takmičenja
                             </div>
                             <div className="required"><svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="9.3" stroke="#18EEA1" strokeWidth="1.4" /><path fill="#18EEA1" d="M9 14h2v2H9z" /><path stroke="#18EEA1" d="M9.5 3v10M10.5 3v10" /></svg></div>
                         </div>
@@ -222,7 +222,7 @@ const Prijava = () => {
                     </div>
 
                     <div style={{ fontSize: "0.8rem", textAlign: "center" }}>*Ukoliko imaš dodatnih pitanja u vezi sa prijavom pošalji nam mejl na</div>
-                    <div style={{ fontSize: "1rem", marginBottom: "20px", textAlign: "center" }}><b><a href="mailto: office@fonis.rs" style={{textDecoration : "none"}} >office@fonis.rs</a></b></div>
+                    <div style={{ fontSize: "1rem", marginBottom: "20px", textAlign: "center" }}><b><a href="mailto: office@fonis.rs" style={{textDecoration : "none", color: "#00ffa3"}} >office@fonis.rs</a></b></div>
 
                 </div>
                 :

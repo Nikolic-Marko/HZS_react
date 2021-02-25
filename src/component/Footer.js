@@ -1,15 +1,14 @@
 import React from 'react';
 import '../css/Footer.css';
 import logoFonis from '../assets/FONISlogo.png'
-import { NavLink } from "react-router-dom"
 
 function Footer() {
   return (
     <div className="footer">
       <div className="logoSection">
-        <NavLink to="https://fonis.rs/">
+        <a href="https://fonis.rs/">
           <img src={logoFonis} alt="Logo Fonis" />
-        </NavLink>
+        </a>
       </div>
       <div className="locationSection">
         <h1>GDE SE NALAZIMO ?</h1>

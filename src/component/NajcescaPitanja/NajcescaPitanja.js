@@ -46,7 +46,7 @@ const NajcescaPitanja = () => {
             </a>
             <div className="odgovor">
               <p>
-                Najpre se radi online test, nakon čega najbolji timovi dobijaju pravo da pohađaju radionice. Na kraju radionica se takmičarima zadaje projektni zadatak. Prvih 8 do 10 timova sa najbolje urađenim zadatkom se plasira na hakaton. Takođe se uzima u obzir anganžman tima i svakog člana ponaosob
+                Najpre se radi online test, nakon čega najbolji timovi dobijaju pravo da pohađaju radionice. Na kraju radionica se takmičarima zadaje projektni zadatak. Prvih 8 do 10 timova sa najbolje urađenim zadatkom se plasira na hakaton. Takođe se uzima u obzir anganžman tima i svakog člana ponaosob.
               </p>
             </div>
           </div>
@@ -104,7 +104,7 @@ const NajcescaPitanja = () => {
             </a>
             <div className="odgovor">
               <p>
-                Ne, u finale se može plasirati samo jedan tim iz određene srednje škole. Ukoliko je tim sastavljen od takmičara iz različitih srednjih škola, u finale se može plasirati dva tima koja imaju člana iz iste srednje škole.
+                Ne, u finale se može plasirati samo jedan tim iz određene srednje škole. Ukoliko je tim sastavljen od takmičara iz različitih srednjih škola, u finale se mogu plasirati dva tima koja imaju člana iz iste srednje škole.
               </p>
             </div>
           </div>
@@ -119,7 +119,7 @@ const NajcescaPitanja = () => {
             </a>
             <div className="odgovor">
               <p>
-              Svi delovi projekta su u online formatu. Timovi će biti blagovremeno obavešteni o načinu za pristup platformi na kojoj će se projekat održati. Za detaljnije informacije o načinu održavanja projekta posetite deo sajta “Pravilnik”.
+              Svi delovi projekta su u online formatu. Timovi će biti blagovremeno obavešteni o načinu za pristup platformi na kojoj će se projekat održati. Za detaljnije informacije o načinu održavanja projekta posetite deo sajta „Pravilnik”.
               </p>
             </div>
           </div>

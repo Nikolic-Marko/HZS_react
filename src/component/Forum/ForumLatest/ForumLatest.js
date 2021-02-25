@@ -19,4 +19,3 @@ const ForumLatest = () => {
 }
 
 export default ForumLatest
-w

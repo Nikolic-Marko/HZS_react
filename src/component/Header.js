@@ -7,19 +7,19 @@ const Header = (props) => {
   return (
     <div className={classes.Header}>
       <div className={classes.HeaderWidth}>
-        <NavLink to="/">
+        <NavLink to="/2021">
           <img src={Logo} alt="logo" />
         </NavLink>
         <div className={classes.Links}>
           <div className={classes.Text}>2-3 APRILA</div>
 
-          <NavLink to="/forum" className={classes.Link}>
+          {/* <NavLink to="/2021/forum" className={classes.Link}>
             <span>Forum</span>
           </NavLink>
 
           <button className={classes.Link} onClick={props.modalShow}>
             <span>Log In</span>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

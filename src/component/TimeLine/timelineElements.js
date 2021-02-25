@@ -20,7 +20,7 @@ let timelineElements = [
     startDate: "14.3.2021.",
     title: "Online test",
     description:
-      "Svaki tim radi test, nakon čega se u najkraćem mogućem roku dostavljaju rezultati testa kao i informacija o prolasku u naredni krug selekcije.",
+      "Timovi koji prođu prvi krug selekcije radiće online test, nakon čega se u najkraćem mogućem roku dostavljaju rezultati testa kao i informacija o prolasku u naredni krug selekcije. Test se radi timski.",
     icon: "work",
   },
   {
@@ -28,7 +28,7 @@ let timelineElements = [
     startDate: "18.3.2021 - 21.3.2021.",
     title: "Radionice",
     description:
-      "Podrazumevaju upoznavanje potencijalnih učesnika sa tehnologijama koje će im biti od pomoći na samom hakatonu. Nakon odslušanih radionica, timovima se zadaje projektni zadatak koji je neophodno da odrade i predaju na vreme, i koji ujedno predstavlja treći krug selekcije.",
+      "Podrazumevaju upoznavanje potencijalnih takmičara sa tehnologijama koje će im biti od pomoći na samom hakatonu. Nakon odslušanih radionica, timovima se zadaje domaći zadatak koji je neophodno da odrade i predaju na vreme, i koji ujedno predstavlja treći krug selekcije.",
     icon: "work",
   },
   {
