@@ -11,7 +11,7 @@ function App() {
   return (
     <HashRouter basename="/">
       <Switch>
-        <Route path="/2021" exact component={Homepage} />
+        <Route path="/" exact component={Homepage} />
         <Route path="/2021/forum" exact component={Forum} />
         <Route path="/2021/forum/pitanja" exact component={ForumPitanja} />
         <Route path="/2021/forum/takmicenja" exact component={ForumPitanja} />
