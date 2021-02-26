@@ -35,7 +35,7 @@ class AboutHakaton extends Component {
                             i nauče nešto novo u oblasti informacionih tehnologija.
                             Takmičenju prethodi selekcija koja se sastoji iz prijave,
                             online testa i radionica. Na samom takmičenju timovi
-                            treba za 24 časa da kreiraju softverska rešenja na zadati problem
+                            treba za 24 časa da kreiraju softversko rešenje na zadati problem
                             primenom znanja stečenog na radionicama i uz pomoć mentora.
                         </p>
                         <br />
