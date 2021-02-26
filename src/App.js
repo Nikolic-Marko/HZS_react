@@ -12,12 +12,12 @@ function App() {
     <HashRouter basename="/">
       <Switch>
         <Route path="/" exact component={Homepage} />
-        <Route path="/2021/forum" exact component={Forum} />
-        <Route path="/2021/forum/pitanja" exact component={ForumPitanja} />
-        <Route path="/2021/forum/takmicenja" exact component={ForumPitanja} />
-        <Route path="/2021/forum/ostalo" exact component={ForumPitanja} />
-        <Route path="/2021/forum/ostalo/:id" exact component={PitanjaStranica} />
-        <Route path="/2021/prijava" exact component={Prijava} />
+        <Route path="/forum" exact component={Forum} />
+        <Route path="/forum/pitanja" exact component={ForumPitanja} />
+        <Route path="/forum/takmicenja" exact component={ForumPitanja} />
+        <Route path="/forum/ostalo" exact component={ForumPitanja} />
+        <Route path="/forum/ostalo/:id" exact component={PitanjaStranica} />
+        <Route path="/prijava" exact component={Prijava} />
       </Switch>
     </HashRouter>
   )

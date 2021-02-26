@@ -13,7 +13,7 @@ const Header = (props) => {
         <div className={classes.Links}>
           <div className={classes.Text}>2-3 APRILA</div>
 
-          {/* <NavLink to="/2021/forum" className={classes.Link}>
+          {/* <NavLink to="/forum" className={classes.Link}>
             <span>Forum</span>
           </NavLink>
 

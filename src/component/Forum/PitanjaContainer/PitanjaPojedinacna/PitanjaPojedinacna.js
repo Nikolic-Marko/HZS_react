@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const PitanjaPojedinacna = () => {
   return (
     <div className={classes.PitanjaPojedinacna}>
-      <Link to="/2021/forum/ostalo/1">EVO NEKO PITANJE OVDE</Link>
+      <Link to="/forum/ostalo/1">EVO NEKO PITANJE OVDE</Link>
     </div>
   )
 }
