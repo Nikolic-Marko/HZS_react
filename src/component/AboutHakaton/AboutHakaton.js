@@ -29,17 +29,14 @@ class AboutHakaton extends Component {
                     <div className="textSection">
                         <h1>O HAKATONU</h1>
                         <p>
-                            Hakaton za srednjoškolce je projekat koji se po
-                            treći put održava na Fakultetu organizacionih nauka.
-                            Namenjen je učenicima srednjih škola sa teritorije
-                            Srbije koji su spremni da primene postojeće znanje u
-                            praksi i nauče nešto novo u oblasti informacionih
-                            tehnologija. Projekat se sastoji iz dva dela –
-                            radionica, na kojima će srednjoškolci naučiti
-                            osnovne stvari o programerskoj logici i sintaksi, i
-                            takmičenja, na kome će timovi za 24 časa naći idejna
-                            rešenja na zadati problem primenom znanja stečenog
-                            na radionicama i uz pomoć mentora.
+                            Hakaton za srednjoškolce predstavlja takmičenje namenjeno
+                            učenicima srednjih škola na teritoriji Srbije
+                            koji su spremni da primene postojeća znanja u praksi
+                            i nauče nešto novo u oblasti informacionih tehnologija.
+                            Takmičenju prethodi selekcija koja se sastoji iz prijave,
+                            online testa i radionica. Na samom takmičenju timovi
+                            treba za 24 časa da kreiraju softversko rešenje na zadati problem
+                            primenom znanja stečenog na radionicama i uz pomoć mentora.
                         </p>
                         <br />
                         <hr />

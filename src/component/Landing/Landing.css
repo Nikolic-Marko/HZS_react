@@ -36,8 +36,8 @@
   justify-content: center;
   color: black;
   font-size: 14px;
-  width: 150px;
-  height: 36px;
+  width: 180px;
+  height: 40px;
   background-color: #00ffa3;
   margin-top: 20px;
 }
@@ -524,7 +524,7 @@
   }
 
   .clouds {
-    height: 100vh;
+    height: 90vh;
   }
 
   .naslov-partneri {
@@ -542,5 +542,9 @@
   }
   .dugmici-mreze{
     margin-top: 0;
+  }
+  .dugme-ucestvuj {
+    margin-top: 15px;
+    margin-bottom: 10px;
   }
 }
