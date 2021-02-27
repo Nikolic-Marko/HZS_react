@@ -7,16 +7,10 @@ const ForumLatest = () => {
     <div>
       <p>Poslednje aktivnosti</p>
       <div className={classes.ForumPitanja}>
-        <Pitanja
-          logo
-          username
-          naslov
-          kategorija
-        />
+        <Pitanja logo username naslov kategorija />
       </div>
     </div>
   )
 }
 
 export default ForumLatest
-w
