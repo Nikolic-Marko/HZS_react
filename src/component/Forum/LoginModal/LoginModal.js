@@ -41,6 +41,7 @@ const LoginModal = (props) => {
   }
 
   const loginForm = () => {
+    setUsername('')
     setShouldLogin(!shouldLogin)
     buttonText === 'Register'
       ? setButtonText('Login')
@@ -122,6 +123,7 @@ const LoginModal = (props) => {
               </span>
               <div className={classes.Inputi}>
                 <input
+                  id="usernameInput"
                   type="text"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
@@ -219,12 +221,10 @@ const LoginModal = (props) => {
                   type="date"
                   value={datum}
                   onChange={(e) => setDatum(e.target.value)}
-                  id="start"
                   required
-                  name="trip-start"
-                  value="2018-07-22"
-                  min="2018-01-01"
-                  max="2018-12-31"
+                  min="1997-01-01"
+                  className={classes.Input2}
+                  max="2007-12-31"
                 ></input>
               </div>
               <div className={classes.Submit}>
