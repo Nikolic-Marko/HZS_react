@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import classes from './Modal.module.css'
+import { connect } from 'react-redux'
 
 const Modal = (props) => {
   const [title, setTitle] = useState('')
@@ -13,7 +14,7 @@ const Modal = (props) => {
     form.append('autor', autor)
     form.append('kategorija', kategorija)
 
-    const url = 'http://localhost/hzsapi/api/insert_post.php'
+    const url = 'https://hzs.fonis.rs/2021/api/insert_post.php'
     const request = new Request(url, {
       method: 'POST',
       body: form,
@@ -27,7 +28,7 @@ const Modal = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    insertPost(title, text, 'marko', category)
+    insertPost(title, text, props.usrName, category)
       .then((data) => {
         console.log(data)
       })
@@ -102,4 +103,9 @@ const Modal = (props) => {
   )
 }
 
-export default React.memo(Modal)
+const mapStateToProps = (state) => {
+  return {
+    usrName: state.username,
+  }
+}
+export default connect(mapStateToProps)(Modal)
