@@ -13,21 +13,20 @@ import NavigationDots from './NavigationDots'
 import LoginModal from './Forum/LoginModal/LoginModal'
 
 const Homepage = () => {
-  // const [showModal, setShowModal] = useState(false)
+  const [showModal, setShowModal] = useState(false)
 
-  // const closeModal = () => {
-  //   setShowModal(false)
-  // }
+  const closeModal = () => {
+    setShowModal(false)
+  }
 
-  // const modalShow = () => {
-  //   setShowModal(true)
-  // }
+  const modalShow = () => {
+    setShowModal(true)
+  }
 
   return (
     <div className="App">
       <NavigationDots />
-      <Header />
-      {/* <Header modalShow={modalShow} /> */}
+      <Header modalShow={modalShow} />
       <Landing />
       <AboutHakaton />
       <TimeLine />
@@ -35,7 +34,7 @@ const Homepage = () => {
       <NajcescaPitanja />
       <PartneriTemp />
       <Footer />
-      {/* <LoginModal show={showModal} modalClosed={closeModal} /> */}
+      <LoginModal show={showModal} modalClosed={closeModal} />
     </div>
   )
 }
