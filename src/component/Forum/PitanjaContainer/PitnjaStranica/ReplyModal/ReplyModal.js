@@ -2,6 +2,11 @@ import React from 'react'
 
 import classes from './ReplyModal.module.css'
 const modal = (props) => {
+  const submitComment = (e) => {
+    e.preventDefault()
+    console.log('KITA')
+    props.modalClosed()
+  }
   return (
     <React.Fragment>
       <div
@@ -21,6 +26,7 @@ const modal = (props) => {
               <textarea
                 placeholder="Ovde upisite vas odgovor"
                 className={classes.TekstArea}
+                required
                 style={{
                   resize: 'none',
                 }}
@@ -28,7 +34,11 @@ const modal = (props) => {
             </div>
             <div className={classes.Submit}>
               <div className={classes.SubmitButtons}>
-                <button type="submit" className={classes.btnSubmit}>
+                <button
+                  type="submit"
+                  className={classes.btnSubmit}
+                  onClick={(e) => submitComment(e)}
+                >
                   <i className="fas fa-plus" style={{ color: 'white' }}></i>
                   <span>Submit</span>
                 </button>

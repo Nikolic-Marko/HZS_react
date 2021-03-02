@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { connect } from 'react-redux'
 import classes from './LoginModal.module.css'
 import * as actionCreators from '../../../store/actions/actions'
@@ -9,6 +9,7 @@ const LoginModal = (props) => {
   const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
   const [datum, setDatum] = useState('')
+  const [user, setUser] = useState()
 
   // const registerForm = () => {
   //   console.log('radi')
@@ -40,6 +41,14 @@ const LoginModal = (props) => {
     return json_data
   }
 
+  useEffect(() => {
+    const loggedInUsername = localStorage.getItem('username')
+    const loggedInPass = localStorage.getItem('pass')
+    if (loggedInPass && loggedInUsername) {
+      props.onLogin()
+    }
+  }, [])
+
   const loginForm = () => {
     setUsername('')
     setShouldLogin(!shouldLogin)
@@ -49,21 +58,35 @@ const LoginModal = (props) => {
   }
 
   const submitLogin = (e) => {
-    e.preventDefault()
-    props.onLogin(username)
-
-    loginUser(username, passInput.current.value)
-      .then((data) => {
-        console.log(data)
-      })
-      .catch((err) => {
-        console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
-      })
-    console.log(props.usrName)
+    if (username !== '' || passInput !== '') {
+      e.preventDefault()
+      let status = ''
+      loginUser(username, passInput.current.value)
+        .then((data) => {
+          console.log(data)
+          status = data.status
+          if (status === 'uspesno') {
+            props.onLogin(username)
+            props.modalClosed()
+            setUser(username, passInput)
+            localStorage.setItem('username', username)
+            localStorage.setItem('pass', passInput)
+          } else {
+            console.log('greska odavde')
+          }
+        })
+        .catch((err) => {
+          console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
+        })
+    } else {
+      console.log('NEMOZ PRANZO')
+    }
   }
 
   const submitRegister = (e) => {
     e.preventDefault()
+    props.modalClosed()
+
     registerUser(username, passRegister.current.value, datum, email)
       .then((data) => {
         console.log(data)
@@ -154,11 +177,7 @@ const LoginModal = (props) => {
                     <i class="fas fa-check" style={{ color: 'white' }}></i>
                     <span>Submit</span>
                   </button>
-                  <a
-                    type="submit"
-                    className={classes.btnDynamic}
-                    onClick={loginForm}
-                  >
+                  <a className={classes.btnDynamic} onClick={loginForm}>
                     <i className="fas fa-plus" style={{ color: 'white' }}></i>
                     <span>{buttonText}</span>
                   </a>
@@ -232,7 +251,7 @@ const LoginModal = (props) => {
                   <button
                     type="submit"
                     className={classes.btnFinish}
-                    onClick={submitRegister}
+                    onSubmit={submitRegister}
                   >
                     <i class="fas fa-check" style={{ color: 'white' }}></i>
                     <span>Submit</span>

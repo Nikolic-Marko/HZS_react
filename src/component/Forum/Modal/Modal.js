@@ -28,13 +28,28 @@ const Modal = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    insertPost(title, text, props.usrName, category)
+    let localUsername = ''
+    props.modalClosed()
+    console.log(localStorage.getItem('username'))
+    if (
+      localStorage.getItem('username') === null ||
+      localStorage.getItem('username') === undefined ||
+      localStorage.getItem('username') === ''
+    ) {
+      localUsername = 'Guest'
+    } else {
+      localUsername = localStorage.getItem('username')
+    }
+    insertPost(title, text, localUsername, category)
       .then((data) => {
         console.log(data)
       })
       .catch((err) => {
         console.log('Greska: ' + err)
       })
+    setTitle('')
+    setText('')
+    setCategory('')
   }
 
   return (
@@ -65,6 +80,7 @@ const Modal = (props) => {
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
               ></input>
+
               <input
                 type="text"
                 required
