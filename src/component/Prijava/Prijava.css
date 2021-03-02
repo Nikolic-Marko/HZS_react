@@ -156,8 +156,7 @@ box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.83);
     position: relative;
     font-size: 1.1rem;
 }
-
-select{
+.selectMenu{
     border: none;
     outline:none;
     width: 100%;

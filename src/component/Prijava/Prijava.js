@@ -154,7 +154,7 @@ const Prijava = () => {
                         <div className="saznali-container">
                             <div>Broj članova tima</div>
                             <div className="required"><svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="9.3" stroke="#18EEA1" strokeWidth="1.4" /><path fill="#18EEA1" d="M9 14h2v2H9z" /><path stroke="#18EEA1" d="M9.5 3v10M10.5 3v10" /></svg></div>
-                            <select name="saznali" id="brojClanova-select" ref={brojClanovaRef} onChange={promenaBrojaClanova}>
+                            <select className="selectMenu" name="saznali" id="brojClanova-select" ref={brojClanovaRef} onChange={promenaBrojaClanova}>
                                 <option>4</option>
                                 <option>3</option>
                             </select>
@@ -162,7 +162,7 @@ const Prijava = () => {
                         <div className="saznali-container">
                             <div>Kako ste saznali za hakaton za srednjoškolce?</div>
                             <div className="required"><svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="9.3" stroke="#18EEA1" strokeWidth="1.4" /><path fill="#18EEA1" d="M9 14h2v2H9z" /><path stroke="#18EEA1" d="M9.5 3v10M10.5 3v10" /></svg></div>
-                            <select name="saznali" id="saznali-select" ref={saznaliRef}>
+                            <select className="selectMenu" name="saznali" id="saznali-select" ref={saznaliRef}>
                                 <option>Preko društvenih mreža</option>
                                 <option>Preko prijatelja</option>
                                 <option>Preko profesora</option>
@@ -200,7 +200,7 @@ const Prijava = () => {
                                 <div className="saznali-container">
                                     <div>Razred</div>
                                     <div className="required"><svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="9.3" stroke="#18EEA1" strokeWidth="1.4" /><path fill="#18EEA1" d="M9 14h2v2H9z" /><path stroke="#18EEA1" d="M9.5 3v10M10.5 3v10" /></svg></div>
-                                    <select name="saznali" id="razred-select">
+                                    <select className="selectMenu" name="saznali" id="razred-select">
                                         <option valeu={1}>1</option>
                                         <option valeu={2}>2</option>
                                         <option valeu={3}>3</option>
