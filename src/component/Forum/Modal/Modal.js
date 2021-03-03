@@ -80,14 +80,18 @@ const Modal = (props) => {
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
               ></input>
-
-              <input
-                type="text"
-                required
+              <select
                 className={classes.Input2}
+                required
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
-              ></input>
+              >
+                <option>Radionice</option>
+                <option>Domaći zadatak</option>
+                <option>Prezentovanje rešenja</option>
+                <option>Pravila</option>
+                <option>Ostalo</option>
+              </select>
             </div>
             <div className={classes.Tekst}>
               <textarea

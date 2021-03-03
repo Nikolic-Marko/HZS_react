@@ -4,17 +4,13 @@ import classes from './ForumNavigacija.module.css'
 const ForumNavigacija = () => {
   return (
     <div className={classes.ForumNavigacija}>
-      {/* PRIVREMENO SU <BUTTON/> */}
       <select className={classes.ListaKategorija}>
-      <option>Radionice</option>
-        <option>Domaći zadatak</option>
-        <option>Prezentovanje rešenja</option>
-        <option>Pravila</option>
-        <option>Pravila</option>
-        <option>Ostalo</option>
+        <option id="radionice">Radionice</option>
+        <option id="domaci">Domaći zadatak</option>
+        <option id="prezentovanje">Prezentovanje rešenja</option>
+        <option id="pravila">Pravila</option>
+        <option id="ostalo">Ostalo</option>
       </select>
-      <button>KATEGORIJE</button>
-      <button>NAJNOVIJE</button>
     </div>
   )
 }
