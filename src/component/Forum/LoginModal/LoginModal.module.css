@@ -120,6 +120,17 @@
   margin-right: 0.5rem;
 }
 
+.Error {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+  color: red;
+  font-weight: bold;
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .Modal {
     height: 37%;

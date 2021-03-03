@@ -10,6 +10,10 @@ const LoginModal = (props) => {
   const [email, setEmail] = useState('')
   const [datum, setDatum] = useState('')
   const [user, setUser] = useState()
+  const [password, setPassword] = useState('')
+  const [confirmPassword, setConfirmPassword] = useState('')
+  const [error, setError] = useState(false)
+  const [errorMessage, setErrorMessage] = useState('')
 
   // const registerForm = () => {
   //   console.log('radi')
@@ -21,6 +25,12 @@ const LoginModal = (props) => {
 
   const passInput = useRef()
   const passRegister = useRef()
+
+  const testEmail = (mail) => {
+    const expression = /^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/
+
+    return expression.test(String(email).toLowerCase())
+  }
 
   const loginUser = async (username, password) => {
     const form = new FormData()
@@ -50,6 +60,8 @@ const LoginModal = (props) => {
   }, [])
 
   const loginForm = () => {
+    setErrorMessage('')
+    setError(false)
     setUsername('')
     setShouldLogin(!shouldLogin)
     buttonText === 'Register'
@@ -58,11 +70,12 @@ const LoginModal = (props) => {
   }
 
   const submitLogin = (e) => {
-    if (username !== '' || passInput !== '') {
+    if (username !== '' && passInput !== '') {
       e.preventDefault()
       let status = ''
       loginUser(username, passInput.current.value)
         .then((data) => {
+          setError(false)
           console.log(data)
           status = data.status
           if (status === 'uspesno') {
@@ -72,28 +85,79 @@ const LoginModal = (props) => {
             localStorage.setItem('username', username)
             localStorage.setItem('pass', passInput)
           } else {
+            setError(true)
             console.log('greska odavde')
+            setErrorMessage('Pogresno korisnicko ime ili lozinka.')
           }
         })
         .catch((err) => {
-          console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
+          console.log(
+            'Greska prilikom izvrsavanja http zahteva kod logina: ' + err,
+          )
+          setError(true)
+          setErrorMessage('Greska prilikom izvrsavanja http zahteva kod logina')
         })
     } else {
-      console.log('NEMOZ PRANZO')
+      setError(true)
+      setErrorMessage('Unesite sifru.')
     }
   }
 
-  const submitRegister = (e) => {
+  const submitRegister = async (e) => {
     e.preventDefault()
-    props.modalClosed()
+    let status = ''
 
-    registerUser(username, passRegister.current.value, datum, email)
-      .then((data) => {
-        console.log(data)
-      })
-      .catch((err) => {
-        console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
-      })
+    if (datum === '') {
+      setErrorMessage('Unesite datum.')
+      setError(true)
+      return
+    }
+
+    if (!testEmail(email)) {
+      setError(true)
+      setErrorMessage('Email je u pogresnom formatu.')
+      return
+    }
+
+    if (password === confirmPassword && password !== '' && username !== '') {
+      props.modalClosed()
+
+      await registerUser(username, passRegister.current.value, datum, email)
+        .then((data) => {
+          console.log(data)
+        })
+        .catch((err) => {
+          // console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
+          setError(true)
+          setErrorMessage('Greska prilikom izvrsavanja http zahteva')
+        })
+      await loginUser(username, password)
+        .then((data) => {
+          setError(false)
+          console.log(data)
+          status = data.status
+          if (status === 'uspesno') {
+            props.onLogin(username)
+            props.modalClosed()
+            setUser(username, passInput)
+            localStorage.setItem('username', username)
+            localStorage.setItem('pass', passInput)
+          } else {
+            setError(true)
+            setErrorMessage('Greska prilikom logina.')
+          }
+        })
+        .catch((err) => {
+          // console.log(
+          //   'Greska prilikom izvrsavanja http zahteva kod logina: ' + err,
+          // )
+          setError(true)
+          setErrorMessage('Greska prilikom izvrsavanja http zahteva kod logina')
+        })
+    } else {
+      setError(true)
+      setErrorMessage('Sifre se ne slazu.')
+    }
   }
 
   const registerUser = async (username, password, datum_rodjenja, email) => {
@@ -167,6 +231,7 @@ const LoginModal = (props) => {
                   // onChange={(e) => setCategory(e.target.value)}
                 ></input>
               </div>
+              {!error || <div className={classes.Error}>{errorMessage}</div>}
               <div className={classes.Submit}>
                 <div className={classes.SubmitButtons}>
                   <button
@@ -225,16 +290,16 @@ const LoginModal = (props) => {
                   placeholder="password"
                   required
                   className={classes.Input2}
-                  // value={category}
-                  // onChange={(e) => setCategory(e.target.value)}
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                 ></input>
                 <input
                   type="password"
                   placeholder="password"
                   required
                   className={classes.Input1}
-                  // value={category}
-                  // onChange={(e) => setCategory(e.target.value)}
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
                 ></input>
                 <input
                   type="date"
@@ -246,12 +311,13 @@ const LoginModal = (props) => {
                   max="2007-12-31"
                 ></input>
               </div>
+              {!error || <div className={classes.Error}>{errorMessage}</div>}
               <div className={classes.Submit}>
                 <div className={classes.SubmitButtons}>
                   <button
                     type="submit"
                     className={classes.btnFinish}
-                    onSubmit={submitRegister}
+                    onClick={submitRegister}
                   >
                     <i class="fas fa-check" style={{ color: 'white' }}></i>
                     <span>Submit</span>

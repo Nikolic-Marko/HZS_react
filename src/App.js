@@ -6,6 +6,7 @@ import Forum from './component/Forum/Forum'
 import ForumPitanja from './component/Forum/ForumPitanja/ForumPitanja'
 import PitanjaStranica from './component/Forum/PitanjaContainer/PitnjaStranica/PitanjaStranica'
 import Prijava from './component/Prijava/Prijava'
+import Radionice from './component/Forum/PojedinacneKategorije/Radionice/Radionice'
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={Homepage} />
         <Route path="/forum" exact component={Forum} />
-        <Route path="/forum/pitanja" exact component={ForumPitanja} />
+        <Route path="/forum/Radionice" exact component={Radionice} />
         <Route path="/forum/takmicenja" exact component={ForumPitanja} />
         <Route path="/forum/ostalo" exact component={ForumPitanja} />
         <Route path="/forum/ostalo/:id" exact component={PitanjaStranica} />
