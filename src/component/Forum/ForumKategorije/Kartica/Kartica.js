@@ -14,7 +14,7 @@ const Kartica = (props) => {
         </NavLink>
         <p>{props.paragraph}</p>
       </div>
-      <div className={classes.Topics}>699</div>
+      <div className={classes.Topics}>{props.broj}</div>
     </div>
   )
 }

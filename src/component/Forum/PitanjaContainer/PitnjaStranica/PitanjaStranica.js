@@ -90,14 +90,23 @@ const PitanjaStranica = () => {
 
     return json_data
   }
+  let postAutor
+  let postTekst
+  let postTitle
+  if (post[0] !== undefined) {
+    postTitle = post[0].text
+    postAutor = post[0].autor
+    postTekst = post[0].naslov //opet greska kod bekenda, treba .text ali je obrnuto
+  }
 
   return (
     <React.Fragment>
       <Header modalShow={showLoginHandler} />
       <div className={classes.Container}>
         <div className={classes.TitleDiv}>
-          <h2 className={classes.Title}></h2>
+          <h2 className={classes.Title}>{postTitle}</h2>
         </div>
+        <PitanjeDiv name={postAutor} text={postTekst} click={reply} />
         {/* <PitanjeDiv
           name="marko754"
           day="9d"
