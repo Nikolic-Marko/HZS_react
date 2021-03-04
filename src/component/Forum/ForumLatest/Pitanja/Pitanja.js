@@ -1,15 +1,25 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import classes from './Pitanja.module.css'
 const Pitanja = (props) => {
-    const link = '/forum/' + props.link
-    return (
-        <div className={classes.svaPitanja}>
-            <div className={classes.left}></div>
-            <div className={classes.mid}></div>
-            <div className={classes.right}></div>
-        </div>
-    )
+  const link = '/forum/' + props.link
+  return (
+    <div className={classes.Container}>
+      <div className={classes.Left}>
+        <Link
+          to={`/forum/${props.category.toLowerCase()}/${props.id}`}
+          className={classes.Naslov}
+        >
+          {props.title}
+        </Link>
+        <div className={classes.Kategorija}>{props.category}</div>
+      </div>
+      <div className={classes.Right}>
+        <div className={classes.Replies}>{props.replies}</div>
+        <div className={classes.Activity}>{props.datum}</div>
+      </div>
+    </div>
+  )
 }
 
 export default Pitanja

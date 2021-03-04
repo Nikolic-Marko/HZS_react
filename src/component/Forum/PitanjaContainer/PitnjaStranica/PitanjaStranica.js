@@ -94,9 +94,9 @@ const PitanjaStranica = () => {
   let postTekst
   let postTitle
   if (post[0] !== undefined) {
-    postTitle = post[0].text
+    postTitle = post[0].naslov
     postAutor = post[0].autor
-    postTekst = post[0].naslov //opet greska kod bekenda, treba .text ali je obrnuto
+    postTekst = post[0].text
   }
 
   return (

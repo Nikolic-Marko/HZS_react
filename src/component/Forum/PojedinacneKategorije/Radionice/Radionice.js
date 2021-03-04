@@ -56,8 +56,8 @@ const Radionice = () => {
   const listaPostova = postovi.map((post) => {
     return (
       <PitanjaPojedinacna
-        title={post.text} // greska kod bekenda, treba obrnuto
-        text={post.naslov}
+        title={post.naslov}
+        text={post.text}
         komentari={post.komentari}
         id={post.id}
         autor={post.autor}
