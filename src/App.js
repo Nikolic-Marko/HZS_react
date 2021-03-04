@@ -6,6 +6,7 @@ import Forum from './component/Forum/Forum'
 import PitanjaStranica from './component/Forum/PitanjaContainer/PitnjaStranica/PitanjaStranica'
 import Prijava from './component/Prijava/Prijava'
 import DinamicneKategorije from './component/Forum/DinamicneKategorije/DinamicneKategorije'
+import MojiPostovi from './component/Forum/MojiPostovi/MojiPostovi'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" exact component={Homepage} />
         <Route path="/forum" exact component={Forum} />
         <Route path="/forum/Radionice" exact component={DinamicneKategorije} />
+        <Route path="/forum/MojiPostovi" exact component={MojiPostovi} />
         <Route
           path="/forum/DomaciZadatak"
           exact

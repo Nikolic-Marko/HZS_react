@@ -102,8 +102,6 @@ const DinamicneKategorije = () => {
             console.log(data)
 
             setPostovi(data)
-
-            console.log('ODAVDE IDU POSTOVI', postovi)
           })
           .catch((err) => {
             console.log('Greska prilikom izvrsavanja http zahteva: ' + err)

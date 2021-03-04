@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import classes from '../css/Header.module.css'
 import Logo from '../assets/HZSlogo1.jpeg'
 import { connect } from 'react-redux'
+import { Nav } from 'react-bootstrap'
 
 const Header = (props) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -29,9 +30,14 @@ const Header = (props) => {
               <span>Log In</span>
             </button>
           ) : (
-            <button onClick={signOut} className={classes.Link}>
-              Sign Out
-            </button>
+            <div>
+              <NavLink className={classes.Link} to="/forum/MojiPostovi">
+                Moji Postovi
+              </NavLink>
+              <button onClick={signOut} className={classes.Link}>
+                Sign Out
+              </button>
+            </div>
           )}
         </div>
       </div>
