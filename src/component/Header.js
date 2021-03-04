@@ -1,7 +1,7 @@
 import React, { Component, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import classes from '../css/Header.module.css'
-import Logo from '../assets/HZSlogo2.png'
+import Logo from '../assets/HZSlogo1.jpeg'
 import { connect } from 'react-redux'
 
 const Header = (props) => {

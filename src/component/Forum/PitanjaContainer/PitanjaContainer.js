@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './PitanjaContainer.module.css'
-import PitanjaPojedinacna from './PitanjaPojedinacna/PitanjaPojedinacna'
+// import PitanjaPojedinacna from '../PojedinacneKategorije/Radionice/PitanjaPojedinacna/PitanjaPojedinacna'
 
 const PitanjaContainer = () => {
   return (
@@ -15,9 +15,9 @@ const PitanjaContainer = () => {
           <p>Activity</p>
         </div>
       </div>
+      {/* <PitanjaPojedinacna />
       <PitanjaPojedinacna />
-      <PitanjaPojedinacna />
-      <PitanjaPojedinacna />
+      <PitanjaPojedinacna /> */}
     </div>
   )
 }

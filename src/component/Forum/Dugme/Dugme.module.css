@@ -43,13 +43,13 @@
 }
 
 .Sticky:hover {
-  border-radius:20% 20% 20% 20% / 50% 50% 50% 50% ;
+  border-radius: 20% 20% 20% 20% / 50% 50% 50% 50%;
   color: white;
   transform: translateX(-60%);
   transition: 0ms;
 }
 
 .Sticky:hover::after {
-  content: "New Topic";
+  content: 'New Topic';
   color: white;
 }

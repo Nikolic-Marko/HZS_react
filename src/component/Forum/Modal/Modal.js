@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 const Modal = (props) => {
   const [title, setTitle] = useState('')
   const [text, setText] = useState('')
-  const [category, setCategory] = useState('')
+  const [category, setCategory] = useState('Radionice')
 
   const insertPost = async (naslov, text, autor, kategorija) => {
     const form = new FormData()

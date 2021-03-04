@@ -42,13 +42,13 @@ const getPosts = async (kategorija, id) => {
   return json_data
 }
 
-getPosts()
-  .then((data) => {
-    console.log(data)
-  })
-  .catch((err) => {
-    console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
-  })
+// getPosts()
+//   .then((data) => {
+//     console.log(data)
+//   })
+//   .catch((err) => {
+//     console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
+//   })
 
 const registerUser = async (username, password, datum_rodjenja, email) => {
   const form = new FormData()

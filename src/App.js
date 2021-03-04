@@ -18,6 +18,18 @@ function App() {
         <Route path="/forum/takmicenja" exact component={ForumPitanja} />
         <Route path="/forum/ostalo" exact component={ForumPitanja} />
         <Route path="/forum/ostalo/:id" exact component={PitanjaStranica} />
+        <Route path="/forum/radionice/:id" exact component={PitanjaStranica} />
+        <Route
+          path="/forum/domaci%20zadatak/:id"
+          exact
+          component={PitanjaStranica}
+        />
+        <Route
+          path="/forum/prezentovanje%20resenja/:id"
+          exact
+          component={PitanjaStranica}
+        />
+        <Route path="/forum/pravila/:id" exact component={PitanjaStranica} />
         <Route path="/prijava" exact component={Prijava} />
       </Switch>
     </HashRouter>
