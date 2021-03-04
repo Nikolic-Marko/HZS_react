@@ -6,7 +6,6 @@ import moment from 'moment'
 const ForumLatest = () => {
   const [postovi, setPostovi] = useState([])
   const [visible, setVisible] = useState(10)
-  const [disabledButton, setDisabledButton] = useState(false)
   const getPosts = async (kategorija, id) => {
     let url
 
@@ -59,7 +58,6 @@ const ForumLatest = () => {
   })
 
   let disable = false
-  let disableStyle = {}
 
   if (visible >= postovi.length) {
     disable = true

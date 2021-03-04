@@ -7,6 +7,7 @@ import LoginModal from '../LoginModal/LoginModal'
 const DinamicneKategorije = () => {
   const [postovi, setPostovi] = useState([])
   const [showLogin, setShowLogin] = useState(false)
+  const [visible, setVisible] = useState(10)
 
   const showLoginHandler = () => {
     setShowLogin(true)
@@ -113,7 +114,17 @@ const DinamicneKategorije = () => {
     }
   }, [])
 
-  const listaPostova = postovi.map((post) => {
+  const handleLoadMore = () => {
+    setVisible(visible + 10)
+  }
+
+  let disable = false
+
+  if (visible >= postovi.length) {
+    disable = true
+  }
+
+  const listaPostova = postovi.slice(0, visible).map((post) => {
     return (
       <PitanjaPojedinacna
         title={post.naslov}
@@ -141,6 +152,15 @@ const DinamicneKategorije = () => {
             </div>
           </div>
           {listaPostova}
+          <div className={classes.ButtonRight}>
+            <button
+              disabled={disable}
+              className={disable ? classes.Disabled : classes.LoadMore}
+              onClick={handleLoadMore}
+            >
+              Load more
+            </button>
+          </div>
         </div>
       </div>
       <LoginModal show={showLogin} modalClosed={closeLoginHandler} />

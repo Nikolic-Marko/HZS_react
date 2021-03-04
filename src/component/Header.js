@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom'
 import classes from '../css/Header.module.css'
 import Logo from '../assets/HZSlogo1.jpeg'
 import { connect } from 'react-redux'
-import { Nav } from 'react-bootstrap'
 
 const Header = (props) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false)

@@ -8,6 +8,7 @@ import { Redirect } from 'react-router-dom'
 const MojiPostovi = (props) => {
   const [postovi, setPostovi] = useState([])
   const [showLogin, setShowLogin] = useState(false)
+  const [visible, setVisible] = useState(10)
 
   const showLoginHandler = () => {
     setShowLogin(true)
@@ -40,6 +41,16 @@ const MojiPostovi = (props) => {
     return json_data
   }
 
+  const handleLoadMore = () => {
+    setVisible(visible + 10)
+  }
+
+  let disable = false
+
+  if (visible >= postovi.length) {
+    disable = true
+  }
+
   useEffect(() => {
     if (localStorage.getItem('username') !== null) {
       getPosts()
@@ -58,7 +69,7 @@ const MojiPostovi = (props) => {
     }
   }, [])
 
-  const listaPostova = postovi.map((post) => {
+  const listaPostova = postovi.slice(0, visible).map((post) => {
     return (
       <PitanjaPojedinacna
         title={post.naslov}
@@ -88,6 +99,15 @@ const MojiPostovi = (props) => {
                 </div>
               </div>
               {listaPostova}
+              <div className={classes.ButtonRight}>
+                <button
+                  disabled={disable}
+                  className={disable ? classes.Disabled : classes.LoadMore}
+                  onClick={handleLoadMore}
+                >
+                  Load more
+                </button>
+              </div>
             </div>
           </div>
           <LoginModal show={showLogin} modalClosed={closeLoginHandler} />
