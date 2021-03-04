@@ -49,9 +49,7 @@ const PitanjaPojedinacna = (props) => {
     <div className={classes.PitanjaPojedinacna}>
       <Link to={`radionice/${props.id}`}>{props.title}</Link>
       <div className={classes.RightSide}>
-        <div className={classes.Datum}>
-          {moment.utc(`${activity}`).local().startOf('seconds').fromNow()}
-        </div>
+        <div className={classes.Datum}>{moment(`${activity}`).fromNow()}</div>
         <div className={classes.Replies}>{props.komentari.length}</div>
       </div>
     </div>

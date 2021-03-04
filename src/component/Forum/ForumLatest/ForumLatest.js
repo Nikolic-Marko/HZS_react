@@ -53,11 +53,7 @@ const ForumLatest = () => {
         category={post.kategorija}
         replies={post.komentari.length}
         id={post.id}
-        datum={moment
-          .utc(`${post.datum_kreiranja}`)
-          .local()
-          .startOf('seconds')
-          .fromNow()}
+        datum={moment(`${post.datum_kreiranja}`).fromNow()}
       />
     )
   })
