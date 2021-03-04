@@ -14,14 +14,14 @@ const ForumKategorije = () => {
       />
 
       <Kartica
-        link="Domaći zadatak"
+        link="DomaciZadatak"
         paragraph="Svoje znanje sa radionica primenićeš na realnom primeru, ali ćeš i pokazati zašto baš tvoj tim zaslužuje da uđe u najuži krug i time bude korak bliže pobedi. Dileme u vezi sa domaćim zadacima ćemo rešiti u ovoj sekciji."
         heading="Domaći zadatak"
         color="#F7941D"
       />
 
       <Kartica
-        link="Prezentovanje rešenja"
+        link="PrezentovanjeResenja"
         paragraph="Odeljak Prezentovanje rešenja predstavlja kutak u kome možete prodiskutovati o svemu što vas interesuje, a vezano je za vaš nastup pred žirijem. Rešenja ne smete otkrivati unapred, ali stojimo vam na raspolaganju za sve tehničke nedoumice koje imate."
         heading="Prezentovanje rešenja  "
         color="#12A89D"
@@ -33,7 +33,7 @@ const ForumKategorije = () => {
         heading="Pravila"
         color="#FFFF00"
       />
-       <Kartica
+      <Kartica
         link="Ostalo"
         paragraph="Imaš još neku nedoumicu koja se tiče HZS-a koju bi želeo da rastumačiš? Mi smo tu da ti damo odgovor!"
         heading="Ostalo"

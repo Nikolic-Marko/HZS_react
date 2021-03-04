@@ -1,9 +1,21 @@
 import React, { useEffect, useState } from 'react'
 import classes from './Radionice.module.css'
 import PitanjaPojedinacna from './PitanjaPojedinacna/PitanjaPojedinacna'
+import Header from '../../../Header'
+import LoginModal from '../../LoginModal/LoginModal'
 
 const Radionice = () => {
   const [postovi, setPostovi] = useState([])
+  const [showLogin, setShowLogin] = useState(false)
+
+  const showLoginHandler = () => {
+    setShowLogin(true)
+  }
+
+  const closeLoginHandler = () => {
+    setShowLogin(false)
+  }
+
   const getPosts = async (kategorija, id) => {
     let url
 
@@ -63,20 +75,24 @@ const Radionice = () => {
   //   })
 
   return (
-    <div className={classes.Radionice}>
-      <div className={classes.PitanjaContainer}>
-        <div className={classes.PitanjaHeader}>
-          <div className={classes.Left}>
-            <p>Topic</p>
+    <React.Fragment>
+      <Header modalShow={showLoginHandler} />
+      <div className={classes.Radionice}>
+        <div className={classes.PitanjaContainer}>
+          <div className={classes.PitanjaHeader}>
+            <div className={classes.Left}>
+              <p>Topic</p>
+            </div>
+            <div className={classes.Right}>
+              <p>Activity</p>
+              <p>Replies</p>
+            </div>
           </div>
-          <div className={classes.Right}>
-            <p>Activity</p>
-            <p>Replies</p>
-          </div>
+          {listaPostova}
         </div>
-        {listaPostova}
       </div>
-    </div>
+      <LoginModal show={showLogin} modalClosed={closeLoginHandler} />
+    </React.Fragment>
   )
 }
 

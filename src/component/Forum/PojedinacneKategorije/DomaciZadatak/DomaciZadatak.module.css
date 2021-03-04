@@ -1,0 +1,26 @@
+.Radionice {
+  background-color: white;
+  height: 100vh;
+}
+.PitanjaContainer {
+  box-shadow: 0 2px 3px #ccc;
+  background-color: white;
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem 0.5rem;
+  transform: translateY(4rem);
+}
+
+.PitanjaHeader {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #e9e9e9;
+}
+
+.Right {
+  display: flex;
+}
+
+.Right p {
+  padding: 0 1rem;
+}

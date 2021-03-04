@@ -4,10 +4,21 @@ import ReplyModal from './ReplyModal/ReplyModal'
 import PitanjeDiv from './PitanjeDiv/PitanjeDiv'
 import Dugme from '../../Dugme/Dugme'
 import classes from './PitanjaStranica.module.css'
+import LoginModal from '../../LoginModal/LoginModal'
 
 const PitanjaStranica = () => {
   const [showModal, setShowModal] = useState(false)
   const [post, setPost] = useState([])
+  const [id, setId] = useState('')
+  const [showLogin, setShowLogin] = useState(false)
+
+  const showLoginHandler = () => {
+    setShowLogin(true)
+  }
+
+  const closeLoginHandler = () => {
+    setShowLogin(false)
+  }
 
   const reply = () => {
     setShowModal(true)
@@ -22,7 +33,7 @@ const PitanjaStranica = () => {
     console.log(url)
     const lastItem = url.substring(url.lastIndexOf('/') + 1)
     console.log(lastItem)
-
+    setId(lastItem)
     getPosts(null, lastItem)
       .then((data) => {
         console.log(data)
@@ -47,6 +58,7 @@ const PitanjaStranica = () => {
     listaKomentara = post[0].komentari.map((komentar) => {
       return (
         <PitanjeDiv
+          key={komentar.id}
           name={komentar.autor}
           day={komentar.datum_kreiranja}
           text={komentar.text}
@@ -55,30 +67,6 @@ const PitanjaStranica = () => {
       )
     })
   }
-
-  const insertKomentar = async (autor, post_id, text) => {
-    const form = new FormData()
-    form.append('post_id', post_id)
-    form.append('text', text)
-    form.append('autor', autor)
-
-    const url = 'https://hzs.fonis.rs/2021/api/insert_komentar.php'
-    const request = new Request(url, {
-      method: 'POST',
-      body: form,
-    })
-
-    const response = await fetch(request)
-    const json_data = await response.json()
-
-    return json_data
-  }
-
-  // insertKomentar("marko", 8, "prvi komentar na novom postu").then(data => {
-  //     console.log(data);
-  // }).catch(err => {
-  //     console.log("Greska: " + err);
-  // })
 
   const getPosts = async (kategorija, id) => {
     let url
@@ -105,7 +93,7 @@ const PitanjaStranica = () => {
 
   return (
     <React.Fragment>
-      <Header />
+      <Header modalShow={showLoginHandler} />
       <div className={classes.Container}>
         <div className={classes.TitleDiv}>
           <h2 className={classes.Title}></h2>
@@ -137,7 +125,8 @@ const PitanjaStranica = () => {
         {listaKomentara}
       </div>
       <Dugme ikonica="fas fa-reply" click={reply} />
-      <ReplyModal show={showModal} modalClosed={closeModal} />
+      <ReplyModal show={showModal} modalClosed={closeModal} id={id} />
+      <LoginModal show={showLogin} modalClosed={closeLoginHandler} />
     </React.Fragment>
   )
 }

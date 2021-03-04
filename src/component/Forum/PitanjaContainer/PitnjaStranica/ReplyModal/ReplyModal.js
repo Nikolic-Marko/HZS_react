@@ -1,12 +1,49 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import classes from './ReplyModal.module.css'
-const modal = (props) => {
+const Modal = (props) => {
+  const [text, setText] = useState('')
   const submitComment = (e) => {
     e.preventDefault()
-    console.log('KITA')
-    props.modalClosed()
+
+    insertKomentar(localStorage.getItem('username'), props.id, text)
+      .then((data) => {
+        console.log(data)
+        const status = data.status
+        if (status === 'uspesno') {
+          props.modalClosed()
+          window.location.reload(false)
+        }
+      })
+      .catch((err) => {
+        console.log('Greska: ' + err)
+      })
   }
+
+  const insertKomentar = async (autor, post_id, text) => {
+    const form = new FormData()
+    form.append('post_id', post_id)
+    form.append('text', text)
+    form.append('autor', autor)
+
+    const url = 'https://hzs.fonis.rs/2021/api/insert_komentar.php'
+    const request = new Request(url, {
+      method: 'POST',
+      body: form,
+    })
+
+    const response = await fetch(request)
+    const json_data = await response.json()
+
+    return json_data
+  }
+
+  // insertKomentar("marko", 8, "prvi komentar na novom postu").then(data => {
+  //     console.log(data);
+  // }).catch(err => {
+  //     console.log("Greska: " + err);
+  // })
+
   return (
     <React.Fragment>
       <div
@@ -27,6 +64,8 @@ const modal = (props) => {
                 placeholder="Ovde upisite vas odgovor"
                 className={classes.TekstArea}
                 required
+                value={text}
+                onChange={(e) => setText(e.target.value)}
                 style={{
                   resize: 'none',
                 }}
@@ -54,4 +93,4 @@ const modal = (props) => {
   )
 }
 
-export default React.memo(modal)
+export default React.memo(Modal)
