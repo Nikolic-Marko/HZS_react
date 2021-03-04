@@ -5,8 +5,11 @@ const Modal = (props) => {
   const [text, setText] = useState('')
   const submitComment = (e) => {
     e.preventDefault()
-
-    insertKomentar(localStorage.getItem('username'), props.id, text)
+    let usrName =
+      localStorage.getItem('username') === null
+        ? 'Guest'
+        : localStorage.getItem('username')
+    insertKomentar(usrName, props.id, text)
       .then((data) => {
         console.log(data)
         const status = data.status

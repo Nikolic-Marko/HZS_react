@@ -1,5 +1,5 @@
 import classes from './PitanjeDiv.module.css'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const PitanjeDiv = (props) => {
   return (
