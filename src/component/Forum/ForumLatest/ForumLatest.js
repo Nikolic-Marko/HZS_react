@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import classes from './ForumLatest.module.css'
 import Pitanja from './Pitanja/Pitanja.js'
 import moment from 'moment'
+import Spinner from '../Spinner/Spinner'
 
 const ForumLatest = () => {
   const [postovi, setPostovi] = useState([])
@@ -65,25 +66,31 @@ const ForumLatest = () => {
 
   return (
     <div className={classes.Container}>
-      <p className={classes.Title}>Poslednje aktivnosti</p>
-      <div className={classes.ForumPitanja}>
-        {/* <Pitanja logo username="mare" naslov="aii" kategorija="oii" />
-        <Pitanja logo username="mare" naslov="aii" kategorija="oii" />
-        <Pitanja logo username="mare" naslov="aii" kategorija="oii" />
-        <Pitanja logo username="mare" naslov="aii" kategorija="oii" />
-        <Pitanja logo username="mare" naslov="aii" kategorija="oii" />
-        <Pitanja logo username="mare" naslov="aii" kategorija="oii" /> */}
-        {listaPostova}
-        <div className={classes.ButtonRight}>
-          <button
-            disabled={disable}
-            className={disable ? classes.Disabled : classes.LoadMore}
-            onClick={handleLoadMore}
-          >
-            Load more
-          </button>
-        </div>
-      </div>
+      {postovi.length > 0 ? (
+        <React.Fragment>
+          <p className={classes.Title}>Poslednje aktivnosti</p>
+          <div className={classes.ForumPitanja}>
+            {/* <Pitanja logo username="mare" naslov="aii" kategorija="oii" />
+      <Pitanja logo username="mare" naslov="aii" kategorija="oii" />
+      <Pitanja logo username="mare" naslov="aii" kategorija="oii" />
+      <Pitanja logo username="mare" naslov="aii" kategorija="oii" />
+      <Pitanja logo username="mare" naslov="aii" kategorija="oii" />
+    <Pitanja logo username="mare" naslov="aii" kategorija="oii" /> */}
+            {listaPostova}
+            <div className={classes.ButtonRight}>
+              <button
+                disabled={disable}
+                className={disable ? classes.Disabled : classes.LoadMore}
+                onClick={handleLoadMore}
+              >
+                Load more
+              </button>
+            </div>
+          </div>
+        </React.Fragment>
+      ) : (
+        <Spinner />
+      )}
     </div>
   )
 }

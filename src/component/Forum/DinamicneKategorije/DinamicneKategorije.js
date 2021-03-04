@@ -3,6 +3,7 @@ import classes from './DinamicneKategorije.module.css'
 import PitanjaPojedinacna from './PitanjaPojedinacna/PitanjaPojedinacna'
 import Header from '../../Header'
 import LoginModal from '../LoginModal/LoginModal'
+import Spinner from '../Spinner/Spinner'
 
 const DinamicneKategorije = () => {
   const [postovi, setPostovi] = useState([])
@@ -128,6 +129,7 @@ const DinamicneKategorije = () => {
     return (
       <PitanjaPojedinacna
         title={post.naslov}
+        kategorija={post.kategorija.replace(/\s+/g, '').toLowerCase()}
         text={post.text}
         komentari={post.komentari}
         id={post.id}
@@ -141,27 +143,31 @@ const DinamicneKategorije = () => {
     <React.Fragment>
       <Header modalShow={showLoginHandler} />
       <div className={classes.Radionice}>
-        <div className={classes.PitanjaContainer}>
-          <div className={classes.PitanjaHeader}>
-            <div className={classes.Left}>
-              <p>Topic</p>
+        {postovi.length > 0 ? (
+          <div className={classes.PitanjaContainer}>
+            <div className={classes.PitanjaHeader}>
+              <div className={classes.Left}>
+                <p>Topic</p>
+              </div>
+              <div className={classes.Right}>
+                <p>Activity</p>
+                <p>Replies</p>
+              </div>
             </div>
-            <div className={classes.Right}>
-              <p>Activity</p>
-              <p>Replies</p>
+            {listaPostova}
+            <div className={classes.ButtonRight}>
+              <button
+                disabled={disable}
+                className={disable ? classes.Disabled : classes.LoadMore}
+                onClick={handleLoadMore}
+              >
+                Load more
+              </button>
             </div>
           </div>
-          {listaPostova}
-          <div className={classes.ButtonRight}>
-            <button
-              disabled={disable}
-              className={disable ? classes.Disabled : classes.LoadMore}
-              onClick={handleLoadMore}
-            >
-              Load more
-            </button>
-          </div>
-        </div>
+        ) : (
+          <Spinner />
+        )}
       </div>
       <LoginModal show={showLogin} modalClosed={closeLoginHandler} />
     </React.Fragment>

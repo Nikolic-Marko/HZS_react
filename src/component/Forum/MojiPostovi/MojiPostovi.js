@@ -4,6 +4,7 @@ import Header from '../../Header'
 import LoginModal from '../LoginModal/LoginModal'
 import PitanjaPojedinacna from './PitanjaPojedinacna/PitanjaPojedinacna'
 import { Redirect } from 'react-router-dom'
+import Spinner from '../Spinner/Spinner'
 
 const MojiPostovi = (props) => {
   const [postovi, setPostovi] = useState([])
@@ -88,27 +89,31 @@ const MojiPostovi = (props) => {
         <div>
           <Header modalShow={showLoginHandler} />
           <div className={classes.Radionice}>
-            <div className={classes.PitanjaContainer}>
-              <div className={classes.PitanjaHeader}>
-                <div className={classes.Left}>
-                  <p>Topic</p>
+            {postovi.length > 0 ? (
+              <div className={classes.PitanjaContainer}>
+                <div className={classes.PitanjaHeader}>
+                  <div className={classes.Left}>
+                    <p>Topic</p>
+                  </div>
+                  <div className={classes.Right}>
+                    <p>Activity</p>
+                    <p>Replies</p>
+                  </div>
                 </div>
-                <div className={classes.Right}>
-                  <p>Activity</p>
-                  <p>Replies</p>
+                {listaPostova}
+                <div className={classes.ButtonRight}>
+                  <button
+                    disabled={disable}
+                    className={disable ? classes.Disabled : classes.LoadMore}
+                    onClick={handleLoadMore}
+                  >
+                    Load more
+                  </button>
                 </div>
               </div>
-              {listaPostova}
-              <div className={classes.ButtonRight}>
-                <button
-                  disabled={disable}
-                  className={disable ? classes.Disabled : classes.LoadMore}
-                  onClick={handleLoadMore}
-                >
-                  Load more
-                </button>
-              </div>
-            </div>
+            ) : (
+              <Spinner />
+            )}
           </div>
           <LoginModal show={showLogin} modalClosed={closeLoginHandler} />
         </div>

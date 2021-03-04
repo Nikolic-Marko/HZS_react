@@ -5,6 +5,7 @@ import PitanjeDiv from './PitanjeDiv/PitanjeDiv'
 import Dugme from '../../Dugme/Dugme'
 import classes from './PitanjaStranica.module.css'
 import LoginModal from '../../LoginModal/LoginModal'
+import Spinner from '../../Spinner/Spinner'
 
 const PitanjaStranica = () => {
   const [showModal, setShowModal] = useState(false)
@@ -131,7 +132,7 @@ const PitanjaStranica = () => {
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
           click={reply} 
         /> */}
-        {listaKomentara}
+        {post.length > 0 ? listaKomentara : <Spinner />}
       </div>
       <Dugme ikonica="fas fa-reply" click={reply} />
       <ReplyModal show={showModal} modalClosed={closeModal} id={id} />

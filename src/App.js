@@ -36,7 +36,17 @@ function App() {
           component={PitanjaStranica}
         />
         <Route
+          path="/forum/domaćizadatak/:id"
+          exact
+          component={PitanjaStranica}
+        />
+        <Route
           path="/forum/PrezentovanjeResenja/:id"
+          exact
+          component={PitanjaStranica}
+        />
+        <Route
+          path="/forum/prezentovanjerešenja/:id"
           exact
           component={PitanjaStranica}
         />
