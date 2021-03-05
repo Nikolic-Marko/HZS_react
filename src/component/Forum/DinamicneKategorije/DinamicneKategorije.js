@@ -4,6 +4,7 @@ import PitanjaPojedinacna from './PitanjaPojedinacna/PitanjaPojedinacna'
 import Header from '../../Header'
 import LoginModal from '../LoginModal/LoginModal'
 import Spinner from '../Spinner/Spinner'
+import Footer from './../../Footer'
 
 const DinamicneKategorije = () => {
   const [postovi, setPostovi] = useState([])
@@ -170,6 +171,7 @@ const DinamicneKategorije = () => {
         )}
       </div>
       <LoginModal show={showLogin} modalClosed={closeLoginHandler} />
+      <Footer />
     </React.Fragment>
   )
 }

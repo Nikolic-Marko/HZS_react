@@ -53,15 +53,15 @@
   font-size: 0.9rem;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 740px) {
   .Link {
-    padding: 0.4rem 1rem;
+    padding: 0.4rem 0.2rem;
     margin-left: 0rem;
     margin-right: 0.4rem;
     font-size: 0.8rem;
     margin-top: auto;
     margin-bottom: auto;
-    width: 5.8rem;
+    width: 6.8rem;
   }
   .Text {
     margin-left: 0;

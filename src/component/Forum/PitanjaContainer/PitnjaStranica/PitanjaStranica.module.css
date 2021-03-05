@@ -1,13 +1,23 @@
 .Container {
-  width: 50%;
   margin: auto;
+  background: #FAFAFA;
+  width: 100%;
+  padding-bottom: 10vh;
+  min-height: 80vh;
 }
 
 .TitleDiv {
-  width: 70%;
+  width: 100%;
+  padding-top: 2rem;
 }
 
 .Title {
   font-size: 1.8rem;
   margin: 1.5rem 0;
+  color: black;
+  font-family: Gilroy-ExtraBold, sans-serif;
+}
+
+@media only screen and (max-width: 500px) { 
+
 }

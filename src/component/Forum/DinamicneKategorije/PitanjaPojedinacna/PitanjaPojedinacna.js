@@ -47,7 +47,7 @@ const PitanjaPojedinacna = (props) => {
 
   return (
     <div className={classes.PitanjaPojedinacna}>
-      <Link to={`${props.kategorija}/${props.id}`}>{props.title}</Link>
+      <Link to={`${props.kategorija}/${props.id}`} className={classes.Title}>{props.title}</Link>
       <div className={classes.RightSide}>
         <div className={classes.Datum}>{moment(`${activity}`).fromNow()}</div>
         <div className={classes.Replies}>{props.komentari.length}</div>

@@ -1,7 +1,7 @@
 .Forum {
   display: flex;
   flex-direction: column;
-  width: 75%;
+  width: 90%;
   margin: auto;
   background-color: #fafafa;
 }
@@ -14,17 +14,16 @@
   background-color: #fafafa;
 }
 
-.Forum {
-  display: flex;
-  flex-direction: column;
-  width: 75%;
-  margin: auto;
+@media only screen and (max-width: 740px) { 
+  .Forum {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .ForumCentar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 
-.ForumCentar {
-  display: flex;
-}
-
-.Background {
-  background-color: #fafafa;
-}

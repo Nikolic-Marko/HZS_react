@@ -83,6 +83,7 @@ const ForumKategorije = () => {
     <React.Fragment>
       {
         <div className={classes.ForumKategorije}>
+          <p className={classes.Title}>Kategorije</p>
           <Kartica
             link="Radionice"
             paragraph="Želiš da unaprediš svoje IT znanje i time omogućiš sebi bolji plasman na hakatonu? Za tebe smo spremili radionice koje će ti u tome pomoći! Sve što te zanima o radionicama nas možeš ovde pitati."
@@ -103,7 +104,7 @@ const ForumKategorije = () => {
             link="PrezentovanjeResenja"
             paragraph="Odeljak Prezentovanje rešenja predstavlja kutak u kome možete prodiskutovati o svemu što vas interesuje, a vezano je za vaš nastup pred žirijem. Rešenja ne smete otkrivati unapred, ali stojimo vam na raspolaganju za sve tehničke nedoumice koje imate."
             heading="Prezentovanje rešenja  "
-            color="#12A89D"
+            color="#3AB54A"
             broj={numberPrez}
           />
 
@@ -118,7 +119,7 @@ const ForumKategorije = () => {
             link="Ostalo"
             paragraph="Imaš još neku nedoumicu koja se tiče HZS-a koju bi želeo da rastumačiš? Mi smo tu da ti damo odgovor!"
             heading="Ostalo"
-            color="#FFFF00"
+            color="#AB9364"
             broj={numberOst}
           />
         </div>

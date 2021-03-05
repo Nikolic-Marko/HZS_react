@@ -8,7 +8,7 @@
   align-items: center;
   top: 85%;
   left: 92%;
-  box-shadow: 0 4px 8px #ccc;
+  /* box-shadow: 0 4px 8px #ccc; */
   border: none;
   box-shadow: none;
 }
@@ -28,7 +28,7 @@
   align-items: center;
   top: 87%;
   left: 92%;
-  box-shadow: 0 4px 8px #ccc;
+  box-shadow: none;
   border: none;
   transition: 0s;
   transform-origin: left;

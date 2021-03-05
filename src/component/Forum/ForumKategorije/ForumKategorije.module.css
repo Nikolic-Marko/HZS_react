@@ -16,3 +16,17 @@
   margin: 0;
   padding: 0;
 }
+.Title {
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  color: #929292;
+  font-size: 14px;
+}
+
+/* Mobilna verzija */
+@media only screen and (max-width: 740px) { 
+  .ForumKategorije {
+    width: 90%;
+    padding: 1rem 0 0 0;
+  }
+}

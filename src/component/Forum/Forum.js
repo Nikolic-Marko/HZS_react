@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import Header from '../Header'
-import ForumNavigacija from './ForumNavigacija/ForumNavigacija'
 import classes from './Forum.module.css'
 import ForumKategorije from './ForumKategorije/ForumKategorije'
 import ForumLatest from './ForumLatest/ForumLatest'
 import Modal from './Modal/Modal'
 import Dugme from './Dugme/Dugme'
 import LoginModal from './LoginModal/LoginModal'
+import Footer from './../Footer'
 
 const Forum = () => {
   const [showModal, setShowModal] = useState(false)
@@ -33,7 +33,6 @@ const Forum = () => {
       <Header modalShow={showLoginHandler} />
       <div className={classes.Background}>
         <div className={classes.Forum}>
-          <ForumNavigacija />
           <div className={classes.ForumCentar}>
             <ForumKategorije />
             <ForumLatest />
@@ -43,6 +42,7 @@ const Forum = () => {
       <Dugme click={showNewTopic} ikonica="fas fa-plus" />
       <Modal show={showModal} modalClosed={closeModal} />
       <LoginModal show={showLogin} modalClosed={closeLoginHandler} />
+      <Footer />
     </React.Fragment>
   )
 }

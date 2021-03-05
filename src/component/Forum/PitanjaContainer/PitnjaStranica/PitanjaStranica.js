@@ -6,6 +6,7 @@ import Dugme from '../../Dugme/Dugme'
 import classes from './PitanjaStranica.module.css'
 import LoginModal from '../../LoginModal/LoginModal'
 import Spinner from '../../Spinner/Spinner'
+import Footer from './../../../Footer'
 
 const PitanjaStranica = () => {
   const [showModal, setShowModal] = useState(false)
@@ -137,6 +138,7 @@ const PitanjaStranica = () => {
       <Dugme ikonica="fas fa-reply" click={reply} />
       <ReplyModal show={showModal} modalClosed={closeModal} id={id} />
       <LoginModal show={showLogin} modalClosed={closeLoginHandler} />
+      <Footer />
     </React.Fragment>
   )
 }
