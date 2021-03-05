@@ -4,23 +4,25 @@ import classes from './ReplyModal.module.css'
 const Modal = (props) => {
   const [text, setText] = useState('')
   const submitComment = (e) => {
-    e.preventDefault()
-    let usrName =
-      localStorage.getItem('username') === null
-        ? 'Guest'
-        : localStorage.getItem('username')
-    insertKomentar(usrName, props.id, text)
-      .then((data) => {
-        console.log(data)
-        const status = data.status
-        if (status === 'uspesno') {
-          props.modalClosed()
-          window.location.reload(false)
-        }
-      })
-      .catch((err) => {
-        console.log('Greska: ' + err)
-      })
+    if (text !== '') {
+      e.preventDefault()
+      let usrName =
+        localStorage.getItem('username') === null
+          ? 'Guest'
+          : localStorage.getItem('username')
+      insertKomentar(usrName, props.id, text)
+        .then((data) => {
+          console.log(data)
+          const status = data.status
+          if (status === 'uspesno') {
+            props.modalClosed()
+            window.location.reload(false)
+          }
+        })
+        .catch((err) => {
+          console.log('Greska: ' + err)
+        })
+    }
   }
 
   const insertKomentar = async (autor, post_id, text) => {
