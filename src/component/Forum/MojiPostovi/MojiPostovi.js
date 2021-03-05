@@ -56,13 +56,11 @@ const MojiPostovi = (props) => {
     if (localStorage.getItem('username') !== null) {
       getPosts()
         .then((data) => {
-          console.log(data)
           setPostovi(
             data.filter((post) =>
               post.autor.includes(localStorage.getItem('username')),
             ),
           )
-          console.log(props.isAuthenticated)
         })
         .catch((err) => {
           console.log('Greska prilikom izvrsavanja http zahteva: ' + err)

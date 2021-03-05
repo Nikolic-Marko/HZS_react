@@ -30,7 +30,6 @@ const Modal = (props) => {
     e.preventDefault()
     let localUsername = ''
     props.modalClosed()
-    console.log(localStorage.getItem('username'))
     if (
       localStorage.getItem('username') === null ||
       localStorage.getItem('username') === undefined ||
@@ -41,9 +40,7 @@ const Modal = (props) => {
       localUsername = localStorage.getItem('username')
     }
     insertPost(title, text, localUsername, category)
-      .then((data) => {
-        console.log(data)
-      })
+      .then((data) => {})
       .catch((err) => {
         console.log('Greska: ' + err)
       })

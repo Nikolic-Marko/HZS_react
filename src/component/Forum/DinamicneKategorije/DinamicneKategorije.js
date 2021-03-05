@@ -50,11 +50,7 @@ const DinamicneKategorije = () => {
       case 'Radionice':
         getPosts('Radionice', null)
           .then((data) => {
-            console.log(data)
-
             setPostovi(data)
-
-            console.log(postovi)
           })
           .catch((err) => {
             console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
@@ -63,11 +59,7 @@ const DinamicneKategorije = () => {
       case 'Pravila':
         getPosts('Pravila', null)
           .then((data) => {
-            console.log(data)
-
             setPostovi(data)
-
-            console.log(postovi)
           })
           .catch((err) => {
             console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
@@ -76,11 +68,7 @@ const DinamicneKategorije = () => {
       case 'Ostalo':
         getPosts('Ostalo', null)
           .then((data) => {
-            console.log(data)
-
             setPostovi(data)
-
-            console.log(postovi)
           })
           .catch((err) => {
             console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
@@ -89,11 +77,7 @@ const DinamicneKategorije = () => {
       case 'PrezentovanjeResenja':
         getPosts('Prezentovanje rešenja', null)
           .then((data) => {
-            console.log(data)
-
             setPostovi(data)
-
-            console.log(postovi)
           })
           .catch((err) => {
             console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
@@ -102,8 +86,6 @@ const DinamicneKategorije = () => {
       case 'DomaciZadatak':
         getPosts('Domaći zadatak', null)
           .then((data) => {
-            console.log(data)
-
             setPostovi(data)
           })
           .catch((err) => {

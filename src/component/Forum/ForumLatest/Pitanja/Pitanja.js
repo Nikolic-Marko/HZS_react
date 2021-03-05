@@ -1,10 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import classes from './Pitanja.module.css'
 const Pitanja = (props) => {
-  useEffect(() => {
-    console.log(props.category.replace(/\s+/g, ''))
-  }, [])
   const link = '/forum/' + props.link
   return (
     <div className={classes.Container}>

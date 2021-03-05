@@ -43,12 +43,6 @@ const Modal = (props) => {
     return json_data
   }
 
-  // insertKomentar("marko", 8, "prvi komentar na novom postu").then(data => {
-  //     console.log(data);
-  // }).catch(err => {
-  //     console.log("Greska: " + err);
-  // })
-
   return (
     <React.Fragment>
       <div

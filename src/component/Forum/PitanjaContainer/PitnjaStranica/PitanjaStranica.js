@@ -32,26 +32,15 @@ const PitanjaStranica = () => {
 
   useEffect(() => {
     const url = window.location.href
-    console.log(url)
     const lastItem = url.substring(url.lastIndexOf('/') + 1)
-    console.log(lastItem)
     setId(lastItem)
     getPosts(null, lastItem)
       .then((data) => {
-        console.log(data)
-
         setPost(data)
       })
       .catch((err) => {
         console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
       })
-    // insertKomentar('nikola', 28, 'cetvrti komentar na novom postu')
-    //   .then((data) => {
-    //     console.log(data)
-    //   })
-    //   .catch((err) => {
-    //     console.log('Greska: ' + err)
-    //   })
   }, [])
 
   let listaKomentara

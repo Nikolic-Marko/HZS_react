@@ -32,7 +32,6 @@ const ForumKategorije = () => {
   useEffect(() => {
     getPosts()
       .then((data) => {
-        console.log(data)
         result = Object.values(
           data.reduce((a, { kategorija }) => {
             let key = `${kategorija}`
@@ -42,21 +41,12 @@ const ForumKategorije = () => {
           }, {}),
         )
         setNumberOfPosts(result)
-
-        console.log(result)
       })
       .catch((err) => {
         console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
       })
   }, [])
 
-  // getPosts()
-  //   .then((data) => {
-  //     console.log(data)
-  //   })
-  //   .catch((err) => {
-  //     console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
-  //   })
   let numberRad
   let numberDom
   let numberPrez
@@ -78,7 +68,6 @@ const ForumKategorije = () => {
     }
   }
 
-  console.log(numberOfPosts[0])
   return (
     <React.Fragment>
       {

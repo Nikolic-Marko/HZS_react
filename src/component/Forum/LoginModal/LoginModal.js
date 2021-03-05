@@ -16,7 +16,6 @@ const LoginModal = (props) => {
   const [errorMessage, setErrorMessage] = useState('')
 
   // const registerForm = () => {
-  //   console.log('radi')
   //   setShouldLogin(!shouldLogin)
   //   buttonText === 'Register'
   //     ? setButtonText('Login')
@@ -76,7 +75,6 @@ const LoginModal = (props) => {
       loginUser(username, passInput.current.value)
         .then((data) => {
           setError(false)
-          console.log(data)
           status = data.status
           if (status === 'uspesno') {
             props.onLogin(username)
@@ -86,7 +84,6 @@ const LoginModal = (props) => {
             localStorage.setItem('pass', passInput)
           } else {
             setError(true)
-            console.log('greska odavde')
             setErrorMessage('Pogresno korisnicko ime ili lozinka.')
           }
         })
@@ -123,18 +120,14 @@ const LoginModal = (props) => {
       props.modalClosed()
 
       await registerUser(username, passRegister.current.value, datum, email)
-        .then((data) => {
-          console.log(data)
-        })
+        .then((data) => {})
         .catch((err) => {
-          // console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
           setError(true)
           setErrorMessage('Greska prilikom izvrsavanja http zahteva')
         })
       await loginUser(username, password)
         .then((data) => {
           setError(false)
-          console.log(data)
           status = data.status
           if (status === 'uspesno') {
             props.onLogin(username)
@@ -148,9 +141,6 @@ const LoginModal = (props) => {
           }
         })
         .catch((err) => {
-          // console.log(
-          //   'Greska prilikom izvrsavanja http zahteva kod logina: ' + err,
-          // )
           setError(true)
           setErrorMessage('Greska prilikom izvrsavanja http zahteva kod logina')
         })
@@ -178,15 +168,6 @@ const LoginModal = (props) => {
 
     return json_data
   }
-
-  // datum rodjenja mora biti u formatu YYYY-MM-DD
-  // registerUser('peraaaa', 'peraperic', '2001-05-28', 'peraperic@gmail.com')
-  //   .then((data) => {
-  //     console.log(data)
-  //   })
-  //   .catch((err) => {
-  //     console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
-  //   })
 
   return (
     <React.Fragment>

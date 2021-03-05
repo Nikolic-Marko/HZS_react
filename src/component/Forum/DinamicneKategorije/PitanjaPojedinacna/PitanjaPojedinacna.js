@@ -29,13 +29,11 @@ const PitanjaPojedinacna = (props) => {
   }
   let datum
   useEffect(() => {
-    console.log(props.id)
     getPosts(null, props.id)
       .then((data) => {
         if (data[0].komentari.slice(-1)[0] !== undefined) {
           datum = data[0].komentari.slice(-1)[0].datum
         }
-        console.log(datum)
         if (datum !== undefined) {
           setActivity(datum)
         }
@@ -47,7 +45,9 @@ const PitanjaPojedinacna = (props) => {
 
   return (
     <div className={classes.PitanjaPojedinacna}>
-      <Link to={`${props.kategorija}/${props.id}`} className={classes.Title}>{props.title}</Link>
+      <Link to={`${props.kategorija}/${props.id}`} className={classes.Title}>
+        {props.title}
+      </Link>
       <div className={classes.RightSide}>
         <div className={classes.Datum}>{moment(`${activity}`).fromNow()}</div>
         <div className={classes.Replies}>{props.komentari.length}</div>

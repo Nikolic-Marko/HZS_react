@@ -33,7 +33,6 @@ const ForumLatest = () => {
   useEffect(() => {
     getPosts()
       .then((data) => {
-        console.log(data)
         setPostovi(data)
       })
       .catch((err) => {
