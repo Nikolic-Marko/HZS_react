@@ -14,8 +14,6 @@
 }
 
 .Sticky {
-  left: 90%;
-  top: 90%;
   position: fixed;
   transform: translateZ(0);
   padding: 20px;
@@ -52,4 +50,19 @@
 .Sticky:hover::after {
   content: 'New Topic';
   color: white;
+}
+
+@media only screen and (max-width: 800px) { 
+  .Button {
+    height: 3rem;
+    width: 3rem;
+    top: 25%;
+    left: 85%;
+  }
+
+  .Sticky {
+    top: 90%;
+    left: 85%;
+  }
+  
 }

@@ -1,6 +1,7 @@
 .Header {
   background-color: #161616;
   z-index: 10000;
+  overflow: hidden;
 }
 
 .HeaderWidth {
