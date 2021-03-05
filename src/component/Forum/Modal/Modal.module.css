@@ -130,11 +130,22 @@
     height: 25rem;
   }
   .Input1 {
-    width: 60%;
+    width: 55%;
     font-size: 1rem;
   }
   .Input2 {
-    width: 39%;
+    width: 44%;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .Input1 {
+    width: 50%;
+    font-size: 1rem;
+  }
+  .Input2 {
+    width: 49%;
     font-size: 1rem;
   }
 }
@@ -148,11 +159,11 @@
     top: 20%;
   }
   .Input1 {
-    width: 60%;
+    width: 55%;
     font-size: 0.8rem;
   }
   .Input2 {
-    width: 39%;
+    width: 44%;
     font-size: 0.8rem;
   }
   .TekstArea {
@@ -173,19 +184,19 @@
     top: 20%;
   }
   .Input1 {
-    width: 60%;
+    width: 45%;
     font-size: 0.8rem;
   }
   .Input2 {
-    width: 39%;
-    font-size: 0.8rem;
+    width: 54%;
+    font-size: 0.7rem;
   }
   .TekstArea {
     font-size: 1rem;
     height: 100%;
   }
   .Input2 option{
-    font-size: 0.5rem;
+    font-size: 0.4rem;
     overflow: hidden;
     word-break: break-all;
   }

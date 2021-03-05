@@ -5,6 +5,7 @@ import LoginModal from '../LoginModal/LoginModal'
 import PitanjaPojedinacna from './PitanjaPojedinacna/PitanjaPojedinacna'
 import { Redirect } from 'react-router-dom'
 import Spinner from '../Spinner/Spinner'
+import Footer from './../../Footer'
 
 const MojiPostovi = (props) => {
   const [postovi, setPostovi] = useState([])
@@ -27,8 +28,8 @@ const MojiPostovi = (props) => {
     } else {
       kategorija
         ? (url =
-            'https://hzs.fonis.rs/2021/api/read_posts.php?kategorija=' +
-            kategorija)
+          'https://hzs.fonis.rs/2021/api/read_posts.php?kategorija=' +
+          kategorija)
         : (url = 'https://hzs.fonis.rs/2021/api/read_posts.php')
     }
 
@@ -120,6 +121,7 @@ const MojiPostovi = (props) => {
       ) : (
         <Redirect to="/forum" />
       )}
+      <Footer />
     </React.Fragment>
   )
 }
