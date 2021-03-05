@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import classes from './Pitanja.module.css'
 const Pitanja = (props) => {
-  const link = '/forum/' + props.link
   return (
     <div className={classes.Container}>
       <div className={classes.Left}>

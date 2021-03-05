@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import classes from './ForumKategorije.module.css'
-import { NavLink } from 'react-router-dom'
 import Kartica from './Kartica/Kartica'
 
 const ForumKategorije = () => {
