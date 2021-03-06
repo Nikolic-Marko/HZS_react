@@ -84,6 +84,7 @@ const LoginModal = (props) => {
             localStorage.setItem('pass', passInput)
           } else {
             setError(true)
+
             setErrorMessage('Pogresno korisnicko ime ili lozinka.')
           }
         })
