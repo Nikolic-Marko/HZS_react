@@ -5,10 +5,11 @@
   z-index: 500;
   background-color: white;
   width: 45%;
-  height: 30%;
+  height: 25%;
   box-shadow: 0 4px 8px #ccc;
   padding: 16px;
   left: 25%;
+  top: 60%;
 
   bottom: 0px;
   box-sizing: border-box;
@@ -89,7 +90,65 @@
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .Modal {
-    height: 37%;
-    width: 46%;
+    height: 7rem;
+    width: 40rem;
   }
 }
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .Modal {
+    height: 20rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .Modal {
+    width: 70%;
+    height: 20rem;
+    left: 15%;
+    top: 60%;
+  }
+  .Input1 {
+    width: 60%;
+    font-size: 0.8rem;
+  }
+  .Input2 {
+    width: 39%;
+    font-size: 0.8rem;
+  }
+  .TekstArea {
+    font-size: 1rem;
+    height: 100%;
+  }
+  .Input2 option{
+    font-size: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Modal {
+    width: 90%;
+    height: 20rem;
+    padding: 16px;
+    left: 5%;
+    top: 50%;
+  }
+  .Input1 {
+    width: 60%;
+    font-size: 0.8rem;
+  }
+  .Input2 {
+    width: 39%;
+    font-size: 0.8rem;
+  }
+  .TekstArea {
+    font-size: 1rem;
+    height: 100%;
+  }
+  .Input2 option{
+    font-size: 0.5rem;
+    overflow: hidden;
+    word-break: break-all;
+  }
+}
+

@@ -5,7 +5,7 @@
   z-index: 500;
   background-color: white;
   width: 50%;
-  height: 50%;
+  height: 25rem;
   box-shadow: 0 4px 8px #ccc;
   padding: 16px;
   left: 25%;
@@ -22,6 +22,10 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
+}
+
+.Content form{
+  height: 60%;
 }
 
 .Icon {
@@ -123,10 +127,77 @@
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .Modal {
-    height: 60%;
+    height: 25rem;
+  }
+  .Input1 {
+    width: 55%;
+    font-size: 1rem;
+  }
+  .Input2 {
+    width: 44%;
+    font-size: 1rem;
   }
 }
 
-@media only screen and (max-width: 1200px) {
- 
+@media only screen and (max-width: 1100px) {
+  .Input1 {
+    width: 50%;
+    font-size: 1rem;
+  }
+  .Input2 {
+    width: 49%;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .Modal {
+    width: 90%;
+    height: 60%;
+    padding: 16px;
+    left: 5%;
+    top: 20%;
+  }
+  .Input1 {
+    width: 55%;
+    font-size: 0.8rem;
+  }
+  .Input2 {
+    width: 44%;
+    font-size: 0.8rem;
+  }
+  .TekstArea {
+    font-size: 1rem;
+    height: 100%;
+  }
+  .Input2 option{
+    font-size: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Modal {
+    width: 90%;
+    height: 55%;
+    padding: 16px;
+    left: 5%;
+    top: 20%;
+  }
+  .Input1 {
+    width: 45%;
+    font-size: 0.8rem;
+  }
+  .Input2 {
+    width: 54%;
+    font-size: 0.7rem;
+  }
+  .TekstArea {
+    font-size: 1rem;
+    height: 100%;
+  }
+  .Input2 option{
+    font-size: 0.4rem;
+    overflow: hidden;
+    word-break: break-all;
+  }
 }

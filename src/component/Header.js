@@ -19,7 +19,7 @@ const Header = (props) => {
         </NavLink>
         <div className={classes.Links}>
           <div className={classes.Text}>2-3 APRILA</div>
-
+          <div className={classes.NB}>
           <NavLink to="/forum" className={classes.Link}>
             <span>Forum</span>
           </NavLink>
@@ -34,10 +34,11 @@ const Header = (props) => {
                 Moji Postovi
               </NavLink>
               <button onClick={signOut} className={classes.Link}>
-                Sign Out
+                <p>Sign Out</p>
               </button>
             </div>
           )}
+        </div>
         </div>
       </div>
     </div>

@@ -56,7 +56,7 @@
 
 @media only screen and (max-width: 500px) { 
   .Container {
-    width: 80%;
+    width: 90%;
   }
   .Text {
     font-size: 12px;

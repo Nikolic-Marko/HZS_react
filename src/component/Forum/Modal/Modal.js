@@ -62,7 +62,6 @@ const Modal = (props) => {
           <form
             action="/submit"
             method="get"
-            style={{ height: '60%' }}
             onSubmit={handleSubmit}
           >
             <span className={classes.Icon} onClick={props.modalClosed}>
