@@ -43,7 +43,7 @@ const Header = (props) => {
   return (
     <div className={classes.Header} id="home">
       <div className={classes.HeaderWidth}>
-        <NavLink to="/2021">
+        <NavLink to="/">
           <img src={Logo} alt="logo" />
         </NavLink>
         <div className={classes.Links}>

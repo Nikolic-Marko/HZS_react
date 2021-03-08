@@ -44,7 +44,7 @@ const Partneri = () => {
 
   return (
     <React.Fragment>
-      <div className="partneri">
+      <div className="partneri" id="partners">
         <h1 className="naslov">PARTNERI</h1>
         <div className="naslov-partneri">
           <h1>GENERALNI</h1>
