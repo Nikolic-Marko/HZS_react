@@ -178,10 +178,10 @@
 @media only screen and (max-width: 500px) {
   .Modal {
     width: 90%;
-    height: 55%;
+    height: 23rem;
     padding: 16px;
     left: 5%;
-    top: 20%;
+    top: 3%;
   }
   .Input1 {
     width: 45%;

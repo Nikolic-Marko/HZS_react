@@ -8,7 +8,6 @@ import NajcescaPitanja from './NajcescaPitanja/NajcescaPitanja'
 import Partneri from './Partneri/Partneri'
 import AboutHakaton from './AboutHakaton/AboutHakaton'
 import TimeLine from './TimeLine/TimeLine'
-import PartneriTemp from './Partneri/PartneriTemp'
 import NavigationDots from './NavigationDots'
 import LoginModal from './Forum/LoginModal/LoginModal'
 
@@ -32,7 +31,7 @@ const Homepage = () => {
       <TimeLine />
       <NasTim />
       <NajcescaPitanja />
-      <PartneriTemp />
+      <Partneri />
       <Footer />
       <LoginModal show={showModal} modalClosed={closeModal} />
     </div>

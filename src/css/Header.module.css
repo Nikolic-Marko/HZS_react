@@ -4,10 +4,38 @@
   overflow: hidden;
 }
 
+.NB_resp{
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: none;
+  padding: 1rem 2rem 1rem 0.4rem;
+  z-index: 1000;
+}
+
+.Link_resp{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: white;
+  background: none;
+  box-shadow: none;
+  border: none;
+  font-size: 16px;
+}
+
 .NB{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+}
+
+.hamburger{
+  display: none;
+  position: absolute;
+  top: 4%;
+  right: 5%;
 }
 
 .Link p {
@@ -64,10 +92,15 @@
   font-size: 0.9rem;
 }
 
-@media only screen and (max-width: 740px) {
-  
+@media only screen and (max-width: 850px) {
+  .NB_resp{
+    display: flex;
+  }
   .Text {
-    margin-left: 0;
+    position: absolute;
+    top: 3%;
+    left: 18%;
+    font-size: 1rem;
   }
   .HeaderWidth {
     margin-left: 0rem;
@@ -75,27 +108,18 @@
   .Link {
     width: 100px;
   }
+  .Links{
+    display: block;
+  }
+  .Link{
+    display: none;
+  }
+  .hamburger{
+    display: flex;
+    margin-top: 10px;
+  }
 }
-
-@media only screen and (max-width: 720px) {
-}
-
-
-
 @media only screen and (max-width: 350px) {
-  .Link {
-    padding: 0.2rem 0.4rem;
-    margin-left: 0;
-    margin-right: 0.1rem;
-    font-size: 0.8rem;
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 4.6rem;
-  }
-  .Text {
-    margin-left: 0;
-    margin-right: 0rem;
-  }
   .HeaderWidth {
     margin-left: 0rem;
   }
