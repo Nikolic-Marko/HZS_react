@@ -10,6 +10,10 @@ import JafaLogo from '../Landing/img/jaffalogo.png'
 import HzsSporedni from '../Landing/img/hzs-sporedni-mali-removebg-preview.png'
 import Chipsway from '../Landing/img/chipswaylogo.png'
 import ZabacLogo from '../Landing/img/zabaclogo.png'
+import Sessame from '../Landing/img/Sessame.png'
+import Kampster from '../Landing/img/Kampster.png'
+import Laguna from '../Landing/img/Laguna.png'
+import Eden from '../Landing/img/EDEN.jpg'
 import TonusGymLogo from '../Landing/img/tonusgymlogo.png'
 import BaniniLogo from '../Landing/img/baninilogo.png'
 import HelloWorld from '../Landing/img/HelloWorld.png'
@@ -61,28 +65,20 @@ const Partneri = () => {
             <img src={FonLogo} alt="" />
           </div>
         </div>
-        {/* <div className="naslov-partneri">
-          <h1>ROBNI</h1>
+        <div className="naslov-partneri">
+          <h1>NATURALNI</h1>
         </div>
-        <div className="generalni-partneri robni-partneri">
+        <div className="slider">
 
-          <div className="sponzor-slika">
-            <img src={JafaLogo} alt="" />
-          </div>
-          <div className="sponzor-slika">
-            <img src={Chipsway} alt="" />
-          </div>
-          <div className="sponzor-slika">
-            <img src={ZabacLogo} alt="" />
-          </div>
-          <div className="sponzor-slika">
-            <img src={BaniniLogo} alt="" />
-          </div>
-          <div className="sponzor-slika">
-            <img src={TonusGymLogo} alt="" />
-          </div>
+          <Carousel responsive={responsive} autoPlay={true} autoPlaySpeed={1000} infinite={true} showDots={false} arrows={false}>
+            <div className="card"><img src={ZabacLogo} alt="" /></div>
+            <div className="card"><img src={Kampster} alt="" /></div>
+            <div className="card"><img src={Eden} alt="" /></div>
+            <div className="card"><img src={Laguna} alt="" /></div>
+            <div className="card"><img src={Sessame} alt="" /></div>
+          </Carousel>;
 
-        </div> */}
+      </div>
         <div className="naslov-partneri">
           <h1>MEDIJSKI</h1>
         </div>
