@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React, { Suspense, useEffect, useState } from 'react'
 import classes from './DinamicneKategorije.module.css'
 import PitanjaPojedinacna from './PitanjaPojedinacna/PitanjaPojedinacna'
 import Header from '../../Header'
 import LoginModal from '../LoginModal/LoginModal'
 import Spinner from '../Spinner/Spinner'
 import Footer from './../../Footer'
+import { wait } from '@testing-library/dom'
 
 const DinamicneKategorije = () => {
   const [postovi, setPostovi] = useState([])
   const [showLogin, setShowLogin] = useState(false)
   const [visible, setVisible] = useState(10)
+  const [loading, setLoading] = useState(true)
 
   const showLoginHandler = () => {
     setShowLogin(true)
@@ -45,12 +47,15 @@ const DinamicneKategorije = () => {
   useEffect(() => {
     const url = window.location.href
     const kategorija = url.substring(url.lastIndexOf('/') + 1)
+    console.log(loading)
 
     switch (kategorija) {
       case 'Radionice':
         getPosts('Radionice', null)
           .then((data) => {
             setPostovi(data)
+            setLoading(false)
+            console.log(loading)
           })
           .catch((err) => {
             console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
@@ -60,6 +65,7 @@ const DinamicneKategorije = () => {
         getPosts('Pravila', null)
           .then((data) => {
             setPostovi(data)
+            setLoading(false)
           })
           .catch((err) => {
             console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
@@ -69,6 +75,7 @@ const DinamicneKategorije = () => {
         getPosts('Ostalo', null)
           .then((data) => {
             setPostovi(data)
+            setLoading(false)
           })
           .catch((err) => {
             console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
@@ -78,6 +85,7 @@ const DinamicneKategorije = () => {
         getPosts('Prezentovanje rešenja', null)
           .then((data) => {
             setPostovi(data)
+            setLoading(false)
           })
           .catch((err) => {
             console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
@@ -87,6 +95,7 @@ const DinamicneKategorije = () => {
         getPosts('Domaći zadatak', null)
           .then((data) => {
             setPostovi(data)
+            setLoading(false)
           })
           .catch((err) => {
             console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
@@ -126,31 +135,33 @@ const DinamicneKategorije = () => {
     <React.Fragment>
       <Header modalShow={showLoginHandler} />
       <div className={classes.Radionice}>
-        {postovi.length > 0 ? (
-          <div className={classes.PitanjaContainer}>
-            <div className={classes.PitanjaHeader}>
-              <div className={classes.Left}>
-                <p>Topic</p>
-              </div>
-              <div className={classes.Right}>
-                <p>Activity</p>
-                <p>Replies</p>
-              </div>
+        <div className={classes.PitanjaContainer}>
+          <div className={classes.PitanjaHeader}>
+            <div className={classes.Left}>
+              <p>Topic</p>
             </div>
-            {listaPostova}
-            <div className={classes.ButtonRight}>
-              <button
-                disabled={disable}
-                className={disable ? classes.Disabled : classes.LoadMore}
-                onClick={handleLoadMore}
-              >
-                Load more
-              </button>
+            <div className={classes.Right}>
+              <p>Activity</p>
+              <p>Replies</p>
             </div>
           </div>
-        ) : (
-          <Spinner />
-        )}
+          {loading ? (
+            <Spinner />
+          ) : postovi.length > 0 ? (
+            listaPostova
+          ) : (
+            <div className={classes.NoPosts}>Jos uvek nema objava</div>
+          )}
+          <div className={classes.ButtonRight}>
+            <button
+              disabled={disable}
+              className={disable ? classes.Disabled : classes.LoadMore}
+              onClick={handleLoadMore}
+            >
+              Load more
+            </button>
+          </div>
+        </div>
       </div>
       <LoginModal show={showLogin} modalClosed={closeLoginHandler} />
       <Footer />

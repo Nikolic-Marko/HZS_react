@@ -61,17 +61,17 @@
   justify-content: flex-end;
 }
 
-@media only screen and (max-width: 800px) { 
+@media only screen and (max-width: 800px) {
   .PitanjaContainer {
     width: 90%;
   }
 }
 
-@media only screen and (max-width: 550px) { 
-  .Left{
+@media only screen and (max-width: 550px) {
+  .Left {
     font-size: 10px;
   }
-  .Right{
+  .Right {
     font-size: 10px;
   }
   .Right p {
@@ -90,4 +90,11 @@
   }
 }
 
-
+.NoPosts {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
