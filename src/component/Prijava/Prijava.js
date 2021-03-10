@@ -245,7 +245,7 @@ const presekStyle = {
 }
 
 const vratiInicijalnoOdbrojavanje = () => {
-    var countDownDate = new Date("Mar 11, 2021 00:00:00").getTime();
+    var countDownDate = new Date("Mar 12, 2021 00:00:00").getTime();
 
     var now = new Date().getTime();
 
@@ -266,7 +266,7 @@ const vratiInicijalnoOdbrojavanje = () => {
 }
 const odbrojavanje = () => {
     let interval = setInterval(function () {
-        var countDownDate = new Date("Mar 11, 2021 00:00:00").getTime();
+        var countDownDate = new Date("Mar 12, 2021 00:00:00").getTime();
 
         var now = new Date().getTime();
 

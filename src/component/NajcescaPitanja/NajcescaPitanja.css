@@ -142,6 +142,7 @@ body{
 @media screen and (max-width: 650px) {
   .najcesce-pitanje {
     width: 100%;
+    height: 130px;
   }
   .najcesce-pitanje:hover {
     height: 440px;
@@ -150,6 +151,6 @@ body{
     height: 290px;
   }
   .pitanje-tekst {
-    height: 55px;
+    height: 70px;
   }
 }

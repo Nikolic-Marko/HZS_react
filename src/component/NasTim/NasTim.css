@@ -76,7 +76,7 @@
 .cardTeam{
   width: 90%;
   height: auto;
-  background: red;
+  background: none;
   color: white;
   margin: 0;
   display: flex;
@@ -98,7 +98,7 @@
   .cardTeam{
     width: 85%;
     height: auto;
-    background: red;
+    background: none;
     color: white;
     font-size: 30px;
     margin-left: 15px;
@@ -130,6 +130,6 @@
   }
   .cardTeam{
     width: 95%;
-    margin-left: 10px;
+    margin-left: 5px;
   }
 }
