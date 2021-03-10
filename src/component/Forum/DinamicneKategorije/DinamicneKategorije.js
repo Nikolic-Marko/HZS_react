@@ -5,7 +5,6 @@ import Header from '../../Header'
 import LoginModal from '../LoginModal/LoginModal'
 import Spinner from '../Spinner/Spinner'
 import Footer from './../../Footer'
-import { wait } from '@testing-library/dom'
 
 const DinamicneKategorije = () => {
   const [postovi, setPostovi] = useState([])
@@ -47,7 +46,6 @@ const DinamicneKategorije = () => {
   useEffect(() => {
     const url = window.location.href
     const kategorija = url.substring(url.lastIndexOf('/') + 1)
-    console.log(loading)
 
     switch (kategorija) {
       case 'Radionice':
@@ -55,7 +53,6 @@ const DinamicneKategorije = () => {
           .then((data) => {
             setPostovi(data)
             setLoading(false)
-            console.log(loading)
           })
           .catch((err) => {
             console.log('Greska prilikom izvrsavanja http zahteva: ' + err)
