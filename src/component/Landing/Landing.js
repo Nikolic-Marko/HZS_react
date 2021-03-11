@@ -24,9 +24,11 @@ const Landing = () => {
                     Ovaj put družimo se u online formatu, <br />
                     u periodu od 2. do 3. aprila 2021.
                     <br />
-                    Prijave za takmičenje su otvorene <br /> do 11. marta u
-                    23:59,
-                    <br />a mi vas s nestrpljenjem očekujemo!
+                    Prijave za takmičenje su <b>zatvorene!</b><br />
+                    Svi prijavljeni timovi biće kontaktirani<br /> 
+                    u što kraćem roku.
+                    Hvala na prijavama!
+                    
                 </p>
                     <div className="dugme-ucestvuj">
                         <b>UČESTVUJ</b>
