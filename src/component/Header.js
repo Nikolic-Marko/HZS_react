@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import classes from '../css/Header.module.css'
 import Logo from '../assets/HZSlogo1.jpeg'
 import { connect } from 'react-redux'
@@ -43,9 +43,9 @@ const Header = (props) => {
   return (
     <div className={classes.Header} id="home">
       <div className={classes.HeaderWidth}>
-        <NavLink to="/">
+        <Link to="/">
           <img src={Logo} alt="logo" />
-        </NavLink>
+        </Link>
         <div className={classes.Links}>
           <div className={classes.Text}>2-3 APRILA</div>
           <div className={classes.IconsMenu}>

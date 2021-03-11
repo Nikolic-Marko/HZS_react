@@ -28,11 +28,9 @@ const Landing = () => {
                     23:59,
                     <br />a mi vas s nestrpljenjem očekujemo!
                 </p>
-                <NavLink to="/prijava" style = {{textDecoration: "none"}}>
                     <div className="dugme-ucestvuj">
                         <b>UČESTVUJ</b>
                     </div>
-                </NavLink>
                 {/* <!-- <div className="tajmer">
           <p id="timer"></p>
   </div> --> */}

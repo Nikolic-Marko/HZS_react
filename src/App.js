@@ -51,7 +51,6 @@ function App() {
           component={PitanjaStranica}
         />
         <Route path="/forum/pravila/:id" exact component={PitanjaStranica} />
-        <Route path="/prijava" exact component={Prijava} />
       </Switch>
     </HashRouter>
   )

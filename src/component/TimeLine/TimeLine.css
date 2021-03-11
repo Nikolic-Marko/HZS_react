@@ -1,6 +1,7 @@
 .timeLineWrap{
   background: #161616;
   margin-top: 5%;
+  overflow: hidden;
 }
 h4 {
     padding-top: 0.25em;
@@ -9,6 +10,7 @@ h4 {
   .vertical-timeline-element-content {
     box-shadow: none!important;
     padding: 2em 3em !important;
+    overflow: hidden;
   }
   .date {
     color: rgb(201, 251, 255);

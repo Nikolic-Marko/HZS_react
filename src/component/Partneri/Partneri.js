@@ -20,6 +20,13 @@ import HelloWorld from '../Landing/img/HelloWorld.png'
 import BestLogo from '../Landing/img/BestLogo.png'
 import PrijemniLogo from '../Landing/img/PrijemniLogo.png'
 import eestecLogo from '../Landing/img/eestecLogo.png'
+import SmartLogo from '../Landing/img/SmartLogo.jpg'
+import CentarLogo from '../Landing/img/CentarLogo.png'
+import AIESECLogo from '../Landing/img/AIESECLogo.png'
+import YouthLogo from '../Landing/img/YouthLogo.png'
+import BibliotekaLogo from '../Landing/img/BibliotekaLogo.jpg'
+import FontanaLogo from '../Landing/img/FontanaLogo.jpg'
+import BugiLogo from '../Landing/img/BugiLogo.PNG'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -76,6 +83,9 @@ const Partneri = () => {
             <div className="card"><img src={Eden} alt="" /></div>
             <div className="card"><img src={Laguna} alt="" /></div>
             <div className="card"><img src={Sessame} alt="" /></div>
+            <div className="card"><img src={BugiLogo} alt="" /></div>
+            <div className="card"><img src={FontanaLogo} alt="" /></div>
+            <div className="card"><img src={BibliotekaLogo} alt="" /></div>
           </Carousel>;
 
       </div>
@@ -89,7 +99,10 @@ const Partneri = () => {
             <div className="card"><img src={PrijemniLogo} alt="" /></div>
             <div className="card"><img src={BestLogo} alt="" /></div>
             <div className="card"><img src={eestecLogo} alt="" /></div>
-            <div className="card"><img src={FonLogo} alt="" /></div>
+            <div className="card"><img src={YouthLogo} alt="" /></div>
+            <div className="card"><img src={SmartLogo} alt="" /></div>
+            <div className="card"><img src={AIESECLogo} alt="" /></div>
+            <div className="card"><img src={CentarLogo} alt="" /></div>
           </Carousel>;
 
       </div>
