@@ -17,7 +17,7 @@ let timelineElements = [
   },
   {
     id: 3,
-    startDate: "14.3.2021.",
+    startDate: "15.3.2021.",
     title: "Online test",
     description:
       "Timovi koji prođu prvi krug selekcije radiće online test, nakon čega se u najkraćem mogućem roku dostavljaju rezultati testa kao i informacija o prolasku u naredni krug selekcije. Test se radi timski.",

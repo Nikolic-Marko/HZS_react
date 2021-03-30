@@ -43,7 +43,6 @@
 .robni-partneri .sponzor-slika{
   height: 120px;
 }
-
 .sponzor-slika{
   background-color: white;
   display: flex;
@@ -58,6 +57,7 @@
   width: auto;
   height: 90%;
 }
+
 /*****slider***********/
 .slider{
   width: 90%;

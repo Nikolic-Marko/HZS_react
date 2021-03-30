@@ -14,8 +14,8 @@ import Sessame from '../Landing/img/Sessame.png'
 import Kampster from '../Landing/img/Kampster.png'
 import Laguna from '../Landing/img/Laguna.png'
 import Eden from '../Landing/img/EDEN.jpg'
-import TonusGymLogo from '../Landing/img/tonusgymlogo.png'
-import BaniniLogo from '../Landing/img/baninilogo.png'
+import CatenaLogo from '../Landing/img/CatenaLogo.jpg'
+import RaiffeisenLogo from '../Landing/img/RaiffeisenLogo.png'
 import HelloWorld from '../Landing/img/HelloWorld.png'
 import BestLogo from '../Landing/img/BestLogo.png'
 import PrijemniLogo from '../Landing/img/PrijemniLogo.png'
@@ -61,16 +61,28 @@ const Partneri = () => {
           <h1>GENERALNI</h1>
         </div>
         <div className="generalni-partneri">
-
-          <div className="sponzor-slika">
+        <a href="https://www.comtrade.com/"><div className="sponzor-slika">
             <img src={ComtradeLogo} alt="" />
           </div>
-          <div className="sponzor-slika">
+          </a>
+          <a href="https://guarana.rs/"><div className="sponzor-slika">
             <img src={Guarana} alt="" />
           </div>
-          <div className="sponzor-slika">
+          </a>
+          <a href="http://www.fon.bg.ac.rs/"><div className="sponzor-slika">
             <img src={FonLogo} alt="" />
           </div>
+          </a>
+        </div>
+        <div className="generalni-partneri">
+        <a href="https://www.raiffeisenbank.rs/"><div className="sponzor-slika">
+            <img src={RaiffeisenLogo} alt="" />
+          </div>
+          </a>
+          <a href="https://www.catenamedia.com/"><div className="sponzor-slika">
+            <img src={CatenaLogo} alt="" />
+          </div>
+          </a>
         </div>
         <div className="naslov-partneri">
           <h1>NATURALNI</h1>

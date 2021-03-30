@@ -7,6 +7,7 @@ import PitanjaStranica from './component/Forum/PitanjaContainer/PitnjaStranica/P
 import Prijava from './component/Prijava/Prijava'
 import DinamicneKategorije from './component/Forum/DinamicneKategorije/DinamicneKategorije'
 import MojiPostovi from './component/Forum/MojiPostovi/MojiPostovi'
+import RandomPicker from './component/RandomPicker/RandomPicker'
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
           component={PitanjaStranica}
         />
         <Route path="/forum/pravila/:id" exact component={PitanjaStranica} />
+        <Route path="/randomPicker" exact component={RandomPicker} />
       </Switch>
     </HashRouter>
   )
